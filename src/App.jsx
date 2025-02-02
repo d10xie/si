@@ -982,6 +982,29 @@ const questions = [
   }
 ];
 
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import { Card, CardContent } from "./components/ui/card/card.jsx";
+import { Button } from "./components/ui/button/button.jsx";
+
+const shuffle = (array) => {
+  const shuffledArray = [...array];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+};
+
+const questions = [
+  {
+    question: "Przykładowe pytanie?",
+    options: ["Odpowiedź 1", "Odpowiedź 2", "Odpowiedź 3", "Odpowiedź 4"],
+    correct: 1,
+  },
+  // Dodaj więcej pytań tutaj
+];
+
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -1043,7 +1066,10 @@ export default function App() {
             <h3 className="text-lg font-semibold">Podsumowanie:</h3>
             <ul className="mt-2 list-disc list-inside pl-4">
               {answers.map((answer, index) => (
-                <li key={index} className={answer.selected === answer.correct ? "bg-green-200 p-2 rounded" : "bg-red-200 p-2 rounded"}>
+                <li
+                  key={index}
+                  style={{ backgroundColor: answer.selected === answer.correct ? "#d4edda" : "#f8d7da", padding: "10px", borderRadius: "5px", marginBottom: "5px" }}
+                >
                   <strong>{answer.question}</strong>
                   <br />
                   <span className="font-bold">
@@ -1098,4 +1124,3 @@ export default function App() {
     </div>
   );
 }
-
