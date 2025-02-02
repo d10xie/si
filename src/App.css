@@ -1,0 +1,96 @@
+.card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.button.outline {
+  background-color: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+}
+
+.button.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Style for questions */
+.question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Style for answer options */
+.answer-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.answer-option:hover {
+  background-color: #f0f0f0;
+}
+
+.answer-option.selected {
+  background-color: #e0e0e0;
+}
+
+/* Style for the result section */
+.result {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.result-score {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.result-summary {
+  margin-top: 1rem;
+}
+
+.result-summary li {
+  margin-bottom: 0.5rem;
+}
+
+.result-summary .correct {
+  color: green;
+}
+
+.result-summary .incorrect {
+  color: red;
+}
