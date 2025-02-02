@@ -982,29 +982,6 @@ const questions = [
   }
 ];
 
-import "./App.css";
-import React, { useState, useEffect } from "react";
-import { Card, CardContent } from "./components/ui/card/card.jsx";
-import { Button } from "./components/ui/button/button.jsx";
-
-const shuffle = (array) => {
-  const shuffledArray = [...array];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-
-const questions = [
-  {
-    question: "Przykładowe pytanie?",
-    options: ["Odpowiedź 1", "Odpowiedź 2", "Odpowiedź 3", "Odpowiedź 4"],
-    correct: 1,
-  },
-  // Dodaj więcej pytań tutaj
-];
-
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
