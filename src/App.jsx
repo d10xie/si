@@ -1043,7 +1043,7 @@ export default function App() {
             <h3 className="text-lg font-semibold">Podsumowanie:</h3>
             <ul className="mt-2 list-disc list-inside pl-4">
               {answers.map((answer, index) => (
-                <li key={index} className="mb-2">
+                <li key={index} className={answer.selected === answer.correct ? "text-green-600 font-bold" : "text-red-600 font-bold"}>
                   <strong>{answer.question}</strong>
                   <br />
                   <span
