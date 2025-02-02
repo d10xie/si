@@ -1043,14 +1043,10 @@ export default function App() {
             <h3 className="text-lg font-semibold">Podsumowanie:</h3>
             <ul className="mt-2 list-disc list-inside pl-4">
               {answers.map((answer, index) => (
-                <li key={index} className={answer.selected === answer.correct ? "text-green-600 font-bold" : "text-red-600 font-bold"}>
+                <li key={index} className={answer.selected === answer.correct ? "bg-green-200 p-2 rounded" : "bg-red-200 p-2 rounded"}>
                   <strong>{answer.question}</strong>
                   <br />
-                  <span
-                    className={
-                      answer.selected === answer.correct ? "text-green-600 font-bold" : "text-red-600 font-bold"
-                    }
-                  >
+                  <span className="font-bold">
                     Twoja odpowiedź: {shuffledQuestions[index]?.options[answer.selected] || "Brak odpowiedzi"}
                   </span>
                   <br />
@@ -1102,3 +1098,4 @@ export default function App() {
     </div>
   );
 }
+
