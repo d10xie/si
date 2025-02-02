@@ -1020,6 +1020,10 @@ export default function App() {
     }
   };
 
+  const endQuiz = () => {
+    setShowResult(true);
+  };
+
   const restartQuiz = () => {
     setCurrentQuestion(0);
     setScore(0);
@@ -1044,7 +1048,7 @@ export default function App() {
                   <br />
                   <span
                     className={
-                      answer.selected === answer.correct ? "text-green-600" : "text-red-600"
+                      answer.selected === answer.correct ? "text-green-600 font-bold" : "text-red-600 font-bold"
                     }
                   >
                     Twoja odpowiedź: {shuffledQuestions[index]?.options[answer.selected] || "Brak odpowiedzi"}
@@ -1070,7 +1074,13 @@ export default function App() {
                 {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
                   <Button
                     key={index}
-                    variant={selectedOption === index ? "secondary" : "outline"}
+                    className={
+                      selectedOption === index
+                        ? selectedOption === shuffledQuestions[currentQuestion].correct
+                          ? "bg-green-500 text-white"
+                          : "bg-red-500 text-white"
+                        : "outline"
+                    }
                     onClick={() => handleAnswer(index)}
                   >
                     {option}
@@ -1084,6 +1094,7 @@ export default function App() {
               >
                 {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne pytanie"}
               </Button>
+              <Button className="mt-2 w-full" onClick={endQuiz}>Zakończ quiz</Button>
             </CardContent>
           </Card>
         )
