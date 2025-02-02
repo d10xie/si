@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
-import { Card, CardContent } from "../components/ui/card/card.jsx";
-import { Button } from "../components/ui/button/button.jsx";
+import { Card, CardContent } from "./components/ui/card/card.jsx";
+import { Button } from "./components/ui/button/button.jsx";
 
 const shuffle = (array) => {
   const shuffledArray = [...array];
