@@ -989,12 +989,15 @@ export default function App() {
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
+
   useEffect(() => {
     setShuffledQuestions(shuffle(questions));
   }, []);
+
   const handleAnswer = (index) => {
     setSelectedOption(index);
   };
+
   const nextQuestion = () => {
     setAnswers([
       ...answers,
@@ -1004,25 +1007,33 @@ export default function App() {
         correct: shuffledQuestions[currentQuestion].correct,
       },
     ]);
+
     if (selectedOption === shuffledQuestions[currentQuestion].correct) {
       setScore(score + 1);
     }
     setSelectedOption(null);
+
     if (currentQuestion + 1 < shuffledQuestions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowResult(true);
     }
   };
-  const endQuiz = () => {
-    setShowResult(true);
+
+  const restartQuiz = () => {
+    setCurrentQuestion(0);
+    setScore(0);
+    setAnswers([]);
+    setShowResult(false);
+    setShuffledQuestions(shuffle(questions));
   };
+
   return (
     <div className="flex flex-col items-center p-6">
       {showResult ? (
         <Card className="p-6 text-center">
           <h2 className="text-xl font-bold">
-            Twój wynik: {score} / {shuffledQuestions.length}
+            Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
           </h2>
           <div className="mt-4 text-left">
             <h3 className="text-lg font-semibold">Podsumowanie:</h3>
@@ -1033,34 +1044,20 @@ export default function App() {
                   <br />
                   <span
                     className={
-                      answer.selected === answer.correct
-                        ? "text-green-600"
-                        : "text-red-600"
+                      answer.selected === answer.correct ? "text-green-600" : "text-red-600"
                     }
                   >
-                    Twoja odpowiedź:{" "}
-                    {shuffledQuestions[index]?.options[answer.selected]}
+                    Twoja odpowiedź: {shuffledQuestions[index]?.options[answer.selected] || "Brak odpowiedzi"}
                   </span>
                   <br />
                   <span className="text-blue-600">
-                    Poprawna odpowiedź:{" "}
-                    {shuffledQuestions[index]?.options[answer.correct]}
+                    Poprawna odpowiedź: {shuffledQuestions[index]?.options[answer.correct]}
                   </span>
                 </li>
               ))}
             </ul>
           </div>
-          <Button
-            onClick={() => {
-              setCurrentQuestion(0);
-              setScore(0);
-              setAnswers([]);
-              setShowResult(false);
-              setShuffledQuestions(shuffle(questions));
-            }}
-          >
-            Spróbuj ponownie
-          </Button>
+          <Button onClick={restartQuiz} className="mt-4">Spróbuj ponownie</Button>
         </Card>
       ) : (
         shuffledQuestions.length > 0 && (
@@ -1070,31 +1067,22 @@ export default function App() {
                 {shuffledQuestions[currentQuestion]?.question}
               </h2>
               <div className="flex flex-col gap-2 mt-4">
-                {shuffledQuestions[currentQuestion]?.options.map(
-                  (option, index) => (
-                    <Button
-                      key={index}
-                      variant={
-                        selectedOption === index ? "secondary" : "outline"
-                      }
-                      onClick={() => handleAnswer(index)}
-                    >
-                      {option}
-                    </Button>
-                  ),
-                )}
+                {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
+                  <Button
+                    key={index}
+                    variant={selectedOption === index ? "secondary" : "outline"}
+                    onClick={() => handleAnswer(index)}
+                  >
+                    {option}
+                  </Button>
+                ))}
               </div>
               <Button
                 className="mt-4 w-full"
                 onClick={nextQuestion}
                 disabled={selectedOption === null}
               >
-                {currentQuestion + 1 === shuffledQuestions.length
-                  ? "Zakończ test"
-                  : "Następne pytanie"}
-              </Button>
-              <Button className="mt-2 w-full" onClick={endQuiz}>
-                Zakończ quiz
+                {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne pytanie"}
               </Button>
             </CardContent>
           </Card>
