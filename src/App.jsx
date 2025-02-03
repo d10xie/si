@@ -1102,7 +1102,6 @@ const questions = [
     ],
     correct: 0
   },
-  [
   {
     question: "Funkcję aktywacji w perceptronie prostym można określić jako funkcję:",
     options: ["Sigmoidalną", "Ciągłą", "Stałą", "Schodkową"],
@@ -1532,7 +1531,7 @@ const questions = [
     "5"
   ],
   correct: 3
-  },
+  }
 ];
 
 export default function App() {
