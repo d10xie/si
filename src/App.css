@@ -1,96 +1,157 @@
-.card {
-  background-color: #f8f8f8;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* ✅ Główna struktura quizu */
+.quiz-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  gap: 40px; /* Większy odstęp między pytaniem a siatką */
+}
+
+/* ✅ Główna sekcja quizu */
+.quiz-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* ✅ Pytanie - większe i bardziej czytelne */
+.fixed-size {
+  width: 700px; /* Szerokość pytania */
+  min-height: 450px; /* Większe pole pytania */
   padding: 20px;
+  font-size: 1.3rem; /* Powiększamy tekst */
+  text-align: center;
 }
 
-.card-content {
-  padding: 10px;
-}
-
-.button {
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
+.question-text {
+  font-size: 1.5rem; /* Powiększamy pytanie */
   font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.button.primary {
-  background-color: #007bff;
-  color: white;
-}
-
-.button.outline {
-  background-color: transparent;
-  border: 1px solid #007bff;
-  color: #007bff;
-}
-
-.button.secondary {
-  background-color: #6c757d;
-  color: white;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-.button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-/* Style for questions */
-.question {
-  font-size: 1.2rem;
+.question-counter {
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
-/* Style for answer options */
-.answer-option {
+/* ✅ Style odpowiedzi */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.option-label {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.option-button {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.option-button.correct {
+  background-color: green;
+  color: white;
+}
+
+.option-button.incorrect {
+  background-color: red;
+  color: white;
+}
+
+/* ✅ Nawigacja */
+.navigation-buttons {
+  display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+}
+
+.end-button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #dc3545;
+  color: white;
+}
+
+/* ✅ Styl siatki pytań */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-gap: 5px;
+  max-width: 520px;
+  margin-right: 40px; /* Przesunięcie siatki w prawo */
+}
+
+.summary-box {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid black;
   cursor: pointer;
+  font-weight: bold;
+  background-color: #f8f8f8;
 }
 
-.answer-option:hover {
-  background-color: #f0f0f0;
+.summary-box:hover {
+  background-color: #ddd;
 }
 
-.answer-option.selected {
+.neutral {
   background-color: #e0e0e0;
 }
 
-/* Style for the result section */
-.result {
-  text-align: center;
-  margin-top: 2rem;
+.correct {
+  background-color: #d4edda;
 }
 
-.result-score {
-  font-size: 2rem;
-  font-weight: bold;
+.incorrect {
+  background-color: #f8d7da;
 }
 
-.result-summary {
-  margin-top: 1rem;
+.active-question {
+  border: 3px solid black;
 }
 
-.result-summary li {
-  margin-bottom: 0.5rem;
+/* ✅ Styl podsumowania */
+.correct-answer {
+  background-color: #d4edda;
+  border-left: 5px solid green;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: black;
 }
 
-.result-summary .correct {
-  color: green;
+.wrong-answer {
+  background-color: #f8d7da;
+  border-left: 5px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: black;
 }
 
-.result-summary .incorrect {
-  color: red;
+/* ✅ Szczegóły odpowiedzi w podsumowaniu */
+.question-detail {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid #ddd;
 }
