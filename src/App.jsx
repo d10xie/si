@@ -1543,49 +1543,69 @@ export default function App() {
     setShuffledQuestions(shuffle(questions));
   }, []);
 
-  const handleAnswer = (index) => setSelectedOption(index);
+  const endQuiz = () => {
+    if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
+      saveAnswer();
+      setShowResult(true);
+    }
+  };
+  
+  
+
+  const handleAnswer = (index) => {
+    setSelectedOption(index);
+  
+    // Zapisujemy odpowiedź od razu po jej zaznaczeniu
+    const newAnswers = [...answers];
+    newAnswers[currentQuestion] = {
+      question: shuffledQuestions[currentQuestion].question,
+      options: shuffledQuestions[currentQuestion].options,
+      selected: index,
+      correct: shuffledQuestions[currentQuestion].correct,
+    };
+    setAnswers(newAnswers);
+  };
+  
 
   // Przechodzenie między pytaniami
   const goToQuestion = (index) => {
     setCurrentQuestion(index);
-    setSelectedOption(answers[index]?.selected || null);
+    setSelectedOption(answers[index]?.selected ?? null);
   };
+  
 
   // Zapisuje odpowiedź użytkownika
   const saveAnswer = () => {
     if (!answers[currentQuestion]) {
-      setAnswers([
-        ...answers,
-        {
-          question: shuffledQuestions[currentQuestion].question,
-          options: shuffledQuestions[currentQuestion].options,
-          selected: selectedOption,
-          correct: shuffledQuestions[currentQuestion].correct,
-        },
-      ]);
-
+      const newAnswers = [...answers];
+      newAnswers[currentQuestion] = {
+        question: shuffledQuestions[currentQuestion].question,
+        options: shuffledQuestions[currentQuestion].options,
+        selected: selectedOption,
+        correct: shuffledQuestions[currentQuestion].correct,
+      };
+      setAnswers(newAnswers);
+  
       if (selectedOption === shuffledQuestions[currentQuestion].correct) {
         setScore(score + 1);
       }
-      setSelectedOption(null);
     }
   };
-
+  
+  
   // Przejście do następnego pytania
   const nextQuestion = () => {
-    saveAnswer();
-    if (currentQuestion + 1 < shuffledQuestions.length) {
-      setCurrentQuestion(currentQuestion + 1);
+    if (currentQuestion + 1 === shuffledQuestions.length) {
+      if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
+        setShowResult(true);
+      }
     } else {
-      setShowResult(true);
+      setCurrentQuestion(currentQuestion + 1);
+      setSelectedOption(answers[currentQuestion + 1]?.selected ?? null); // Pobiera poprawną odpowiedź dla nowego pytania
     }
   };
-
-  // Kończy quiz od razu
-  const endQuiz = () => {
-    saveAnswer();
-    setShowResult(true);
-  };
+  
+  
 
   return (
     <div className="quiz-container">
@@ -1661,7 +1681,7 @@ export default function App() {
     let statusClass = "";
 
     if (!showResult) {
-      statusClass = answers[index] ? "answered" : "neutral"; // Dodajemy "answered" podczas quizu
+      statusClass = answers[index]?.selected !== undefined ? "answered" : "neutral";
     } 
     else if (answers[index]) {
       if (answers[index].selected === answers[index].correct) {
@@ -1684,7 +1704,6 @@ export default function App() {
     );
   })}
 </div>
-
     </div>
   );
 }
