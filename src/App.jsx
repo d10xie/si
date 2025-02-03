@@ -83,7 +83,7 @@ const questions = [
     question:
       "Podmiana (aktualizacja) pewnego stanu w zbiorze Open, realizowanego za pomocą kopca binarnego, wymaga w ogólności kosztu:",
     options: ["O(logn)", "O(n²)", "O(n)", "O(n logn)"],
-    correct: 0,
+    correct: 2,
   },
   {
     question:
@@ -94,7 +94,7 @@ const questions = [
       "stałej i stałej",
       "zamortyzowanej stałej i liniowej",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     question: "Algorytm Best-first search jest:",
@@ -168,13 +168,13 @@ const questions = [
       "co najwyżej tyle stanów, co 'przycinanie α-β'",
       "stany wg rosnącej głębokości",
     ],
-    correct: 2,
+    correct: 1,
   },
   {
     question:
       "Algorytm 'przycinanie α-β' odwiedzi pewien stan, jeżeli aktualnie spełniona jest zależność:",
     options: ["α < β", "α ≤ β", "α > β", "α ≥ β"],
-    correct: 1,
+    correct: 0,
   },
   {
     question: "Optymistyczna złożoność 'przycinania α-β' jest rzędu:",
@@ -240,7 +240,7 @@ const questions = [
       "Φt,j(1-Φt,k)Σk vt-1,k,j Et-1,k",
       "Φt,j(1-Φt,k)Σk vt-1,k,j Et+1,k",
     ],
-    correct: 0,
+    correct: 3,
   },
   {
     question:
@@ -289,7 +289,7 @@ const questions = [
   {
     question: "'Problem komiwojażera' to problem:",
     options: ["NP-zupełny", "NP-trudny", "decyzyjny", "klasyfikacji"],
-    correct: 0,
+    correct: 1,
   },
   {
     question:
@@ -311,7 +311,7 @@ const questions = [
       "odpowiedzi po zbyt długim namyśle",
       "odpowiedzi randomizowanych",
     ],
-    correct: 3,
+    correct: 1,
   },
   {
     question:
@@ -322,7 +322,7 @@ const questions = [
       "sprawdzają monotoniczność heurystyki",
       "sprawdzają dopuszczalność heurystyki",
     ],
-    correct: 0,
+    correct: 1,
   },
   {
     question:
@@ -333,7 +333,7 @@ const questions = [
       "najmniejszej wartości g(s) + h(s)",
       "największej wartości g(s) + h(s)",
     ],
-    correct: 2,
+    correct: 0,
   },
   {
     question:
@@ -360,13 +360,13 @@ const questions = [
     question:
       "Dla układanki puzzle przesuwne postaci (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Misplaced tiles' wynosi:",
     options: ["2", "3", "4", "5"],
-    correct: 1,
+    correct: 3,
   },
   {
     question:
       "Dla układanki puzzle przesuwne postaci (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Manhattan' wynosi:",
     options: ["2", "3", "4", "5"],
-    correct: 2,
+    correct: 3,
   },
   {
     question:
@@ -388,7 +388,7 @@ const questions = [
       "algorytmu Dijkstry",
       "żadne z powyższych",
     ],
-    correct: 0,
+    correct: 1,
   },
   {
     question:
@@ -399,7 +399,7 @@ const questions = [
       "nie gwarantuje on znalezienia najkrótszej ścieżki",
       "nie wymaga on zbioru Closed",
     ],
-    correct: 1,
+    correct: 1
   },
   {
     question:
@@ -427,8 +427,18 @@ const questions = [
       "przycięcie nastąpi po innym potomku, co w stanie typu MIN z takimi samymi początkowymi i zwracanymi wartościami",
       "stan typu MAX nie może przybrać takich wartości",
     ],
-    correct: 0,
+    correct: 2,
   },
+  {
+    "question": "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Wynika z tego, że:",
+    "options": [
+        "yi = -1",
+        "yi = 1",
+        "nie można wywnioskować klasy",
+        "algorytm nie zatrzyma się"
+    ],
+    "correct": 0
+},
   {
     question:
       "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Współczynnik uczenia wynosi 0.5. Wynika z tego, że nowy wektor wag będzie równy:",
@@ -438,14 +448,18 @@ const questions = [
       "(-3.5, -2, 1.5, -3)",
       "(1.5, 2, -1.5, 3)",
     ],
-    correct: 3,
+    correct: 2,
   },
   {
-    question:
-      "Zgodnie z dowodem twierdzenia Novikoffa, jeżeli zbiór danych jest liniowo separowalny, to algorytm perceptronu wykona nie więcej kroków niż:",
-    options: ["R² / y'²", "R / y'", "R² * y'²", "y'² / R²"],
-    correct: 0,
-  },
+    "question": "Zgodnie z dowodem twierdzenia Novikoffa, jeżeli zbiór danych jest liniowo separowalny, to algorytm perceptronu wykona nie więcej kroków niż:",
+    "options": [
+        "γ_min² / R_max",
+        "R_max / γ_min²",
+        "γ_min² / R_max²",
+        "R_max² / γ_min²"
+    ],
+    "correct": 3
+},
   {
     question:
       "Pewien zbiór danych określony na płaszczyźnie (w R²) nie jest liniowo separowalny. Dokonano pewnego przekształcenia współrzędnych tego zbioru redukując go do zbioru jednowymiarowego (określonego w R¹). Można powiedzieć, że:",
@@ -455,7 +469,7 @@ const questions = [
       "wspomniane przekształcenie nie jest możliwe",
       "żadne z powyższych",
     ],
-    correct: 1,
+    correct: 0,
   },
   {
     question:
@@ -487,7 +501,7 @@ const questions = [
       "(Σᵐⱼ=₁ƒ(xⱼ)) / (ƒ(xᵢ))",
       "(1/m Σᵐⱼ=₁ƒ(xⱼ)) / (ƒ(xᵢ))",
     ],
-    correct: 0,
+    correct: 1,
   },
   {
     question:
@@ -498,7 +512,7 @@ const questions = [
       "jest pusty",
       "jest pełny",
     ],
-    correct: 2,
+    correct: 0,
   },
   {
     question:
@@ -509,7 +523,7 @@ const questions = [
       "A* i algorytm Dijkstry są szczególnymi przypadkami BFS",
       "BFS i algorytm Dijkstry są szczególnymi przypadkami A*",
     ],
-    correct: 0,
+    correct: 3,
   },
   {
     question: "Algorytm A* używa funkcji heurystycznej h, aby:",
@@ -586,7 +600,7 @@ const questions = [
     question:
       "Algorytm 'przycinanie α−β' wywoła rekurencję (w dół) na rzecz pewnego stanu, jeżeli:",
     options: ["α > β", "α ≥ β", "α < β", "α ≤ β"],
-    correct: 3,
+    correct: 2,
   },
   {
     question:
@@ -603,12 +617,12 @@ const questions = [
     question:
       "Jeżeli D to maksymalna głębokość, a b współczynnik rozgałęzienia, to złożoność 'przycinania α−β' pruning jest proporcjonalna do:",
     options: [
-      "b^D w przypadku pesymistycznym",
-      "√(b^D) w przypadku pesymistycznym",
-      "b^D w przypadku pesymistycznym",
-      "√(b^D) w przypadku optymistycznym",
+      "bD w przypadku pesymistycznym",
+      "√(bD) w przypadku pesymistycznym",
+      "bD w przypadku pesymistycznym",
+      "√(bD) w przypadku optymistycznym",
     ],
-    correct: 3,
+    correct: 0,
   },
   {
     question:
@@ -703,7 +717,7 @@ const questions = [
       "d",
       "żadne z powyższych"
     ],
-    correct: 0
+    correct: 1
   },
   {
     question: "Prawdziwe jest następujące zdanie na temat związku pomiędzy algorytmami A* i Dijkstry dla ustalonego problemu:",
@@ -753,7 +767,7 @@ const questions = [
       "s,t h(s) ≥ h(t) - g(t) - g(s)",
       "s,t h(s) ≥ h(t) - g(t) + g(s)"
     ],
-    correct: 2
+    correct: 1
   },
   {
     question: "Warunek monotoniczności heurystyki można także wypowiedzieć jako:",
@@ -803,7 +817,7 @@ const questions = [
       "hMT+LC(s) dodaje 1 za każdy konflikt liniowy",
       "hMT(s) ≥ hM(s) dla wszystkich stanów s"
     ],
-    correct: 2
+    correct: 0
   },
   {
     question: "W przeszukiwaniu drzewa gry, gdy b jest współczynnikiem rozgałęziania i rozważa się przynajmniej 2 półruchy, to złożoność w najgorszym przypadku skaluje się:",
@@ -873,7 +887,7 @@ const questions = [
       "nie można wykonać testu, ponieważ ω₀=0",
       "żadne z powyższych"
     ],
-    correct: 0
+    correct: 1
   },
   {
     question: "Zgodnie z dowodem twierdzenia Novikoffa, warunki ściskające na iloczyn skalarny ω(k), ω* mają postać:",
@@ -883,7 +897,7 @@ const questions = [
       "kγ'min ≤ ω(k), ω* ≥ √kRmax",
       "kγ'²min ≤ ω(k), ω* ≥ √kR²max"
     ],
-    correct: 0
+    correct: 2
   },
   {
     question: "Jeżeli algorytm uczący perceptron Rosenblatta wpada w nieskończoną pętlę, to oznacza, że:",
@@ -933,7 +947,7 @@ const questions = [
       "obie selekcje ruletkowa i rankingowa gwarantują jego sukcesję",
       "żadne z powyższych"
     ],
-    correct: 2
+    correct: 3
   },
   {
     question: "Programowanie dynamiczne dla dyskretnego problemu plecakowego (DKP) o n elementach wymaga wykładniczego czasu, gdy objętość plecaka C jest proporcjonalna do:",
@@ -953,7 +967,7 @@ const questions = [
       "aᵢⱼ = max{aᵢⱼ₋₁, aᵢ₋₁,ⱼ₋₁ + vⱼ}",
       "aᵢⱼ = max{aᵢⱼ₋₁, aᵢ₋₁,ⱼ₋₁ − Cⱼ + vⱼ}"
     ],
-    correct: 2
+    correct: 0
   },
   {
     question: "W układance puzzle przesuwne niech hMT, hM, hM+LC oznaczają odpowiednio heurystyki: Misplaced Tiles, Manhattan oraz Manhattan + Linear Conflicts. Prawdziwe jest zdanie:",
@@ -1006,7 +1020,7 @@ const questions = [
   {
     question: "W ramach poprzedniego zadania oczekiwana liczba kopii osobnika x1 po selekcji wynosi?",
     options: ["1", "2", "12", "½"],
-    correct: 0
+    correct: 3
   },
   {
     question: "W pewnym algorytmie genetycznym mamy 4 osobników o następujących przystosowaniach f(x1 ) = 2, f(x2 ) = 1, f(x3 ) = 4, f(x4 ) = 3. Odpowiadające im prawdopodobieństwa sukcesji dla selekcji rankingowej wynoszą:",
@@ -1016,7 +1030,7 @@ const questions = [
   {
     question: "Dla warunków z poprzedniego zadania, oczekiwana liczba kopii x1 po selekcji wynosi:",
     options: ["4/10", "1/4", "4/5 - suma oczekiwanych liczb kopii dla wszystkich osobników powinna być równa liczbie osobników", "4* 2/10"],
-    correct: 3
+    correct: 2
   },
   {
     question: "O sigmoidalnej funkcji aktywacji można powiedzieć, że: jest wszędzie różniczkowalna, jest ściśle rosnąca",
@@ -1024,7 +1038,7 @@ const questions = [
     correct: 0
   },
   {
-    question: "W pewnym algorytmie genetycznym ma zostać skrzyżowana następująca para rodziców (0,0,1,0,1,1,0,1) i (1,1,1,1,1,0,0,1). Wylosowano punkt krzyżowania jako punkt pomiędzy trzecim i czwartym bitem. W rezultacie otrzymamy:",
+    question: "W pewnym AG ma zostać skrzyżowana następująca para rodziców (0,0,1,0,1,1,0,1) i (1,1,1,1,1,0,0,1). Wylosowano punkt krzyżowania jako punkt pomiędzy trzecim i czwartym bitem. W rezultacie otrzymamy:",
     options: [
       "jednego potomka (0,0,1,1,1,0,0,1)",
       "jednego potomka (1,1,1,0,1,1,0,1)",
@@ -1034,8 +1048,8 @@ const questions = [
     correct: 2
   },
   {
-    question: "W perceptronie prostym do poprawki wag w danym kroku mogą być wybrane:",
-    options: ["jedynie przykłady źle sklasyfikowane", "wszystkie przykłady", "losowe przykłady", "żadne z powyższych"],
+    question: "W perceptronie prostym do poprawki wag w danym kroku mogą być wybrane jedynie przykłady źle sklasyfikowane",
+    options: ["Prawda", "Fałsz"],
     correct: 0
   },
   {
@@ -1044,8 +1058,8 @@ const questions = [
     correct: 0
   },
   {
-    question: "Jeżeli zbiór danych nie jest liniowo-separowalny, to algorytm uczenia perceptronu prostego:",
-    options: ["nie zatrzyma się", "zatrzyma się", "zawsze działa poprawnie", "nie działa poprawnie"],
+    question: "Jeżeli zbiór danych nie jest liniowo-separowalny, to algorytm uczenia perceptronu prostego nie zatrzyma się",
+    options: ["Prawda", "Fałsz"],
     correct: 0
   },
   {
@@ -1061,7 +1075,7 @@ const questions = [
   {
     question: "Algorytmy genetyczne (AG) próbują poszukiwać:",
     options: ["miejsc zerowych", "optymów lokalnych", "rozwiązań stabilnych", "żadne z powyższych"],
-    correct: 1
+    correct: 3
   },
   {
     question: "Przykładowym zastosowaniem perceptronu prostego może być:",
@@ -1076,7 +1090,7 @@ const questions = [
       "Po drugim potomku",
       "Po trzecim potomku"
     ],
-    correct: 2
+    correct: 3
   },
   {
     question: "Algorytm „przycinanie alfa-beta” uruchomiono dla gry „kółko i krzyżyk”, generując stany potomne aż do maksymalnej możliwej głębokości i oceniając terminale jedną z trzech możliwych wartości: -inf, 0, inf. Można powiedzieć, że:",
@@ -1116,7 +1130,7 @@ const questions = [
       "Odwiedzi tylko podzbiór przykładów uczących",
       "Odpowiednio wyznaczy klasy"
     ],
-    correct: 1
+    correct: 3
   },
   {
     question: "Jeżeli sieć neuronowa MLP rozwiązuje zadanie estymacji regresji, to o wartościach yi dla przykładów uczących można powiedzieć, że:",
@@ -1136,7 +1150,7 @@ const questions = [
       "Liczba węzłów jest znana",
       "Liczba krawędzi jest znana"
     ],
-    correct: 0
+    correct: 2
   },
   {
     question: "Puzzle przesuwane można zaliczyć do grafowych problemów poszukiwania:",
@@ -1219,442 +1233,125 @@ const questions = [
     correct: 1
   },
   {
-    question: "Wskaż grupę algorytmów reprezentujących niepoinformowane techniki przeszukiwania grafów:",
-    options: [
-      "Best-first search, A*, IDA*",
-      "Breadth-first search, Depth-first search, algorytm Dijkstry",
-      "Algorytm Dijkstry, Best-first search, A*",
-      "Breadth-first search, Depth-first search, Best-first search"
+    "question": "W pewnym binarnym naiwnym klasyfikatorze Bayesa użyto dla bezpieczeństwa numerycznego techniki logarytmowania. Przypuśćmy, że na wejście tego klasyfikatora podstawiono obiekt testowy o cechach (a, b, c)m oraz wiadomo, że\n\nP(X₁ = a | Y = +) = 0.25,  P(X₂ = b | Y = +) = 0.125,  P(X₃ = c | Y = +) = 0.5,  P(Y = +) = 0.5\n\nUżywając logarytmu o podstawie 2, oblicz odpowiedź tego klasyfikatora na rzecz klasy Y = +.\n\nWynosi ona:",
+    "options": [
+        "(1/2)^6",
+        "-6",
+        "(1/2)^7",
+        "-7"
     ],
-    correct: 1
-  },
-  {
-    question: "W sieci bayesowskiej węzły reprezentują:",
-    options: [
-      "Wpływ potomków na rodziców",
-      "Zmienne losowe",
-      "Tylko prawdopodobieństwo a priori zdarzeń",
-      "Wpływ jednego zdarzenia na inne"
-    ],
-    correct: 1
-  },
-  {
-    question: "Algorytmy genetyczne są przeznaczone do:",
-    options: [
-      "Rozwiązywania problemów optymalizacji w sposób przybliżony",
-      "Rozwiązywania problemów klasyfikacji w sposób przybliżony",
-      "Rozwiązywania problemów klasyfikacji w sposób dokładny",
-      "Rozwiązywania problemów optymalizacji w sposób dokładny"
-    ],
-    correct: 0
-  },
-  {
-    question: "W sieci bayesowskiej węzły reprezentują:",
-    options: [
-      "Wpływ potomków na rodziców",
-      "Zmienne losowe",
-      "Tylko prawdopodobieństwo a priori zdarzeń",
-      "Wpływ jednego zdarzenia na inne"
-    ],
-    correct: 1
-  },
-  {
-    question: "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Wynika z tego, że:",
-    options: [
-      "yi = -1",
-      "yi = 1",
-      "Nie można wywnioskować klasy",
-      "Algorytm nie zatrzyma się"
-    ],
-    correct: 1
-  },
-  {
-    question: "Wskaż grupę algorytmów reprezentujących niepoinformowane techniki przeszukiwania grafów:",
-    options: [
-      "Best-first search, A*, IDA*",
-      "Breadth-first search, Depth-first search, algorytm Dijkstry",
-      "Algorytm Dijkstry, Best-first search, A*",
-      "Breadth-first search, Depth-first search, Best-first search"
-    ],
-    correct: 1
-  },
-  {
-    question: "W grze w „iterowany dylemat więźnia”:",
-    options: [
-      "Liczba rund nie powinna być znana graczom z góry",
-      "Racjonalnym wyborem w każdej rundzie jest: zdradzić",
-      "Racjonalnym wyborem w każdej rundzie jest: milczeć",
-      "Najlepszą strategią jest „wet za wet”"
-    ],
-    correct: 0
-  },
-  {
-    question: "Powiedzmy, że pewna sztuczna inteligencja do gry w szachy pracuje z użyciem nastaw: „przycinanie alpha-beta” + głębokość 3.5 + quiescence + tablica transpozycji. Wskaż zmianę, która statystycznie spowoduje największe pogorszenie jakości gry tej sztucznej inteligencji:",
-    options: [
-      "Wyłączenie tablicy transpozycji",
-      "Obniżenie głębokości do 3.0",
-      "Przełączenie algorytmu na „MIN-MAX”",
-      "Wyłączenie quiescence"
-    ],
-    correct: 1
-  },
-  {
-    question: "Co to jest baza wiedzy?",
-    options: [
-      "Zbiór zdań w języku formalnym np. w języku opartym na paradygmatach logiki zależny od opisywanej dziedziny/obszaru",
-      "Element systemu, który zarządza danymi najczęściej w architekturze klient-serwer",
-      "Zbiór danych zapisanych zgodnie z określonymi regułami, np w postaci tabeli wypełnionej wartościami",
-      "Element systemu, który stosuje zasady logiczne by wydedukować nowe informacje"
-    ],
-    correct: 0
-  },
-  {
-    question: "Dla układanki puzzle przesuwane postaci (cyfry pisane kolejno wierszami): (7, 0, 8; 6, 5, 4; 3, 1, 2) wartość heurystyki \"Manhattan\" wynosi:",
-    options: [
-      "12",
-      "13",
-      "11",
-      "14"
-    ],
-    correct: 1
-  },
-  {
-    question: "Baza wiedzy to:",
-    options: [
-      "Element systemu, który zarządza danymi najczęściej w architekturze klient-serwer",
-      "Element systemu, który stosuje procedury by wyedukować nowe informacje",
-      "Zbiór danych w postaci tabeli z atrybutami i decyzją",
-      "Zbiór zdań w języku formalnym np. w języku opartym na paradygmatach logiki"
-    ],
-    correct: 3
-  },
-  {
-    question: "Jeśli w przycinaniu alfa-beta analizowany jest pewien stan, w którym procedura zwraca wartości kolejno 5, 10, 11, 12, 13, to można powiedzieć, że:",
-    options: [
-      "Sytuacja ta jest niemożliwa ze względu na wartość pierwszego potomka 5 < alfa",
-      "Przycięcie nastąpi po pierwszym potomku",
-      "Po drugim potomku",
-      "Po trzecim potomku"
-    ],
-    correct: 2
-  },
-  {
-    question: "W perceptronie prostym wektor wag w = (1, 2, 3, 4) ma być poprawiony na podstawie pary uczącej x = (1, 0, 1, -1), y = 1 przy współczynniku uczenia eta = 1.0. Prawdziwe jest następujące stwierdzenie:",
-    options: [
-      "Powstanie wektor wynikowy w = (2, 2, 4, 3)",
-      "Nie zmieni się",
-      "Będzie mniejszy",
-      "Będzie większy"
-    ],
-    correct: 0
-  },
-  {
-    question: "Jeżeli zbiór danych nie jest liniowo-separowalny, to algorytm uczenia perceptronu prostego:",
-    options: [
-      "Nie zatrzyma się",
-      "Zatrzyma się",
-      "Nie działa poprawnie",
-      "Działa poprawnie"
-    ],
-    correct: 0
-  },
-  {
-    question: "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Wynika z tego, że:",
-    options: [
-      "yi = -1",
-      "yi = 1",
-      "Nie można wywnioskować klasy",
-      "Algorytm nie zatrzyma się"
-    ],
-    correct: 1
-  },
-  {
-    question: "W algorytmie A* heurystyka używana do oceny stanu powinna być:",
-    options: [
-      "Zawsze dokładna",
-      "Monotoniczna i dopuszczalna",
-      "Dowolna, jeśli algorytm działa poprawnie",
-      "Nieujemna i różnowartościowa"
-    ],
-    correct: 1
-  },
-  {
-    question: "W układance puzzle przesuwane, wartość heurystyki \"Manhattan\" określa:",
-    options: [
-      "Liczbę kafelków na niewłaściwych pozycjach",
-      "Minimalną liczbę przesunięć do rozwiązania",
-      "Sumę odległości każdego kafelka do jego miejsca docelowego",
-      "Najkrótszą ścieżkę do rozwiązania"
-    ],
-    correct: 2
-  },
-  {
-    question: "Jeżeli algorytm A* używa jako heurystyki dolnego ograniczenia na odległość do celu, to:",
-    options: [
-      "Nie gwarantuje on znalezienia najkrótszej ścieżki",
-      "Gwarantuje on znalezienie najkrótszej ścieżki",
-      "Nie wymaga on zbioru Closed",
-      "Jest on wolniejszy niż algorytm Dijkstry"
-    ],
-    correct: 1
-  },
-  {
-    question: "Dana jest reguła: IF zdarzenie A [LS=2.0, LN=0.3] THEN zdarzenie B P(jp)=0.5. Jeżeli podano dowód, że zdarzenie A zaistniało, to:",
-    options: [
-      "Poprzez swoją wartość współczynnik LS zmniejszy przekonanie o prawdopodobieństwie zdarzenia B",
-      "Poprzez swoją wartość współczynnik LN zwiększy przekonanie o prawdopodobieństwie zdarzenia B",
-      "Prawdopodobieństwo zdarzenia B nie zmieni się.",
-      "Poprzez swoją wartość współczynnik LS zwiększy przekonanie o prawdopodobieństwie zdarzenia B"
-    ],
-    correct: 3
-  },
-  {
-    question: "W sieci bayesowskiej węzły reprezentują:",
-    options: [
-      "Wpływ potomków na rodziców",
-      "Zmienne losowe",
-      "Tylko prawdopodobieństwo a priori zdarzeń",
-      "Wpływ jednego zdarzenia na inne"
-    ],
-    correct: 1
-  },
-  {
-    question: "Baza wiedzy w systemie eksperckim zawiera:",
-    options: [
-      "Zbiór reguł i faktów",
-      "Mechanizm wnioskowania",
-      "Interfejs użytkownika",
-      "Zbiór procedur matematycznych"
-    ],
-    correct: 0
-  },
-  {
-    question: "W algorytmie genetycznym selekcja rankingowa oznacza:",
-    options: [
-      "Losowy wybór osobników",
-      "Wybór najlepszych osobników do reprodukcji",
-      "Zwiększenie różnorodności populacji",
-      "Mutację na podstawie wartości funkcji przystosowania"
-    ],
-    correct: 1
-  },
-  {
-    question: "Heurystyka dopuszczalna w algorytmie A* oznacza, że:",
-    options: [
-      "Może przekraczać rzeczywisty koszt",
-      "Zawsze zwraca dokładny koszt",
-      "Nigdy nie przeszacowuje kosztu",
-      "Jest dowolną funkcją kosztu"
-    ],
-    correct: 2
-  },
-  {
-    question: "Algorytmy genetyczne stosuje się do:",
-    options: [
-      "Rozwiązywania problemów optymalizacyjnych",
-      "Analizy danych statystycznych",
-      "Szybkiego sortowania",
-      "Rozpoznawania twarzy"
-    ],
-    correct: 0
-  },
-  {
-    question: "W perceptronie prostym suma ważona wejść jest przekształcana przez:",
-    options: [
-      "Funkcję sigmoidalną",
-      "Funkcję schodkową",
-      "Funkcję liniową",
-      "Funkcję Gaussa"
-    ],
-    correct: 1
-  },
-  {
-    question: "Metoda backpropagation stosowana jest w:",
-    options: [
-      "Algorytmach heurystycznych",
-      "Sieciach neuronowych",
-      "Sortowaniu danych",
-      "Grafach planarnych"
-    ],
-    correct: 1
-  },
-  {
-    question: "Jeżeli w sieci neuronowej warstwa ukryta ma zbyt mało neuronów, to:",
-    options: [
-      "Sieć może nie nauczyć się dobrze",
-      "Sieć działa szybciej",
-      "Sieć działa dokładniej",
-      "Sieć nie wymaga uczenia"
-    ],
-    correct: 0
-  },
-  {
-    question: "W perceptronie wielowarstwowym aktywacja neuronu zależy od:",
-    options: [
-      "Wagi połączeń",
-      "Losowości",
-      "Poprzedniej aktywacji",
-      "Zmiennej globalnej"
-    ],
-    correct: 0
-  },
-  {
-    question: "Jeżeli zbiór Closed w algorytmie A* jest zbyt duży, to:",
-    options: [
-      "Algorytm działa szybciej",
-      "Zużywa więcej pamięci",
-      "Wyniki są niedokładne",
-      "Heurystyka jest błędna"
-    ],
-    correct: 1
-  },
-  {
-    question: "W sieciach neuronowych nadmierne dopasowanie do danych treningowych prowadzi do:",
-    options: [
-      "Przewagi w testach",
-      "Lepszej generalizacji",
-      "Przeuczenia modelu",
-      "Szybszej konwergencji"
-    ],
-    correct: 2
-  },
-  {
-  question: "Dla układanki puzzle przesuwane postaci (cyfry pisane kolejno wierszami): (1,0,5;3,2,4;6,7,8) wartość heurystyki \"Misplaced tiles\" wynosi:",
-  options: [
-    "2",
-    "3",
-    "4",
-    "5"
-  ],
-  correct: 3
+    "correct": 3
   }
 ];
 
 export default function App() {
-  const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
-  const [selectedSummaryQuestion, setSelectedSummaryQuestion] = useState(null); // Szczegóły pytania w podsumowaniu
+  const [selectedSummaryQuestion, setSelectedSummaryQuestion] = useState(null);
+  const [score, setScore] = useState(0);
 
   useEffect(() => {
     setShuffledQuestions(shuffle(questions));
   }, []);
 
-  const endQuiz = () => {
-    if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
-      let calculatedScore = 0;
-  
-      answers.forEach((answer) => {
-        if (answer && answer.selected === answer.correct) {
-          calculatedScore += 1; // Dodajemy 1 punkt za poprawną odpowiedź
-        }
-      });
-  
-      setScore(calculatedScore);
-      setShowResult(true);
-    }
-  };
-  
-  
-  
-  
+  // Zaznaczenie odpowiedzi i zapis do answers
   const handleAnswer = (index) => {
     setSelectedOption(index);
-  
-    const newAnswers = [...answers];
-  
-    newAnswers[currentQuestion] = {
-      question: shuffledQuestions[currentQuestion].question,
-      options: shuffledQuestions[currentQuestion].options,
-      selected: index,
-      correct: shuffledQuestions[currentQuestion].correct,
-    };
-  
-    setAnswers(newAnswers);
+
+    setAnswers((prevAnswers) => {
+      const newAnswers = [...prevAnswers];
+      newAnswers[currentQuestion] = {
+        question: shuffledQuestions[currentQuestion].question,
+        options: shuffledQuestions[currentQuestion].options,
+        selected: index,
+        correct: shuffledQuestions[currentQuestion].correct,
+      };
+      return newAnswers;
+    });
   };
-  
-  
-  
-  // Przechodzenie między pytaniami
+
+  // Przejście do innego pytania
   const goToQuestion = (index) => {
     setCurrentQuestion(index);
     setSelectedOption(answers[index]?.selected ?? null);
   };
-  
 
-  // Zapisuje odpowiedź użytkownika
-  const saveAnswer = () => {
-    if (!answers[currentQuestion]) {
-      const newAnswers = [...answers];
-      newAnswers[currentQuestion] = {
-        question: shuffledQuestions[currentQuestion].question,
-        options: shuffledQuestions[currentQuestion].options,
-        selected: selectedOption,
-        correct: shuffledQuestions[currentQuestion].correct,
-      };
-      setAnswers(newAnswers);
-  
-      if (selectedOption === shuffledQuestions[currentQuestion].correct) {
-        setScore(score + 1);
-      }
-    }
-  };
-  
-  
   // Przejście do następnego pytania
   const nextQuestion = () => {
-    if (currentQuestion + 1 === shuffledQuestions.length) {
-      if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
-        setShowResult(true);
-      }
-    } else {
+    if (currentQuestion + 1 < shuffledQuestions.length) {
       setCurrentQuestion(currentQuestion + 1);
-      setSelectedOption(answers[currentQuestion + 1]?.selected ?? null); // Pobiera poprawną odpowiedź dla nowego pytania
+      setSelectedOption(answers[currentQuestion + 1]?.selected ?? null);
+    } else {
+      endQuiz(); // Jeśli to było ostatnie pytanie, zakończ test
     }
   };
-  
-  
+
+  // Zakończenie quizu + liczenie wyniku
+  const endQuiz = () => {
+    if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
+      let calculatedScore = 0;
+
+      answers.forEach((answer) => {
+        if (answer && answer.selected === answer.correct) {
+          calculatedScore += 1;
+        }
+      });
+
+      setScore(calculatedScore);
+      setShowResult(true);
+    }
+  };
 
   return (
     <div className="quiz-container">
       <div className="quiz-content">
         {showResult ? (
           <Card className="p-6 text-center">
-<h2 className="text-xl font-bold">
-  Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
-</h2>
-  
+            <h2 className="text-xl font-bold">
+              Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
+            </h2>
+
             {/* Wyświetlanie szczegółów pytania po kliknięciu */}
-            {selectedSummaryQuestion !== null && answers[selectedSummaryQuestion] ? (
+            {selectedSummaryQuestion !== null ? (
               <div className="question-detail">
                 <h3 className="text-lg font-bold">
-                  {answers[selectedSummaryQuestion].question}
+                  {shuffledQuestions[selectedSummaryQuestion]?.question}
                 </h3>
-                <p><strong>Twoja odpowiedź:</strong> {answers[selectedSummaryQuestion].selected !== null 
-                  ? answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].selected] 
-                  : "Brak odpowiedzi"}
-                </p>
-                <p><strong>Poprawna odpowiedź:</strong> {answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].correct]}</p>
+
+                {/* Jeśli użytkownik odpowiedział */}
+                {answers[selectedSummaryQuestion] ? (
+                  <>
+                    <p><strong>Twoja odpowiedź:</strong> {answers[selectedSummaryQuestion].selected !== null 
+                      ? answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].selected] 
+                      : "Brak odpowiedzi"}
+                    </p>
+                    <p><strong>Poprawna odpowiedź:</strong> {answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].correct]}</p>
+                  </>
+                ) : (
+                  <>
+                    <p style={{ color: "red", fontWeight: "bold" }}>Nie odpowiedziałeś na to pytanie.</p>
+                    <p><strong>Poprawna odpowiedź:</strong> {shuffledQuestions[selectedSummaryQuestion]?.options[shuffledQuestions[selectedSummaryQuestion]?.correct]}</p>
+                  </>
+                )}
+
                 <Button onClick={() => setSelectedSummaryQuestion(null)}>Zamknij</Button>
               </div>
             ) : (
-              selectedSummaryQuestion !== null && <p className="error-message">Nie ma odpowiedzi na to pytanie.</p>
+              <p className="info-text">Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
             )}
-  
-            <p>Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
           </Card>
         ) : shuffledQuestions.length > 0 ? (
           <Card className="p-6 w-96 fixed-size">
             <CardContent>
               <h3 className="question-counter">Pytanie {currentQuestion + 1} / {shuffledQuestions.length}</h3>
-  
+
               <h2 className="text-lg font-bold question-text">
                 {shuffledQuestions[currentQuestion]?.question}
               </h2>
-  
+
               {/* Odpowiedzi z checkboxami */}
               <div className="options-container">
                 {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
@@ -1668,7 +1365,7 @@ export default function App() {
                   </label>
                 ))}
               </div>
-  
+
               {/* Nawigacja */}
               <div className="navigation-buttons">
                 <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
@@ -1676,7 +1373,7 @@ export default function App() {
                   {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne ➡"}
                 </Button>
               </div>
-  
+
               {/* Przycisk kończący quiz */}
               <Button className="end-button" onClick={endQuiz}>Zakończ quiz teraz</Button>
             </CardContent>
@@ -1685,36 +1382,35 @@ export default function App() {
           <p>Ładowanie pytań...</p>
         )}
       </div>
-  
+
       {/* Siatka pytań */}
       <div className="summary-grid">
-  {shuffledQuestions.map((_, index) => {
-    let statusClass = "";
+        {shuffledQuestions.map((_, index) => {
+          let statusClass = "";
 
-    if (!showResult) {
-      statusClass = answers[index]?.selected !== undefined ? "answered" : "neutral";
-    } 
-    else if (answers[index]) {
-      if (answers[index].selected === answers[index].correct) {
-        statusClass = "correct"; // Zielony jeśli poprawnie
-      } else if (answers[index].selected !== null) {
-        statusClass = "incorrect"; // Czerwony jeśli źle
-      } else {
-        statusClass = "unanswered"; // Szary jeśli brak odpowiedzi
-      }
-    }
+          if (!showResult) {
+            statusClass = answers[index]?.selected !== undefined ? "answered" : "neutral";
+          } else if (answers[index]) {
+            if (answers[index].selected === answers[index].correct) {
+              statusClass = "correct"; // Zielony jeśli poprawnie
+            } else if (answers[index].selected !== null) {
+              statusClass = "incorrect"; // Czerwony jeśli źle
+            } else {
+              statusClass = "unanswered"; // Szary jeśli brak odpowiedzi
+            }
+          }
 
-    return (
-      <div
-        key={index}
-        className={`summary-box ${statusClass} ${index === currentQuestion ? "active-question" : ""}`}
-        onClick={() => (showResult ? setSelectedSummaryQuestion(index) : goToQuestion(index))}
-      >
-        {index + 1}
+          return (
+            <div
+              key={index}
+              className={`summary-box ${statusClass} ${index === currentQuestion ? "active-question" : ""}`}
+              onClick={() => (showResult ? setSelectedSummaryQuestion(index) : goToQuestion(index))}
+            >
+              {index + 1}
+            </div>
+          );
+        })}
       </div>
-    );
-  })}
-</div>
     </div>
   );
 }

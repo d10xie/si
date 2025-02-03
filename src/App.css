@@ -165,3 +165,9 @@
 .answered {
   background-color: #add8e6; 
 }
+
+.unanswered {
+  background-color: #f0f0f0;
+  border: 2px dashed gray;
+}
+
