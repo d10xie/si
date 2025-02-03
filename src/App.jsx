@@ -1532,8 +1532,8 @@ const questions = [
     "5"
   ],
   "correct": 3
-}
-];
+  }
+]
 
 export default function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
