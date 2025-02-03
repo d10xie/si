@@ -4,9 +4,9 @@
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
 "scripts": {
-  "prebuild": "chmod +x node_modules/.bin/vite",
+  "prebuild": "if exist node_modules\\.bin\\vite (attrib +R node_modules\\.bin\\vite)",
   "build": "vite build"
-}
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
