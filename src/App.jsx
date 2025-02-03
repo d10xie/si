@@ -1233,14 +1233,414 @@ const questions = [
     correct: 1
   },
   {
-    "question": "W pewnym binarnym naiwnym klasyfikatorze Bayesa użyto dla bezpieczeństwa numerycznego techniki logarytmowania. Przypuśćmy, że na wejście tego klasyfikatora podstawiono obiekt testowy o cechach (a, b, c)m oraz wiadomo, że\n\nP(X₁ = a | Y = +) = 0.25,  P(X₂ = b | Y = +) = 0.125,  P(X₃ = c | Y = +) = 0.5,  P(Y = +) = 0.5\n\nUżywając logarytmu o podstawie 2, oblicz odpowiedź tego klasyfikatora na rzecz klasy Y = +.\n\nWynosi ona:",
-    "options": [
+    question: "W pewnym binarnym naiwnym klasyfikatorze Bayesa użyto dla bezpieczeństwa numerycznego techniki logarytmowania. Przypuśćmy, że na wejście tego klasyfikatora podstawiono obiekt testowy o cechach (a, b, c)m oraz wiadomo, że\n\nP(X₁ = a | Y = +) = 0.25,  P(X₂ = b | Y = +) = 0.125,  P(X₃ = c | Y = +) = 0.5,  P(Y = +) = 0.5\n\nUżywając logarytmu o podstawie 2, oblicz odpowiedź tego klasyfikatora na rzecz klasy Y = +.\n\nWynosi ona:",
+    options: [
         "(1/2)^6",
         "-6",
         "(1/2)^7",
         "-7"
     ],
-    "correct": 3
+    correct: 3
+  },
+  {
+    "question": "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami):\n(7, 0, 8; 6, 5, 4; 3, 1, 2)\nwartość heurystyki 'Manhattan + Linear Conflicts' wynosi",
+    "options": [
+        "24",
+        "37",
+        "19",
+        "11"
+    ],
+    correct: 2
+},
+{
+  question: "Dana jest pewna struktura sieci Bayesa. Węzeł A nie ma rodziców i połączony jest z węzłem B, a B wpływa na C. Zakładając, że wszystkie zmienne są binarne, to dla prawidłowego wnioskowania należy podać zestaw następujących prawdopodobieństw:",
+  options: [
+      "P(A), P(B), P(C)",
+      "P(C|A), P(B|A), P(C|B)",
+      "P(A), P(B|A), P(B|egA), P(C|B), P(C|egB)",
+      "P(C), P(B|C), P(B|egC), P(A|B), P(A|egB)"
+  ],
+  correct: 2
+},
+{
+  question: "W algorytmie RPROP (przy domyślnych nastawach początkowych)\n\nη₀ = 0.1, α = 1.2, β = 0.5\n\naktualny współczynnik uczenia pewnej konkretnej wagi po czterech aktualizacjach wynosi\n\n0.72η₀\n\nOznacza to, że pochodne funkcji błędu ze względu na tę wagę",
+  options: [
+      "nie zmieniały znaku",
+      "jednokrotnie zmieniały znak",
+      "dwukrotnie zmieniały znak",
+      "trzykrotnie zmieniały znak"
+  ],
+  correct: 1
+},
+{
+  question: "Schemat wnioskowania sylogizm warunkowy wyraża regułę",
+  options: [
+      "Jeżeli prawdziwe jest P i (P ⇒ Q i Q → R), to wnioskujemy prawdziwość R",
+      "Jeżeli prawdziwe jest P i (P ⇒ Q i ¬P), to wnioskujemy prawdziwość Q",
+      "Jeżeli prawdziwe jest P i (P ⇒ Q i ¬Q), to wnioskujemy prawdziwość P",
+      "Jeżeli prawdziwe jest P i (P ⇒ Q i Q), to wnioskujemy prawdziwość Q"
+  ],
+  "correct": 0
+},
+{
+  question: "Dla układanki puzzle przesuwane postaci (cyfry pisane kolejno wierszami):\n(7, 0, 8; 6, 5, 4; 3, 1, 2)\nwartość heurystyki 'Manhattan' wynosi",
+  options: [
+      "12",
+      "13",
+      "11",
+      "14"
+  ],
+  correct: 1
+},
+{
+  question: "Wskaż grupę algorytmów reprezentujących nieinformowane techniki przeszukiwania grafów",
+  options: [
+      "Best-rst search, A*, IDA*",
+      "Breadth-rst search, Depth-rst search, algorytm Dijkstry",
+      "algorytm Dijkstry, Best-rst search, A*",
+      "Breadth-rst search, Depth-rst search, Best-rst search"
+  ],
+  correct: 1
+},
+{
+  question: "W grze w 'iterowany dylemat więźnia'",
+  options: [
+      "liczba rund nie powinna być znana graczom z góry",
+      "racjonalnym wyborem w każdej rundzie jest: zdradzić",
+      "racjonalnym wyborem w każdej rundzie jest: milczeć",
+      "najlepszą strategią jest 'wet za wet'"
+  ],
+  correct: 0
+},
+{
+  question: "Powiedzmy, że pewna sztuczna inteligencja do gry w szachy pracuje z użyciem nastaw: „przycinanie alpha-beta” + głębokość 3.5 + quiescence + tablica transpozycji. Wskaż zmianę, która statystycznie spowoduje największe pogorszenie jakości gry tej sztucznej inteligencji:",
+  options: [
+    "Wyłączenie tablicy transpozycji",
+    "Obniżenie głębokości do 3.0",
+    "Przełączenie algorytmu na „MIN-MAX”",
+    "Wyłączenie quiescence"
+  ],
+  correct: 1
+},
+{
+  question: "W 'przycinaniu alfa-beta' analizowany jest pewien stan typu MAX, dla którego procedurę wywołano z początkowymi wartościami\n\nα = 10, β = 15\n\nPrzypuśćmy, że wartości zwracane do tego stanu ze stanów potomnych wynosiłyby kolejno:\n\n13, -∞, 17, 4, ∞\n\nPrzycięcie nastąpi po:",
+  options: [
+      "pierwszym potomku",
+      "trzecim potomku",
+      "czwartym potomku",
+      "drugim potomku"
+  ],
+  correct: 1
+},
+{
+  question: "W logice predykatów pierwszego rzędu podane jest zdanie:\n\n∀x smok(x) ∨ wilkołak(x) ⇒ postaćMagiczna(x)\n\nJaki jest poprawny w Prologu wyrażający tę zależność?",
+  options: [
+      "smok(x) :- postaćMagiczna(x), wilkołak(x) :- postaćMagiczna(x).",
+      "postaćMagiczna(x) :- smok(x); wilkołak(x).",
+      "postaćMagiczna(x) :- smok(x), wilkołak(x).",
+      "smok(x); wilkołak(x) :- postaćMagiczna(x)."
+  ],
+  correct: 1
+},
+{
+  question: "Co to jest baza wiedzy?",
+  options: [
+      "Zbiór zdań w języku formalnym np. w języku opartym na paradygmatach logiki zależny od opisywanej dziedziny/obszaru",
+      "Element systemu, który zarządza danymi najczęściej w architekturze klient-serwer",
+      "Zbiór danych zapisanych zgodnie z określonymi regułami, np. w postaci tabeli wypełnionej wartościami",
+      "Element systemu, który stosuje zasady logiczne by wydedukować nowe informacje"
+  ],
+  correct: 0
+},
+{
+  question: "Algorytmy genetyczne są przeznaczone",
+  options: [
+      "rozwiązywania problemów optymalizacji w sposób przybliżony",
+      "rozwiązywania problemów klasykacji w sposób przybliżony",
+      "rozwiązywania problemów klasykacji w sposób dokładny",
+      "rozwiązywania problemów optymalizacji w sposób dokładny"
+  ],
+  correct: 0
+},
+{
+  question: "Jeżeli algorytm A* używa jako heurystyki dolnego ograniczenia na odległość do celu, to",
+  options: [
+      "nie gwarantuje on znalezienia najkrótszej ścieżki",
+      "gwarantuje on znalezienie najkrótszej ścieżki",
+      "nie wymaga on zbioru Closed",
+      "jest on wolniejszy niż algorytm Dijkstry"
+  ],
+  correct: 1
+},
+{
+  question: "Dana jest reguła:\n\nIF zdarzenie A [LS=2.0, LN=0.3] THEN zdarzenie B P(jp)=0.5.\n\nJeżeli podano dowód, zdarzenie A zaistniało, to",
+  options: [
+      "poprzez swoją wartość współczynnik LS zmniejszy przekonanie o prawdopodobieństwie zdarzenia B",
+      "poprzez swoją wartość współczynnik LN zwiększy przekonanie o prawdopodobieństwie zdarzenia B",
+      "prawdopodobieństwo zdarzenia B nie zmieni się.",
+      "poprzez swoją wartość współczynnik LS zwiększy przekonanie o prawdopodobieństwie zdarzenia B"
+  ],
+  "correct": 3
+},
+{
+  question: "W sieci bayesowskiej węzły reprezentują",
+  options: [
+      "wpływ potomków na rodziców",
+      "zmienne losowe",
+      "tylko prawdopodobieństwo a priori zdarzeń",
+      "wpływ jednego zdarzenia na inne"
+  ],
+  correct: 1
+},
+{
+  question: "W sieci przekonań/Bayesa krawędzie reprezentują",
+  options: [
+      "ciągłe zmienne losowe",
+      "zmienne losowe (w tym dyskretne i ciągłe)",
+      "wpływ jednego zdarzenia (zmiennej) na inne zdarzenie",
+      "tylko prawdopodobieństwo a priori faktów"
+  ],
+  "correct": 2
+},
+{
+  question: "Założenie naiwne w klasyfikatorze bayesowskim mówi dokładnie, że",
+  options: [
+      "zmienne wejściowe są parami zależne (bezwarunkowo)",
+      "zmienne wejściowe są parami niezależne (bezwarunkowo)",
+      "zmienne wejściowe są parami niezależne warunkowo w klasach decyzyjnych",
+      "zmienne wejściowe są parami zależne warunkowo w klasach decyzyjnych"
+  ],
+  correct: 2
+},
+{
+  question: "Niech\n\n- t oznacza numer kroku uczenia sieci neuronowej,\n- e pewną przyjętą funkcję błędu (w szczególności może ona oznaczać błąd kwadratowy),\n- η, μ odpowiednio współczynniki uczenia i rozpędu.\n\nW metodzie uczenia z rozpędem wzór na poprawkę dowolnej wagi sieci, oznaczonej jako v ma postać",
+  options: [
+      "v(t + 1) = v(t) - η (∂e / ∂v(t)) + μ(v(t) - v(t - 1))",
+      "v(t + 1) - v(t) = - η (∂e / ∂v(t)) - μv(t)",
+      "v(t + 1) = v(t) - η (∂e / ∂v(t)) - μ(v(t) - v(t - q))",
+      "v(t + 1) = v(t) - η (∂e / ∂v(t)) + μv(t)"
+  ],
+  correct: 0
+},
+{
+  question: "Realizacja zbioru Open (w algorytmach A* i Best-rst search) za pomocą kopca binarnego powoduje, że pobranie elementu minimalnego oraz włożenie nowego elementu są o złożonościach odpowiednio",
+  options: [
+      "O(logn) i O(logn)",
+      "O(1) i O(1)",
+      "O(1) i O(logn)",
+      "O(logn) i O(1)"
+  ],
+  correct: 0
+},
+{
+  question: "Dla pewnego wektora cech x klasyfikator bayesowski zwraca odpowiedź y*, której probabilistyczny sens jest następujący",
+  options: [
+      "y* = arg max P(X = x | Y = y)",
+      "żadna z pozostałych odpowiedzi nie jest prawdziwa",
+      "y* = arg max P(Y = y, X = x)",
+      "y* = arg max P(Y = y | X = x)"
+  ],
+  correct: 3
+},
+{
+  question: "Kod w języku programowania Prolog to zbiór",
+  options: [
+      "zdań w rachunku zdań",
+      "klauzul Horna, czyli takich, które zawierają więcej niż jeden niezanegowany predykat",
+      "klauzul Horna, czyli takich, które zawierają co najwyżej jeden niezanegowany predykat",
+      "dowolnych zdań w logice predykatów pierwszego rzędu"
+  ],
+  correct: 2
+},
+{
+  question: "Niech η, μ oznaczają odpowiednio współczynniki uczenia i rozpędu. Jeżeli przez pewien czas w trakcie uczenia sieci neuronowej z rozpędem wielkości kolejnych gradientów pozostają w przybliżeniu stałe, to można powiedzieć, że efektywny współczynnik uczenia jest wówczas proporcjonalny do",
+  options: [
+      "ημ",
+      "η / (1 - μ)",
+      "ημ^2",
+      "μ / (1 - η)"
+  ],
+  correct: 1
+},
+{
+  question: "Niech E_{l,k} oznacza wyrażenie błędu (obliczone w ramach metody wstecznej propagacji błędu) dla neuronu k-ego w warstwie l. Wtedy pochodna błędu kwadratowego ze względu na wagę v_{l,k,j} wynosi",
+  options: [
+      "E_{l,k} φ_{l-1,j} (1 - φ_{l-1,j})",
+      "√(E_{l,k} φ_{l-1,j} (1 - φ_{l-1,j}))",
+      "√(E_{l,k} φ_{l-1,j})",
+      "E_{l,k} φ_{l-1,j}"
+  ],
+  correct: 3
+},
+{
+  question: "Modus ponendo ponens (Modus ponens) wyraża",
+  options: [
+      "Jeżeli prawdziwe jest P ⇒ Q i P, to wnioskujemy prawdziwość Q",
+      "Jeżeli prawdziwe jest P ⇒ Q i Q ⇒ R, to wnioskujemy prawdziwość R",
+      "Jeżeli prawdziwe jest P ⇒ Q i ¬P, to wnioskujemy prawdziwość Q",
+      "Jeżeli prawdziwe jest P ⇒ Q i ¬Q, to wnioskujemy prawdziwość P"
+  ],
+  correct: 0
+},
+{
+  question: "Dla sieci MLP z jedną warstwą ukrytą, pochodne błędu kwadratowego dla wag v_{k,j} można wyrazić wzorem",
+  options: [
+      "(y_{MLP} - y_i) w_k φ_k (1 - φ_k) x_{i,j}",
+      "y_i φ_k (1 - φ_{hi}) x_{i,j}",
+      "(y_{MLP} - y_i) φ_k (1 - φ_k) x_{i,j}",
+      "y_i w_k φ_k (1 - φ_k) x_{i,j}"
+  ],
+  correct: 0
+},
+{
+  question: "Pewien algorytm genetyczny odnotował (dla populacji pięciu osobników) następujące przystosowania:\n\nf(x₁) = 5, f(x₂) = 1, f(x₃) = 10, f(x₄) = 2, f(x₅) = 2\n\n i będzie wykonywał selekcję ruletkową. Wskaż prawdziwe zdanie",
+  options: [
+      "prawdopodobieństwo selekcji piątego osobnika wynosi 2/10",
+      "osobnik drugi nie zostanie wyselekcjonowany",
+      "oczekiwana liczba egzemplarzy trzeciego osobnika po selekcji wynosi 2.5",
+      "oczekiwana liczba egzemplarzy pierwszego osobnika po selekcji wynosi 4/5"
+  ],
+  correct: 2
+},
+{
+  question: "Dana jest pewna struktura sieci bayesowskiej. Węzeł A i B nie mają rodziców i połączone są z węzłem C: A wpływa na C i B wpływa na C. Które z węzłów są niezależne, jeżeli nie podano żadnych dodatkowych przekonań (dowodów)?",
+  options: [
+      "a nie ma węzłów niezależnych",
+      "A i B",
+      "C",
+      "A, B, i C"
+  ],
+  correct: 1
+},
+{
+  question: "W logice predykatów pierwszego rzędu podane jest zdanie:\n\n∀x wiedźmin(x) ⇒ mutant(x)\n\nJaki jest poprawny kod w Prologu wyrażający tę zależność?",
+  options: [
+      "wiedzmin(x). mutant(x).",
+      "wiedzmin(x) :- mutant(x).",
+      "mutant(x) :- wiedzmin(x).",
+      "wiedzmin(x), mutant(x)."
+  ],
+  correct: 2
+},
+{
+  question: "Pochodna sigmoidalnej funkcji aktywacji wynosi",
+  options: [
+      "exp(-s)/(1 + exp(-s))^2",
+      "exp(s)/(1 + exp(-s))^2",
+      "exp(-s)^2/(1 + exp(-s))",
+      "exp(s)^2/(1 + exp(-s))"
+  ],
+  correct: 0
+},
+{
+  question: "O naiwnym klasyfikatorze Bayesa można powiedzieć, że",
+  options: [
+      "nie cierpi na przekleństwo wymiarowości i złożoność obliczenia odpowiedzi skaluje się kwadratowo wraz z liczbą zmiennych wejściowych",
+      "cierpi na przekleństwo wymiarowości i złożoność obliczenia odpowiedzi skaluje się wykładniczo wraz z liczbą zmiennych wejściowych",
+      "cierpi na przekleństwo wymiarowości i złożoność obliczenia odpowiedzi skaluje się liniowo wraz z liczbą zmiennych wejściowych",
+      "nie cierpi na przekleństwo wymiarowości i złożoność obliczenia odpowiedzi skaluje się liniowo wraz z liczbą zmiennych wejściowych"
+  ],
+  correct: 3
+},
+{
+  question: "Bezpieczeństwo numeryczne obliczeń w klasyfikatorze bayesowskim można podnieść poprzez",
+  options: [
+      "poprawkę LaPlace'a",
+      "założenie naiwne",
+      "użycie funkcji gęstości",
+      "logarytmowanie"
+  ],
+  correct: 3
+},
+{
+  question: "Elementem gwarantującym znalezienie najkrótszej ścieżki (ścieżki o najmniejszym koszcie) przez algorytm A* jest",
+  options: [
+      "heurystyka dopuszczalna",
+      "użycie mapy mieszającej do implementacji zbioru Closed",
+      "generowanie minimalnego zbioru potomków",
+      "warunek stopu"
+  ],
+  correct: 0
+},
+{
+  question: "Zgodnie z dowodem twierdzenia Novikoa, górne ograniczenie na liczbę kroków wykonanych przez algorytm uczenia perceptronu prostego skaluje się odwrotnie proporcjonalnie do",
+  options: [
+      "promienia danych",
+      "kwadratu marginesu między klasami",
+      "kwadratu promienia danych",
+      "marginesu między klasami"
+  ],
+  correct: 1
+},
+{
+  question: "W pewnym algorytmie genetycznym mają zostać skrzyżowane następujące dwa osobniki:\n\n(1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1)\n(1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0)\n\nw ramach krzyżowania jednopunktowego. Wskaż parę potomków, która nie jest możliwa do uzyskania niezależnie od wyboru punktu krzyżowania",
+  options: [
+      "(1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0) , (1, 0, 1, 1, 0, 1, 1, 1, 0, 0, 1)",
+      "(1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1) , (1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 0)",
+      "(1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 0) , (1, 0, 1, 1, 0, 1, 1, 0, 1, 0, 1)",
+      "(1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0) , (1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1)"
+  ],
+  correct: 0
+},
+{
+  question: "Jeżeli zdarzenia dwa zdarzenia A, B są niezależne to",
+  options: [
+      "P(A|B) = P(A)",
+      "P(A ∩ B) > P(A) P(B)",
+      "P(A|B) = P(A) P(B)",
+      "żadna z pozostałych odpowiedzi nie jest prawdziwa"
+  ],
+  correct: 0
+},
+{
+  question: "Unifikacja to",
+  options: [
+      "Procedura wnioskowania z użyciem reguły modus ponens",
+      "procedura/algorytm, w wyniku której uzyskuje się usunięcie wielkiego kwantyfikatora 'dla każdego'",
+      "procedura/algorytm, w wyniku której uzyskuje się listę najbardziej ogólnych podstawień sprawiających, że dwa termy stają się równoważne",
+      "procedura nazwana też skolemizacją zastępująca kwantyfikator mały 'istnieje'"
+  ],
+  correct: 2
+},
+{
+question: "Wzór na odpowiedź naiwnego klasyfikatora bayesowskiego można zapisać następująco",
+        options: [
+            "y* = arg max ∏ P(X_j = x_j | Y = y) P(Y = y)",
+            "y* = arg max ∏ P(Y = y | X_j = x_j) + P(Y = y)",
+            "y* = arg max ∏ P(Y = y | X_j = x_j) P(Y = y)",
+            "y* = arg max ∏ P(X_j = x_j | Y = y) + P(Y = y)"
+        ],
+        correct: 0
+    },
+    {
+        question: "Wskaż prawdziwe zdanie na temat metody uczenia RPROP dla sieci neuronowych",
+        options: [
+            "zaniedbywany jest znak gradientu",
+            "zaniedbywany jest współczynnik uczenia",
+            "zaniedbywana jest wielkość gradientu",
+            "żadna z pozostałych odpowiedzi nie jest prawdziwa"
+        ],
+        correct: 2
+    },
+    {
+      question: "Algorytm rezolucji działa zgodnie z zasadą: Jeżeli baza wiedzy (teza) A1, A2,…, An jest niesprzeczna i prawdziwa, to",
+      options: [
+          "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy teza A1, A2,…, An, ¬B jest sprzeczna",
+          "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy teza A1, A2,…, An, ¬B jest sprzeczna",
+          "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy teza A1, A2,…, An, ¬B jest prawdziwa (niesprzeczna)",
+          "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy teza A1, A2,…, An, B jest sprzeczna"
+      ],
+      correct: 0
+  },
+  {
+      question: "Przykładem zdania w logice predykatów pierwszego rzędu w koniunkcyjnej postaci normalnej (CNF) jest",
+      options: [
+          "¬pompeian(x) roman(x)",
+          "¬roman(x2) loyalt(x2, Caesar) hate(x2, Caesar)",
+          "x (man(x) good(x))",
+          "x roman(x) loyalt(x, Caesar) hate(x, Caesar)"
+      ],
+      correct: 1
   }
 ];
 
