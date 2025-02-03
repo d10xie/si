@@ -1531,9 +1531,9 @@ const questions = [
 ];
 
 export default function App() {
+  const [score, setScore] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedOption, setSelectedOption] = useState(null);
-  const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
   const [shuffledQuestions, setShuffledQuestions] = useState([]);
@@ -1545,28 +1545,39 @@ export default function App() {
 
   const endQuiz = () => {
     if (window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
-      saveAnswer();
+      let calculatedScore = 0;
+  
+      answers.forEach((answer) => {
+        if (answer && answer.selected === answer.correct) {
+          calculatedScore += 1; // Dodajemy 1 punkt za poprawną odpowiedź
+        }
+      });
+  
+      setScore(calculatedScore);
       setShowResult(true);
     }
   };
   
   
-
+  
+  
   const handleAnswer = (index) => {
     setSelectedOption(index);
   
-    // Zapisujemy odpowiedź od razu po jej zaznaczeniu
     const newAnswers = [...answers];
+  
     newAnswers[currentQuestion] = {
       question: shuffledQuestions[currentQuestion].question,
       options: shuffledQuestions[currentQuestion].options,
       selected: index,
       correct: shuffledQuestions[currentQuestion].correct,
     };
+  
     setAnswers(newAnswers);
   };
   
-
+  
+  
   // Przechodzenie między pytaniami
   const goToQuestion = (index) => {
     setCurrentQuestion(index);
@@ -1612,9 +1623,9 @@ export default function App() {
       <div className="quiz-content">
         {showResult ? (
           <Card className="p-6 text-center">
-            <h2 className="text-xl font-bold">
-              Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
-            </h2>
+<h2 className="text-xl font-bold">
+  Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
+</h2>
   
             {/* Wyświetlanie szczegółów pytania po kliknięciu */}
             {selectedSummaryQuestion !== null && answers[selectedSummaryQuestion] ? (
