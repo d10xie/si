@@ -1595,32 +1595,35 @@ export default function App() {
             <h2 className="text-xl font-bold">
               Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
             </h2>
-
+  
             {/* Wyświetlanie szczegółów pytania po kliknięciu */}
-            {selectedSummaryQuestion !== null ? (
+            {selectedSummaryQuestion !== null && answers[selectedSummaryQuestion] ? (
               <div className="question-detail">
                 <h3 className="text-lg font-bold">
                   {answers[selectedSummaryQuestion].question}
                 </h3>
-                <p><strong>Twoja odpowiedź:</strong> {answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].selected] || "Brak odpowiedzi"}</p>
+                <p><strong>Twoja odpowiedź:</strong> {answers[selectedSummaryQuestion].selected !== null 
+                  ? answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].selected] 
+                  : "Brak odpowiedzi"}
+                </p>
                 <p><strong>Poprawna odpowiedź:</strong> {answers[selectedSummaryQuestion].options[answers[selectedSummaryQuestion].correct]}</p>
                 <Button onClick={() => setSelectedSummaryQuestion(null)}>Zamknij</Button>
               </div>
             ) : (
-              <>
-                <p>Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
-              </>
+              selectedSummaryQuestion !== null && <p className="error-message">Nie ma odpowiedzi na to pytanie.</p>
             )}
+  
+            <p>Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
           </Card>
         ) : shuffledQuestions.length > 0 ? (
           <Card className="p-6 w-96 fixed-size">
             <CardContent>
               <h3 className="question-counter">Pytanie {currentQuestion + 1} / {shuffledQuestions.length}</h3>
-
+  
               <h2 className="text-lg font-bold question-text">
                 {shuffledQuestions[currentQuestion]?.question}
               </h2>
-
+  
               {/* Odpowiedzi z checkboxami */}
               <div className="options-container">
                 {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
@@ -1634,7 +1637,7 @@ export default function App() {
                   </label>
                 ))}
               </div>
-
+  
               {/* Nawigacja */}
               <div className="navigation-buttons">
                 <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
@@ -1642,7 +1645,7 @@ export default function App() {
                   {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne ➡"}
                 </Button>
               </div>
-
+  
               {/* Przycisk kończący quiz */}
               <Button className="end-button" onClick={endQuiz}>Zakończ quiz teraz</Button>
             </CardContent>
@@ -1651,32 +1654,37 @@ export default function App() {
           <p>Ładowanie pytań...</p>
         )}
       </div>
-
+  
       {/* Siatka pytań */}
       <div className="summary-grid">
-        {shuffledQuestions.map((_, index) => {
-          let statusClass = "";
-          
-          // Podczas quizu kafelki są neutralne
-          if (!showResult) {
-            statusClass = "neutral";
-          } 
-          // W podsumowaniu pokazujemy poprawność odpowiedzi
-          else if (answers[index]) {
-            statusClass = answers[index].selected === answers[index].correct ? "correct" : "incorrect";
-          }
+  {shuffledQuestions.map((_, index) => {
+    let statusClass = "";
 
-          return (
-            <div
-              key={index}
-              className={`summary-box ${statusClass} ${index === currentQuestion ? "active-question" : ""}`}
-              onClick={() => (showResult ? setSelectedSummaryQuestion(index) : goToQuestion(index))}
-            >
-              {index + 1}
-            </div>
-          );
-        })}
+    if (!showResult) {
+      statusClass = answers[index] ? "answered" : "neutral"; // Dodajemy "answered" podczas quizu
+    } 
+    else if (answers[index]) {
+      if (answers[index].selected === answers[index].correct) {
+        statusClass = "correct"; // Zielony jeśli poprawnie
+      } else if (answers[index].selected !== null) {
+        statusClass = "incorrect"; // Czerwony jeśli źle
+      } else {
+        statusClass = "unanswered"; // Szary jeśli brak odpowiedzi
+      }
+    }
+
+    return (
+      <div
+        key={index}
+        className={`summary-box ${statusClass} ${index === currentQuestion ? "active-question" : ""}`}
+        onClick={() => (showResult ? setSelectedSummaryQuestion(index) : goToQuestion(index))}
+      >
+        {index + 1}
       </div>
+    );
+  })}
+</div>
+
     </div>
   );
 }
