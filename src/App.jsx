@@ -1394,7 +1394,6 @@ const questions = [
     "correct": 2
   },
   {
-  {
     "question": "Jeżeli algorytm A* używa jako heurystyki dolnego ograniczenia na odległość do celu, to:",
     "options": [
       "Nie gwarantuje on znalezienia najkrótszej ścieżki",
