@@ -2116,6 +2116,17 @@ export default function App() {
     }
   };
 
+  const handleRestartQuiz = () => {
+    setStartQuiz(false);
+    setShowResult(false);
+    setCurrentQuestion(0);
+    setScore(0);
+    setSelectedOption(null);
+    setAnswers([]);
+    setSelectedSummaryQuestion(null);
+    shuffleQuestions();
+  };
+
   return (
     <div className="quiz-container">
       {!startQuiz ? (
@@ -2163,6 +2174,7 @@ export default function App() {
               ) : (
                 <p className="info-text">Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
               )}
+              <Button className="mt-4" onClick={handleRestartQuiz}>Spróbuj ponownie</Button>
             </Card>
           ) : shuffledQuestions.length > 0 ? (
             <Card className="p-6 w-96 fixed-size">
@@ -2182,11 +2194,11 @@ export default function App() {
                   ))}
                 </div>
                 <div className="navigation-buttons">
-                  <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
-                  <Button className="nav-button" onClick={nextQuestion} disabled={selectedOption === null}>
-                    {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne ➡"}
-                  </Button>
-                </div>
+                <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
+                <Button className="nav-button" onClick={nextQuestion}>
+                  {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne ➡"}
+                </Button>
+              </div>
                 <Button className="end-button" onClick={endQuiz}>Zakończ quiz teraz</Button>
               </CardContent>
             </Card>
