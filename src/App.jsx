@@ -128,17 +128,6 @@ const questions = [
     correct: 2,
   },
   {
-    question:
-      "Jeżeli algorytm A* używa jako heurystyki dolnego ograniczenia na odległość do celu, to:",
-    options: [
-      "jest on wolniejszy niż algorytm Dijkstry",
-      "gwarantuje on znalezienie najkrótszej ścieżki",
-      "nie gwarantuje on znalezienia najkrótszej ścieżki",
-      "nie wymaga on zbioru Closed",
-    ],
-    correct: 1,
-  },
-  {
     question: "W układance 'puzzle przesuwne' heurystyka Manhattan:",
     options: [
       "jest mniej dokładna niż heurystyka Misplaced Tiles",
@@ -332,7 +321,7 @@ const questions = [
       "najmniejszej wartości g(s) + h(s)",
       "największej wartości g(s) + h(s)",
     ],
-    correct: 0,
+    correct: 2,
   },
   {
     question:
@@ -357,13 +346,19 @@ const questions = [
   },
   {
     question:
-      "Dla układanki puzzle przesuwne postaci (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Misplaced tiles' wynosi:",
+      "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami): (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Misplaced tiles' wynosi:",
     options: ["2", "3", "4", "5"],
     correct: 3,
   },
   {
     question:
-      "Dla układanki puzzle przesuwne postaci (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Manhattan' wynosi:",
+      "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami): (1,8,2;0,4,3;7,6,5) wartość heurystyki 'Manhattan' wynosi:",
+    options: ["9", "10", "7", "8"],
+    correct: 0,
+  },
+  {
+    question:
+      "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami): (1,0,5;3,2,4;6,7,8) wartość heurystyki 'Manhattan' wynosi:",
     options: ["2", "3", "4", "5"],
     correct: 3,
   },
@@ -388,17 +383,6 @@ const questions = [
       "żadne z powyższych",
     ],
     correct: 1,
-  },
-  {
-    question:
-      "Jeżeli algorytm A* używa jako heurystyki dolnego ograniczenia na odległość do celu, to:",
-    options: [
-      "jest on wolniejszy niż algorytm Dijkstry",
-      "gwarantuje on znalezienie najkrótszej ścieżki",
-      "nie gwarantuje on znalezienia najkrótszej ścieżki",
-      "nie wymaga on zbioru Closed",
-    ],
-    correct: 1
   },
   {
     question:
@@ -429,14 +413,14 @@ const questions = [
     correct: 2,
   },
   {
-    "question": "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Wynika z tego, że:",
-    "options": [
+    question: "W perceptronie prostym aktualny wektor wag wynosi (3, 1, -2, 2). Do poprawki wybrano przykład xi = (1, 2, 1, 2). Wynika z tego, że:",
+    options: [
         "yi = -1",
         "yi = 1",
         "nie można wywnioskować klasy",
         "algorytm nie zatrzyma się"
     ],
-    "correct": 0
+    correct: 0
 },
   {
     question:
@@ -450,14 +434,14 @@ const questions = [
     correct: 2,
   },
   {
-    "question": "Zgodnie z dowodem twierdzenia Novikoffa, jeżeli zbiór danych jest liniowo separowalny, to algorytm perceptronu wykona nie więcej kroków niż:",
-    "options": [
+    question: "Zgodnie z dowodem twierdzenia Novikoffa, jeżeli zbiór danych jest liniowo separowalny, to algorytm perceptronu wykona nie więcej kroków niż:",
+    options: [
         "γ_min² / R_max",
         "R_max / γ_min²",
         "γ_min² / R_max²",
         "R_max² / γ_min²"
     ],
-    "correct": 3
+    correct: 3
 },
   {
     question:
@@ -1242,8 +1226,8 @@ const questions = [
     correct: 3
   },
   {
-    "question": "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami):\n(7, 0, 8; 6, 5, 4; 3, 1, 2)\nwartość heurystyki 'Manhattan + Linear Conflicts' wynosi",
-    "options": [
+    question: "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami):\n(7, 0, 8; 6, 5, 4; 3, 1, 2)\nwartość heurystyki 'Manhattan + Linear Conflicts' wynosi",
+    options: [
         "24",
         "37",
         "19",
@@ -1279,7 +1263,7 @@ const questions = [
       "Jeżeli prawdziwe jest P i (P ⇒ Q i ¬Q), to wnioskujemy prawdziwość P",
       "Jeżeli prawdziwe jest P i (P ⇒ Q i Q), to wnioskujemy prawdziwość Q"
   ],
-  "correct": 0
+  correct: 0
 },
 {
   question: "Dla układanki puzzle przesuwane postaci (cyfry pisane kolejno wierszami):\n(7, 0, 8; 6, 5, 4; 3, 1, 2)\nwartość heurystyki 'Manhattan' wynosi",
@@ -1292,7 +1276,7 @@ const questions = [
   correct: 1
 },
 {
-  question: "Wskaż grupę algorytmów reprezentujących nieinformowane techniki przeszukiwania grafów",
+  question: "Wskaż grupę algorytmów reprezentujących niepoinformowane techniki przeszukiwania grafów",
   options: [
       "Best-rst search, A*, IDA*",
       "Breadth-rst search, Depth-rst search, algorytm Dijkstry",
@@ -1379,7 +1363,7 @@ const questions = [
       "prawdopodobieństwo zdarzenia B nie zmieni się.",
       "poprzez swoją wartość współczynnik LS zwiększy przekonanie o prawdopodobieństwie zdarzenia B"
   ],
-  "correct": 3
+  correct: 3
 },
 {
   question: "W sieci bayesowskiej węzły reprezentują",
@@ -1399,7 +1383,7 @@ const questions = [
       "wpływ jednego zdarzenia (zmiennej) na inne zdarzenie",
       "tylko prawdopodobieństwo a priori faktów"
   ],
-  "correct": 2
+  correct: 2
 },
 {
   question: "Założenie naiwne w klasyfikatorze bayesowskim mówi dokładnie, że",
@@ -1640,7 +1624,428 @@ question: "Wzór na odpowiedź naiwnego klasyfikatora bayesowskiego można zapis
           "x roman(x) loyalt(x, Caesar) hate(x, Caesar)"
       ],
       correct: 1
-  }
+  },
+
+  {
+    question: "Dla pewnej gry dwuosobowej pojęcie „słaba sztuczna inteligencja” reprezentuje program",
+    options: [
+        "nie wykorzystujący techniki quiescence",
+        "wykorzystujący funkcję oceny pozycji zaprojektowaną przez człowieka",
+        "wykorzystujący funkcję oceny pozycji wyuczoną lub wyewoluowaną przez algorytm",
+        "wykorzystujący technikę quiescence"
+    ],
+    correct: 1
+},
+{
+  question: "Liczba iteracji, którą musiałby wykonać algorytm wyczerpujący dla „dyskretnego problemu plecakowego” wynosi:",
+  options: [
+      "n",
+      "Ackermann(n)",
+      "n!",
+      "2^n"
+  ],
+  correct: 3
+},
+{
+  question: "Według Minsky’ego maszyna zdolna do 100% introspekcji",
+  options: [
+      "dojdzie do przeświadczenia, że jest tylko maszyną",
+      "rozwiąże dowolny problem w czasie wielomianowym",
+      "osiągnie nadludzką inteligencję",
+      "zda test Turinga"
+  ],
+  correct: 0
+},
+{
+  question: "Jeżeli dla problemu komiwojażera i algorytmu przeszukującego, stan zdefiniujemy jako: zbiór odwiedzonych wierzchołków oraz informację, w którym z nich aktualnie przebywamy; to dobrą dopuszczalną heurystykę może stanowić (wybierz najlepszą możliwość)",
+  options: [
+      "odległość do najdalszego nieodwiedzonego wierzchołka",
+      "długość brzegu powłoki wypukłej pozostałych wierzchołków",
+      "długość minimalnego drzewa rozpinającego pozostałych wierzchołków",
+      "odległość do najbliższego nieodwiedzonego wierzchołka"
+  ],
+  correct: 2
+},
+{
+  question: "Algorytm Dijkstry wybierając kolejne stany do odwiedzenia kieruje się",
+  options: [
+      "tylko kosztem pozostałym od danego stanu do celu",
+      "sumą kosztu przebytego i pozostałego",
+      "tylko kosztem przebytym do chwili osiągnięcia stanu",
+      "żadne z powyższych"
+  ],
+  correct: 2
+},
+{
+  question: "Dla algorytmu przycinanie α-β równanie rekurencyjne opisujące minimalną liczbę liści w drzewie o wysokości d, które trzeba odwiedzić (w przypadku optymistycznym) aby poznać dokładną wartość stanu ma postać",
+  options: [
+      "Rd = ∑(k=0 do d-1) Rk + b",
+      "Rd = Rd-1 + (b - 1) Rd-2",
+      "Rd = 2Rd/2 + bd",
+      "Rd = (b - 1) Rd-1"
+  ],
+  correct: 1
+},
+{
+  question: "W przycinaniu alfa-beta badany jest pewien stan typu MIN, dla którego procedurę wywołano z początkowymi wartościami α = -8, β = 2. Przypuśćmy, że wartości zwracane do tego stanu ze stanów potomnych wynosiłyby kolejno: -1, -9, ∞, -∞. Przycięcie nastąpi po:",
+  options: [
+      "trzecim potomku",
+      "czwartym potomku",
+      "pierwszym potomku",
+      "drugim potomku"
+  ],
+  correct: 3
+},
+{
+  question: "Funkcja oceny pozycji dla szachów zaproponowana przez C. Shannona (1949) zawierała",
+  options: [
+      "składniki materialne i pozycyjne",
+      "składniki, których wagi były nastrajane algorytmem genetycznym",
+      "tylko składniki materialne",
+      "tylko składniki pozycyjne"
+  ],
+  correct: 2
+},
+{
+  question: "W procedurze oceniającej stan typu MAX w ramach przycinania α-β:",
+  options: [
+      "aktualizacjom podlegają obydwie wartości α i β",
+      "ani α, ani β nie zmieniają się",
+      "aktualizacjom podlega tylko wartość α",
+      "aktualizacjom podlega tylko wartość β"
+  ],
+  correct: 2
+},
+{
+  question: "Dla układanki puzzle przesuwne postaci (cyfry pisane kolejno wierszami): (1, 8, 2; 0, 4, 3; 7, 6, 5) liczba konfliktów liniowych wynosi",
+  options: [
+    "5",
+    "6",
+    "0",
+    "2"
+  ],
+  correct: 3
+},
+{
+  question: "Elementem gwarantującym znalezienie najkrótszej ścieżki (ścieżki o najmniejszym koszcie) przez algorytm A* jest",
+  options: [
+    "heurystyka dopuszczalna",
+    "użycie tablicy mieszającej do implementacji zbioru closed",
+    "warunek stopu",
+    "generowanie minimalnego zbioru potomków"
+  ],
+  correct: 0
+},
+{
+  question: "Algorytm IDA*",
+  options: [
+    "nie gwarantuje on znalezienia najkrótszej ścieżki",
+    "nie wymaga on zbioru Closed",
+    "jest on wolniejszy niż algorytm Dijkstry",
+    "przechowuje ewidencję odwiedzonych stanów"
+  ],
+  correct: 3
+},
+{
+  question: "Niech h1 i h2 oznaczają dwie dopuszczalne funkcje heurystyczne dla pewnego problemu przeszukiwania grafu. Jeżeli h1 ma wartości większe niż lub równe h2, tzn. ∀s, h1(s) ≥ h2(s), to algorytm A* wyposażony w h1 będzie przeciętnie",
+  options: [
+      "błądził mniej niż A* wyposażony w h2",
+      "błądził więcej niż A* wyposażony w h2",
+      "wymagał większego zbioru Open",
+      "wymagał mniejszego zbioru Open"
+  ],
+  correct: 0
+},
+{
+  question: "W perceptronie prostym aktualny wektor wag wynosi (6, -2, -1, 3). Do poprawki wybrano przykład x1 = (1, 3, 5, 1). Oznacza to, że:",
+  options: [
+      "etykieta klasy tego przykładu to yi = 1",
+      "etykieta klasy tego przykładu to yi = -1",
+      "ustalenie etykiety nie jest możliwe",
+      "ustalenie etykiety klasy zależy od współczynnika uczenia"
+  ],
+  correct: 0
+},
+{
+  question: "Wybierz nieprawdziwe zdanie o sigmoidalnej funkcji aktywacji neuronu:",
+  options: [
+      "ma punkt przegięcia w punkcie (0, 1/2)",
+      "przyjmuje wartości z przedziału (-1, 1)",
+      "jest wszędzie różniczkowalna",
+      "jest ściśle rosnąca"
+  ],
+  correct: 3
+},
+{
+  question: "Zgodnie z dowodem twierdzenia Novikoffa, górne ograniczenie na liczbę kroków wykonanych przez algorytm uczenia perceptronu prostego skaluje się proporcjonalnie do",
+  options: [
+      "marginesu między klasami",
+      "kwadratu marginesu między klasami",
+      "promienia danych",
+      "kwadratu promienia danych"
+  ],
+  correct: 3
+},
+{
+  question: "Wskaż wartość funkcji ReLU i wartość jej pochodnej (w tej kolejności) w punkcie s = 2.",
+  options: [
+      "2, 1",
+      "2e^1, 0",
+      "e^-2, e^2",
+      "1/(1 + e^-2), 2(1 - 2)"
+  ],
+  correct: 0
+},
+{
+  question: "Wzór, wg którego naiwny klasyfikator Bayesa (dla zmiennych dyskretnych), oblicza odpowiedź dla wejściowego wektora (x1, ..., xn) może być zapisany w postaci",
+  options: [
+      "arg maxy -(log P(Y = y) + ∑(j=1 do n) log P(Xj = xj|Y = y))",
+      "arg maxy (∑(j=1 do n) log P(Xj = xj) + log P(Y = y))",
+      "arg maxy P(Y = y) ∏(j=1 do n) P(Xj = xj|Y = y)",
+      "arg maxy ∏(j=1 do n) P(Xj = xj) P(Y = y)"
+  ],
+  correct: 2
+},
+{
+  question: "Niech m, n, K oznaczają kolejno liczbę: przykładów uczących, cech (zmiennych dyskretnych), klas. Uczenie naiwnego klasyfikatora Bayesa można zrealizować w czasie proporcjonalnym do:",
+  options: [
+      "K ⋅ m ⋅ n",
+      "m ⋅ n",
+      "K ⋅ n",
+      "K ⋅ m"
+  ],
+  correct: 0
+},
+{
+  question: "Dla klasyfikatorów bayesowskich, który z poniższych elementów zapewnia bezpieczeństwo obliczeń prowadzonych na pewnym typie zmiennoprzecinkowym",
+  options: [
+    "logarytmowanie",
+    "dyskretyzacja",
+    "założenie naiwne",
+    "poprawka Laplace’a"
+  ],
+  correct: 0
+},
+{
+  question: "Wyraz P(dane|model) w tzw. regule Bayesa jest określany jako",
+  options: [
+    "prawdopodobieństwo całkowite",
+    "likelihood",
+    "prawdopodobieństwo a priori",
+    "prawdopodobieństwo a posteriori"
+  ],
+  correct: 1
+},
+{
+  question: "Podczas obliczeń wstecz dla l-tej warstwy sieci MLP, na podstawie macierzy δl o wymiarach b × M chcemy wykonać propagację błędów wstecz, otrzymując macierz δl-1 o wymiarach b × N. Wzór tej operacji ma postać:",
+  options: [
+    "φ'(Sl-1) ∘ (δl Wl)",
+    "φ'(Sl-1) ∘ (δl^T Wl)",
+    "φ'(Sl-1) ∘ (δl Wl^T)",
+    "φ'(Sl-1) ∘ (δl^T Wl^T)"
+  ],
+  correct: 2 
+},
+{
+  question: "Dla l-tej warstwy sieci MLP wyznacz gradient ∇Vl, jeżeli δl = [[1, 2], [3, 4]] a Xl = [[2, -2], [-5, 3]].",
+  options: [
+    "[[-2, 1], [-2, -3]]",
+    "[[-8, 4], [-14, 6]]",
+    "[[-13, 7], [-16, 8]]",
+    "[[-4, 4], [-4, 2]]"
+  ],
+  correct: 1 
+},
+{
+  question: "W obliczanej przez algorytm RMSProp poprawce dla wag postaci: -η ∇l / √v + ε, wyraz v_t reprezentuje",
+  options: [
+    "rozpędzany współczynnik uczenia",
+    "wygaszany współczynnik uczenia",
+    "wykładnicza średnia krocząca gradientów",
+    "wykładnicza średnia krocząca kwadratów gradientów"
+  ],
+  correct: 3
+},
+{
+  question: "Zakładając, że dla danego numeru kroku uczenia t uaktualniono już wyrażenia m_t i v_t, reprezentujące odpowiednio pierwszy i drugi moment gradientu, wskaż wzór na poprawkę wag sieci neuronowej zgodną z algorytmem Adam:",
+  options: [
+    "-η * (m_t / (1 - β_1^{t+1})) / (√(v_t^2 / (1 - β_2^{t+1})) + ε)",
+    "-η * (m_t / (1 + β_1^{t+1})) / (√(v_t^2 / (1 + β_2^{t+1})) + ε)",
+    "-η * (m_t / (1 - β_1^{t+1})) / (√(v_t / (1 - β_2^{t+1})) + ε)",
+    "-η * (m_t / (1 + β_1^{t+1})) / (√(v_t / (1 + β_2^{t+1})) + ε)"
+  ],
+  correct: 2
+},
+{
+  question: "W selekcji ruletkowej algorytmu genetycznego pewien osobnik x ma przystosowanie f(x) = 20, a suma przystosowań wszystkich osobników w populacji wynosi 80. Wiedząc, że populacja składa się z 10 osobników, oblicz oczekiwaną liczbę egzemplarzy tego osobnika w następnym pokoleniu:",
+  options: [
+    "8/4",
+    "2.5",
+    "4/20",
+    "0.5"
+  ],
+  correct: 1
+},
+{
+  question: "Wymiana kawałków informacji „genetycznej” pomiędzy osobnikami zachodzi podczas operacji:",
+  options: [
+    "selekcji elitarnej",
+    "selekcji turniejowej",
+    "krzyżowania",
+    "mutacji"
+  ],
+  correct: 2
+},
+{
+  question: "W sieci neuronowej MLP z jedną warstwą ukrytą – o wagach (w_kj) dla warstwy ukrytej oraz wagach (v_k) dla warstwy wyjściowej – użyto sigmoidalnej funkcji aktywacji φ i kwadratowej funkcji straty: (y_MLP - y_i)^2. Pochodne tej funkcji straty ze względu na wagi w_kj można wyrazić wzorami:",
+  options: [
+    "2(y_MLP - y_i) * w_kj φ_k (1 - φ_k) x_j",
+    "2(y_MLP - y_i) * w_kj φ_k (1 - φ_k) x_k",
+    "2(y_MLP - y_i) * v_j φ_k (1 - φ_k) x_k",
+    "2(y_MLP - y_i) * w_kj φ_k (1 - φ_k) x_j"
+  ],
+  correct: 0
+},
+{
+  question: "Dla sieci neuronowej z powyższego zadania obliczono pochodną funkcji straty ze względu na wagę v_0 (wyraz wolny w warstwie wyjściowej). Pochodna ta wynosi:",
+  options: [
+    "2(y_MLP - y_i) s_0",
+    "2(y_MLP - y_i)",
+    "2(y_MLP - y_i) v_0",
+    "2(y_MLP - y_i) w_0,0"
+  ],
+  correct: 0
+},
+{
+  question: "Reguła łańcuchowa w ramach wstecznej propagacji błędu w sieci neuronowej powoduje, że pochodne cząstkowe",
+  options: [
+    "wygaszają się do zera",
+    "nie zależą od funkcji aktywacji neuronu",
+    "wzdłuż jednej ścieżki połączeń są mnożone",
+    "dla ścieżek alternatywnych są sumowane"
+  ],
+  correct: 2
+},
+{
+  question: "Niech δ_{l,j} oznacza wyrażenie błędu (obliczane w ramach metody wstecznej propagacji błędu) dla neuronu nr j w warstwie nr l sieci MLP. Wzór pozwalający na obliczenie tego wyrażenia na podstawie wyrażeń błędu obliczonych wcześniej ma postać:",
+  options: [
+    "∂s_{l,j} / ∂φ_{l,j} ∑_{k=1}^{N_{l-1}} w_{l-1,k,j} δ_{l-1,k}",
+    "∂φ_{l,j} / ∂s_{l,j} ∑_{k=1}^{N_{l-1}} w_{l-1,k,j} δ_{l-1,k}",
+    "∂s_{l,j} / ∂φ_{l,j} ∑_{k=1}^{N_{l+1}} w_{l+1,k,j} δ_{l+1,k}",
+    "∂φ_{l,j} / ∂s_{l,j} ∑_{k=1}^{N_{l+1}} w_{l+1,k,j} δ_{l+1,k}"
+  ],
+  correct: 3
+},
+{
+  question: "Podczas obliczeń w przód w sieci MLP na wejście l-tej warstwy (o N wejściach i M wyjściach) podano macierz X_l o wymiarach b × N, gdzie b to rozmiar wsadu (mini-batch). Niech W_l oznacza macierz wag tej warstwy zaś W_{l;0} wektor kolumnowy wyrazów wolnych. Wzór obliczający dla tej warstwy macierz sum ważonych – S_l (o wymiarach b × M) – ma postać:",
+  options: [
+    "W_l X_l + W_{l;0}^T 1_{1×b}",
+    "(W_l X_l + W_{l;0}^T) 1_{1×b}",
+    "W_l X_l^T + W_{l;0} 1_{1×b}",
+    "(W_l X_l^T + W_{l;0} 1_{1×b})^T"
+  ],
+  correct: 1
+},
+{
+  question: "Dokładność to właściwość systemu reprezentacji wiedzy mówiąca o możliwości:",
+  options: [
+    "wnioskowania w ogóle",
+    "uzyskiwania rzeczywistych konceptów z wnioskowania",
+    "manipulowania konceptami w sposób dowolny",
+    "wyrażenia w systemie każdego rzeczywistego konceptu"
+  ],
+  correct: 1
+},
+{
+  question: "Które ze zdań najlepiej opisuje założenie o zamkniętym świecie (Closed World Assumption) w programowaniu logicznym?",
+  options: [
+    "Zdania atomowe, o których nie wiemy, że są prawdziwe, uważa się za fałszywe.",
+    "Zmienne spod kwantyfikatorów w formule mogą być zastąpione dowolną stałą.",
+    "Żaden model nie zawiera innych niż te wykorzystane w postaci systemu obiektów.",
+    "Różne stałe odnoszą się do różnych obiektów rzeczywistych."
+  ],
+  correct: 0
+},
+{
+  question: "Które z poniższych wyrażeń jest poprawnie sformułowanym wyrażeniem w logice predykatów?",
+  options: [
+    "∀x ⇒ P(x,y) ∨ R(z)",
+    "∀x (P(x) ∧ ∃y Q(y))",
+    "∃x (P(x) ∨ ∀Q(y))",
+    "P(x,y) ∧ ∀z(Q(z) ∨ R)"
+  ],
+  correct: 1
+},
+{
+  question: "Które z wyrażeń w logice predykatów najlepiej wyraża wiedzę ze zdania 'Studenci spędzają czas na nauce bądź relaksie'?",
+  options: [
+    "∀x (Uczysie(x) ∨ Relaksuje(x))",
+    "∃x (Student(x) → Uczysie(x) ∨ Relaksuje(x))",
+    "∀x (Student(x) ∧ Uczysie(x) → Relaksuje(x))",
+    "∀x (Student(x) → Uczysie(x) ∨ Relaksuje(x))"
+  ],
+  correct: 3
+},
+{
+  question: "Unifikacja to procedura/algorytm, który:",
+  options: [
+    "z bazy zdań prawdziwych wyprowadza wnioski o prawdziwej hipotezie przez substytucje",
+    "prowadzi do substytucji kwantyfikatora ogólnego na kwantyfikator egzystencjalny",
+    "podaje listę warunków, które trzeba spełnić, by dwa predykaty zostały zastąpione",
+    "zwraca listę najbardziej ogólnych podstawień sprawiających, że dwa termy stają się równoważne"
+  ],
+  correct: 3
+},
+{
+  question: "Jakie są podstawowe różnice między łańcuchowaniem regresywnym (LR) i łańcuchowaniem progresywnym (LP)?",
+  options: [
+    "LR wykorzystuje podejście oddolne, zaczynając od konkretnych faktów i przechodząc do ogólnych reguł, podczas gdy LP podejście ogórne, zaczynając od ogólnych reguł i przechodząc do faktów.",
+    "LR to metoda, w której system generuje nowe dane w oparciu o istniejące reguły, podczas gdy LP modyfikuje istniejące reguły w oparciu o nowe dane.",
+    "LR zaczyna się od możliwych wniosków/hipotez, aby znaleźć nowe dowody/fakty, podczas gdy LP zaczyna się od dowodów/faktów i wykorzystuje reguły, aby dojść do wniosków/hipotez.",
+    "LR jest głównie wykorzystywany do generowania reguł, podczas gdy LP jest wykorzystywany do generowania faktów."
+  ],
+  correct: 0
+},
+{
+  question: "Przykładem zdania w logice predykatów pierwszego rzędu w koniunkcyjnej postaci normalnej (klauzulowej) jest:",
+  options: [
+    "∃x (Czlowiek(x) ∧ Dobry(x))",
+    "¬Z_pompeii(y) ∨ Rzymianin(y)",
+    "{ A ∧ (B ∧ C) } ↔ { (A ∧ B) ∧ C }",
+    "{ Czlowiek(z) → Lubi(z, Ptaki) ∨ Nienawidzi(z, Ptaki) }"
+  ],
+  correct: 1
+},
+{
+  question: "Algorytm rezolucji działa zgodnie z zasadą: jeżeli baza wiedzy składająca się z aksjomatów A jest niesprzeczna i prawdziwa, to:",
+  options: [
+    "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy A ∧ ¬B jest niespełnialna",
+    "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy A ∧ B jest niespełnialna",
+    "formuła B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy A ∧ ¬B jest spełnialna",
+    "formuła ¬B jest wnioskiem z bazy wiedzy wtedy i tylko wtedy, gdy A ∧ ¬B jest niespełnialna"
+  ],
+  correct: 0
+},
+{
+  question: "Które ze stwierdzeń najdokładniej opisuje, czym jest kod w języku programowania Prolog?",
+  options: [
+    "zbiór wyrażeń w logice predykatów pierwszego rzędu",
+    "zbiór klauzul Horna z głową (każda z jednym pozytywnym predykatem)",
+    "zbiór klauzul Horna bez głowy (każda bez pozytywnego predykatu)",
+    "zbiór dowolnych klauzul w logice predykatów pierwszego rzędu"
+  ],
+  correct: 1
+},
+{
+  question: "W logice predykatów pierwszego rzędu podane jest zdanie ∀x(Czlowiek(x) ∧ Prawo_jazdy(x) → Kierowca(x)). Jaki jest poprawny kod w Prologu wyrażający tę zależność?",
+  options: [
+    "kierowca(X) :- prawo_jazdy(X), czlowiek(X).",
+    "czlowiek(X) :- prawo_jazdy(X), kierowca(X).",
+    "prawo_jazdy(x). kierowca(x) . kierowca(x).",
+    "prawo_jazdy(X), czlowiek(X) :- kierowca(X)."
+  ],
+  correct: 0
+}
 ];
 
 export default function App() {
@@ -1716,6 +2121,7 @@ export default function App() {
       {!startQuiz ? (
         <Card className="p-6 text-center">
           <h2 className="text-xl font-bold">Wybierz liczbę pytań:</h2>
+          <p className="text-gray-600">Dostępnych pytań: {questions.length}</p>
           <input
             type="number"
             value={numQuestions}
