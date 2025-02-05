@@ -1704,7 +1704,7 @@ question: "Wzór na odpowiedź naiwnego klasyfikatora bayesowskiego można zapis
       "tylko składniki materialne",
       "tylko składniki pozycyjne"
   ],
-  correct: 2
+  correct: 0
 },
 {
   question: "W procedurze oceniającej stan typu MAX w ramach przycinania α-β:",
