@@ -1954,7 +1954,7 @@ question: "Wzór na odpowiedź naiwnego klasyfikatora bayesowskiego można zapis
     "manipulowania konceptami w sposób dowolny",
     "wyrażenia w systemie każdego rzeczywistego konceptu"
   ],
-  correct: 1
+  correct: 3
 },
 {
   question: "Które ze zdań najlepiej opisuje założenie o zamkniętym świecie (Closed World Assumption) w programowaniu logicznym?",
