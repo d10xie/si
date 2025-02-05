@@ -740,7 +740,7 @@ const questions = [
       "Manhattan jest zawsze dopuszczalną heurystyką",
       "Manhattan nie doszacowuje odległości euklidesową"
     ],
-    correct: 0
+    correct: 1
   },
   {
     question: "Jeżeli stan t jest pewnym potomkiem stanu s, to warunek monotoniczności heurystyki można zapisać jako:",
@@ -1814,7 +1814,7 @@ question: "Wzór na odpowiedź naiwnego klasyfikatora bayesowskiego można zapis
       "K ⋅ n",
       "K ⋅ m"
   ],
-  correct: 0
+  correct: 1
 },
 {
   question: "Dla klasyfikatorów bayesowskich, który z poniższych elementów zapewnia bezpieczeństwo obliczeń prowadzonych na pewnym typie zmiennoprzecinkowym",
