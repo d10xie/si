@@ -177,7 +177,7 @@ const questions = [
       "różnicę pomiędzy sumą wartości pozostałych bierek białych i czarnych",
       "różnicę pomiędzy sumą wartości zbitych bierek białych i czarnych",
     ],
-    correct: 3,
+    correct: 2,
   },
   {
     question:
