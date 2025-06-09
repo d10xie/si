@@ -16,7 +16,7 @@ const questions = [
       "2 graczy",
       "2 graczy i 2 pytających",
     ],
-    correct: 1,
+    correct: 2,
   },
   {
     question: "„Gra w życie” Conwaya jest przykładem:",
