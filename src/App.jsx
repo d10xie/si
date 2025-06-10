@@ -1,5 +1,7 @@
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import './App.css';
+import { Card, CardContent } from './components/ui/card/card';
+import { Button } from './components/ui/button/button';
 
 
 const allQuestions = [
@@ -23,7 +25,7 @@ const allQuestions = [
     options: ['Pies', 'Krokodyl', 'Wieloryb', 'Orzeł'],
     correct: ['Pies', 'Wieloryb'],
   },
-    {
+  {
     question: 'Które z tych planet są gazowymi olbrzymami?',
     options: ['Mars', 'Jowisz', 'Saturn', 'Ziemia'],
     correct: ['Jowisz', 'Saturn'],
@@ -40,189 +42,242 @@ const allQuestions = [
   },
 ];
 
-function App() {
+const shuffle = (array) => {
+  return [...array].sort(() => Math.random() - 0.5);
+};
+
+export default function App() {
+  const [startQuiz, setStartQuiz] = useState(false);
+  const [numQuestions, setNumQuestions] = useState(5);
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showResult, setShowResult] = useState(false);
   const [answers, setAnswers] = useState([]);
-  const [showScore, setShowScore] = useState(false);
-  const [isStarted, setIsStarted] = useState(false);
+  const [selectedSummaryQuestion, setSelectedSummaryQuestion] = useState(null);
+  const [score, setScore] = useState(0);
 
-  const shuffleArray = (array) => {
-    const newArray = [...array];
-    for (let i = newArray.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-    }
-    return newArray;
-  };
-
+ 
   const shuffledQuestions = useMemo(() => {
-    if (!isStarted) return [];
+    if (!startQuiz) return [];
     return questions.map(q => ({
       ...q,
-      options: shuffleArray(q.options),
+      options: shuffle(q.options),
     }));
-  }, [questions, isStarted]);
+  }, [questions, startQuiz]);
 
-  const handleStart = (num) => {
-    const selected = shuffleArray(allQuestions).slice(0, num);
-    setQuestions(selected);
-    setAnswers(new Array(selected.length).fill(null));
-    setIsStarted(true);
-    setCurrentQuestion(0);
-    setShowScore(false);
+
+  const handleNumQuestionsChange = (e) => {
+    let value = parseInt(e.target.value);
+    if (!isNaN(value) && value > 0 && value <= allQuestions.length) {
+      setNumQuestions(value);
+    }
   };
-  
-  const handleAnswerToggle = (optionIndex) => {
+
+  const handleStartQuiz = () => {
+    const selectedQuestions = shuffle(allQuestions).slice(0, numQuestions);
+    setQuestions(selectedQuestions);
+    setAnswers(new Array(numQuestions).fill(null));
+    setCurrentQuestion(0);
+    setShowResult(false);
+    setStartQuiz(true);
+  };
+
+  const handleAnswer = (optionIndex) => {
     const newAnswers = [...answers];
     const currentAnswer = newAnswers[currentQuestion];
-    
     const existingSelections = currentAnswer?.selected || [];
+    
     const optionPosition = existingSelections.indexOf(optionIndex);
+    let newSelections;
 
-    let newSelections = [];
     if (optionPosition > -1) {
       newSelections = existingSelections.filter(item => item !== optionIndex);
     } else {
       newSelections = [...existingSelections, optionIndex];
     }
-    
+
     newAnswers[currentQuestion] = {
-      question: shuffledQuestions[currentQuestion].question,
-      options: shuffledQuestions[currentQuestion].options,
-      correct: shuffledQuestions[currentQuestion].correct,
-      selected: newSelections.sort((a, b) => a - b), 
+      ...shuffledQuestions[currentQuestion],
+      selected: newSelections.sort((a, b) => a - b),
     };
-    
+
     setAnswers(newAnswers);
   };
 
-  const handleNext = () => {
-    setCurrentQuestion((prev) => Math.min(prev + 1, questions.length - 1));
-  };
-
-  const handlePrev = () => {
-    setCurrentQuestion((prev) => Math.max(prev - 1, 0));
-  };
-  
-  const handleQuestionSelect = (index) => {
+  const goToQuestion = (index) => {
     setCurrentQuestion(index);
   };
 
-  const calculateScore = () => {
-    return answers.reduce((score, answer, index) => {
-      if (!answer || !answer.selected) return score;
-
-      const question = shuffledQuestions[index];
-      const correctAnswersAsStrings = question.correct; 
-      
-      const selectedAnswersAsStrings = answer.selected.map(i => question.options[i]);
-      
-      const sortedCorrect = [...correctAnswersAsStrings].sort();
-      const sortedSelected = [...selectedAnswersAsStrings].sort();
-
-      if (JSON.stringify(sortedCorrect) === JSON.stringify(sortedSelected)) {
-        return score + 1;
-      }
-      return score;
-    }, 0);
+  const nextQuestion = () => {
+    if (currentQuestion + 1 < shuffledQuestions.length) {
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      endQuiz(true); 
+    }
   };
 
-  const handleFinish = () => {
-    setShowScore(true);
+  const endQuiz = (force = false) => {
+    const calculateAndSetScore = () => {
+      let calculatedScore = 0;
+      answers.forEach((answer, index) => {
+        if (!answer || !answer.selected?.length) return; 
+
+        const question = shuffledQuestions[index];
+        const correctOptions = question.correct;
+        const selectedOptions = answer.selected.map(i => question.options[i]);
+
+        const isCorrect = JSON.stringify(correctOptions.sort()) === JSON.stringify(selectedOptions.sort());
+        
+        if (isCorrect) {
+          calculatedScore++;
+        }
+      });
+      setScore(calculatedScore);
+      setShowResult(true);
+    };
+
+    if (force || window.confirm("Czy na pewno chcesz zakończyć quiz?")) {
+        calculateAndSetScore();
+    }
   };
   
-  const handleRestart = () => {
-    setIsStarted(false);
-    setQuestions([]);
-    setAnswers([]);
+  const handleRestartQuiz = () => {
+    setStartQuiz(false);
+    setShowResult(false);
     setCurrentQuestion(0);
-    setShowScore(false);
+    setScore(0);
+    setAnswers([]);
+    setQuestions([]);
+    setSelectedSummaryQuestion(null);
   };
 
-  if (!isStarted) {
+
+  if (!startQuiz) {
     return (
-      <div className="start-screen">
-        <h1>Witaj w Quizie!</h1>
-        <p>Wybierz liczbę pytań, aby rozpocząć.</p>
-        <div className="start-options">
-          {[5, 7].map(num => (
-            <button key={num} onClick={() => handleStart(num)}>
-              {num} pytań
-            </button>
-          ))}
-        </div>
+      <div className="quiz-container">
+        <Card className="p-6 text-center">
+          <h2 className="text-xl font-bold">Wybierz liczbę pytań:</h2>
+          <p className="text-gray-600">Dostępnych pytań: {allQuestions.length}</p>
+          <input
+            type="number"
+            value={numQuestions}
+            min="1"
+            max={allQuestions.length}
+            onChange={handleNumQuestionsChange}
+            className="p-2 border border-gray-400 rounded-md w-24 mt-2"
+          />
+          <Button className="mt-4" onClick={handleStartQuiz}>
+            Rozpocznij quiz
+          </Button>
+        </Card>
       </div>
     );
   }
 
-  if (showScore) {
-    const finalScore = calculateScore();
-    return (
-      <div className="score-section">
-        <h2>Quiz zakończony!</h2>
-        <p>Twój wynik to {finalScore} na {questions.length} możliwych.</p>
-        <button onClick={handleRestart}>Spróbuj ponownie</button>
-      </div>
-    );
+  const checkIsCorrect = (answer, question) => {
+      if (!answer || !answer.selected?.length || !question) return false;
+      const correctOptions = question.correct;
+      const selectedOptions = answer.selected.map(i => question.options[i]);
+      return JSON.stringify(correctOptions.sort()) === JSON.stringify(selectedOptions.sort());
   }
 
   return (
-    <div className="app-container">
-      <div className="quiz-container">
-        <div className="question-section">
-          <div className="question-count">
-            <span>Pytanie {currentQuestion + 1}</span>/{questions.length}
-          </div>
-          <div className="question-text">{shuffledQuestions[currentQuestion].question}</div>
-        </div>
-        <div className="answer-section">
-          {shuffledQuestions[currentQuestion].options.map((option, index) => {
-            const isSelected = answers[currentQuestion]?.selected?.includes(index) ?? false;
-            return (
-              <label 
-                key={index} 
-                className={`checkbox-label ${isSelected ? 'selected' : ''}`}
-              >
-                <input
-                  type="checkbox"
-                  checked={isSelected}
-                  onChange={() => handleAnswerToggle(index)}
-                />
-                {option}
-              </label>
-            );
-          })}
-        </div>
-        <div className="navigation-buttons">
-          <button onClick={handlePrev} disabled={currentQuestion === 0}>
-            Poprzednie
-          </button>
-          <button onClick={handleNext} disabled={currentQuestion === questions.length - 1}>
-            Następne
-          </button>
-        </div>
-        <button className="finish-button" onClick={handleFinish}>
-          Zakończ Quiz
-        </button>
+    <div className="quiz-container">
+      <div className="quiz-content">
+        {showResult ? (
+          <Card className="p-6 text-center">
+            <h2 className="text-xl font-bold">
+              Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
+            </h2>
+            {selectedSummaryQuestion !== null ? (
+              <div className="question-detail">
+                <h3 className="text-lg font-bold">{shuffledQuestions[selectedSummaryQuestion]?.question}</h3>
+                {answers[selectedSummaryQuestion] ? (
+                  <>
+                    <p><strong>Twoja odpowiedź:</strong> {
+                      answers[selectedSummaryQuestion].selected.length > 0
+                        ? answers[selectedSummaryQuestion].selected.map(i => answers[selectedSummaryQuestion].options[i]).join(', ')
+                        : "Brak odpowiedzi"
+                    }</p>
+                    <p><strong>Poprawna odpowiedź:</strong> {answers[selectedSummaryQuestion].correct.join(', ')}</p>
+                  </>
+                ) : (
+                  <>
+                    <p style={{ color: "red", fontWeight: "bold" }}>Nie odpowiedziałeś na to pytanie.</p>
+                    <p><strong>Poprawna odpowiedź:</strong> {shuffledQuestions[selectedSummaryQuestion]?.correct.join(', ')}</p>
+                  </>
+                )}
+                <Button onClick={() => setSelectedSummaryQuestion(null)}>Zamknij</Button>
+              </div>
+            ) : (
+              <p className="info-text">Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
+            )}
+            <Button className="mt-4" onClick={handleRestartQuiz}>Spróbuj ponownie</Button>
+          </Card>
+        ) : shuffledQuestions.length > 0 ? (
+          <Card className="p-6 w-96 fixed-size">
+            <CardContent>
+              <h3 className="question-counter">Pytanie {currentQuestion + 1} / {shuffledQuestions.length}</h3>
+              <h2 className="text-lg font-bold question-text">{shuffledQuestions[currentQuestion]?.question}</h2>
+              <div className="options-container">
+                {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
+                  <label key={index} className="option-label">
+                    <input
+                      type="checkbox"
+                      checked={answers[currentQuestion]?.selected?.includes(index) || false}
+                      onChange={() => handleAnswer(index)}
+                    />
+                    {option}
+                  </label>
+                ))}
+              </div>
+              <div className="navigation-buttons">
+                <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
+                <Button className="nav-button" onClick={nextQuestion}>
+                  {currentQuestion + 1 === shuffledQuestions.length ? "Zakończ test" : "Następne ➡"}
+                </Button>
+              </div>
+              <Button className="end-button" onClick={() => endQuiz()}>Zakończ quiz teraz</Button>
+            </CardContent>
+          </Card>
+        ) : (
+          <p>Ładowanie pytań...</p>
+        )}
       </div>
 
-      <div className="question-grid">
-        <h3>Pytania</h3>
-        <div className="grid">
-          {shuffledQuestions.map((_, index) => (
-            <button
+      <div className="summary-grid">
+        {shuffledQuestions.map((_, index) => {
+          let statusClass = "neutral";
+          const answer = answers[index];
+          
+          if (showResult) {
+              if (!answer || !answer.selected?.length) {
+                  statusClass = "unanswered";
+              } else if (checkIsCorrect(answer, shuffledQuestions[index])) {
+                  statusClass = "correct";
+              } else {
+                  statusClass = "incorrect";
+              }
+          } else {
+              if (answer && answer.selected?.length > 0) {
+                  statusClass = "answered";
+              }
+          }
+          if (index === currentQuestion && !showResult) {
+              statusClass += " active-question";
+          }
+
+          return (
+            <div
               key={index}
-              className={`grid-item ${index === currentQuestion ? 'active' : ''} ${answers[index] ? 'answered' : ''}`}
-              onClick={() => handleQuestionSelect(index)}
+              className={`summary-box ${statusClass}`}
+              onClick={() => (showResult ? setSelectedSummaryQuestion(index) : goToQuestion(index))}
             >
               {index + 1}
-            </button>
-          ))}
-        </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 }
-
-export default App;
