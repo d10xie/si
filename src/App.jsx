@@ -1234,19 +1234,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Typowy rozmiar skompresowanych ramek P w kompresji wideo...",
-        "options": [
-            "jest znacznie mniejszy niż ramek I",
-            "zależy silnie od ramek B",
-            "nie zależy od ramek I",
-            "jest znacznie większy niż ramek B"
-        ],
-        "correct": [
-            "jest znacznie mniejszy niż ramek I",
-            "jest znacznie większy niż ramek B"
-        ]
-    },
-    {
         "question": "Dla dowolnego obrazka kolorowego zapisanego z dokładnością 8-bitową alfabet kompresora LZW...",
         "options": [
             "Może zawierać maksymalnie 256 symboli",
