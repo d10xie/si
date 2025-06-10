@@ -354,17 +354,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Dla dowolnego obrazka kolorowego zapisanego z dokładnością 8-bitową alfabet kompresora LZW...",
-    "options": [
-      "Może zawierać maksymalnie 256 symboli",
-      "Będzie równy liczbie symboli w słowniku",
-      "Będzie zawierał więcej niż 256 symboli"
-    ],
-    "correct": [
-      "Może zawierać maksymalnie 256 symboli"
-    ]
-  },
-  {
     "question": "Elementy 'bezstratne' algorytmu kompresji JPEG to",
     "options": [
       "kwantyzację",
@@ -537,17 +526,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Dla dowolnego obrazka kolorowego zapisanego z dokładnością 8-bitową alfabet kompresora LZW...",
-    "options": [
-      "Może zawierać maksymalnie 256 symboli",
-      "Będzie zawierał więcej niż 256 symboli",
-      "Będzie równy liczbie symboli w słowniku"
-    ],
-    "correct": [
-      "Może zawierać maksymalnie 256 symboli"
-    ]
-  },
-  {
     "question": "Metoda podwójnej ślepej próby (test ABC) w ocenie jakości dźwięku wykorzystuje",
     "options": [
       "dowolną liczbę sygnałów, przy założeniu, że tylko jeden jest referencyjny",
@@ -655,18 +633,6 @@ const allQuestions =
       "poprawę jakości transmisji przez korekcję błędów,",
       "zmniejszenie objętości poprzez kompresję,",
       "ograniczenie dostępu poprzez szyfrowanie,"
-    ]
-  },
-  {
-    "question": "Modulacja EFM stosowana w zapisie CD-ROM oznacza, że:",
-    "options": [
-      "do 8 bitów wejściowych dodaje się 4 bity parzystości,",
-      "8 bitów wejściowych jest zastępowane 14 bitami wyjściowymi,",
-      "14 bitów wejściowych uzupełnianych jest 8 bitami parzystości,",
-      "8 bitów wejściowych jest łączone z 14 bitami, co daje 22 bity na wyjściu,"
-    ],
-    "correct": [
-      "8 bitów wejściowych jest zastępowane 14 bitami wyjściowymi,"
     ]
   },
   {
@@ -988,22 +954,6 @@ const allQuestions =
       "GIF"
     ]
   },
-      {
-        "question": "Na odbiór danej barwy wpływ ma wiele bodźców, m. in.:",
-        "options": [
-            "liczba równoczesnych odbiorców",
-            "ilość energii świetlnej",
-            "samopoczucie odbiorcy odczuwane danego dnia",
-            "skład widmowy promieniowana",
-            "obecność innych barw w pobliżu"
-        ],
-        "correct": [
-            "ilość energii świetlnej",
-            "samopoczucie odbiorcy odczuwane danego dnia",
-            "skład widmowy promieniowana",
-            "obecność innych barw w pobliżu"
-        ]
-    },
     {
         "question": "Zmienna przepływność",
         "options": [
@@ -1043,19 +993,6 @@ const allQuestions =
             "pamięć obiektowa,",
             "pamięć plikowa,",
             "pamięć blokowa,"
-        ]
-    },
-    {
-        "question": "W technologii nośników holograficznych wykorzystuje się:",
-        "options": [
-            "laser czerwony,",
-            "laser niebieski,",
-            "laser biały,",
-            "laser zielony,"
-        ],
-        "correct": [
-            "laser czerwony,",
-            "laser zielony,"
         ]
     },
     {
