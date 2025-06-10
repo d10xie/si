@@ -1210,19 +1210,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Kodowanie Huffmana jest",
-        "options": [
-            "Metodą zmniejszania szumów w strumieniach audio",
-            "Metodą kompresji stratnej lub bezstratnej w zależności od danych",
-            "Metodą kompresji stratnej",
-            "Metodą kompresji bezstratnej",
-            "Metodą kodowania sygnału stereo w strumieniu mono"
-        ],
-        "correct": [
-            "Metodą kompresji bezstratnej"
-        ]
-    },
-    {
         "question": "Szum kwantyzacji obniża się",
         "options": [
             "wraz ze wzrostem głębokości bitowej rejestrowanego dźwięku",
