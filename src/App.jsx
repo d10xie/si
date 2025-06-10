@@ -1271,21 +1271,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Wyróżniamy następujące znaczenie komunikatu:",
-        "options": [
-            "wewnętrzne (prawdziwe, obiektywne)",
-            "wirtualne (domniemane)",
-            "wtórne (odbiór, subiektywne)",
-            "pierwotne (założenie, projekt)",
-            "zewnętrzne (zakładane)"
-        ],
-        "correct": [
-            "wewnętrzne (prawdziwe, obiektywne)",
-            "wtórne (odbiór, subiektywne)",
-            "pierwotne (założenie, projekt)"
-        ]
-    },
-    {
         "question": "Kodeki parametryczne w kodowaniu mowy wykorzystują",
         "options": [
             "analizę parametrów mowy",
