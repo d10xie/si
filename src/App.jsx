@@ -1031,18 +1031,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Wadą znakowania wodnego dla video wykorzystującego takie same znaki wodne dla każdej klatki jest:",
-        "options": [
-            "problem z zachowaniem niewidzialności statystycznej,",
-            "duża złożoność obliczeniowa,",
-            "zmienny poziom szumu dla różnych klatek,",
-            "łatwość usuwania znaków wodnych,"
-        ],
-        "correct": [
-            "problem z zachowaniem niewidzialności statystycznej,"
-        ]
-    },
-    {
         "question": "Zaznacz rodzaje pamięci masowej:",
         "options": [
             "pamięć obiektowa,",
@@ -1092,19 +1080,6 @@ const allQuestions =
         ],
         "correct": [
             "znak wodny jest obecny ale nie może zostać wykryty,"
-        ]
-    },
-    {
-        "question": "Maskowanie w modelu psychoakustycznym dotyczy m.in.:",
-        "options": [
-            "Maskowania szumem dźwięków słyszalnych",
-            "\"Zagłuszania\" wybranych dźwięków po sobie następujących w określonych warunkach",
-            "Maskowania sąsiednich częstotliwości/dźwięków w obecności innych dźwięków",
-            "Maskowania częstotliwości mowy przez odpowiednią muzykę"
-        ],
-        "correct": [
-            "\"Zagłuszania\" wybranych dźwięków po sobie następujących w określonych warunkach",
-            "Maskowania sąsiednich częstotliwości/dźwięków w obecności innych dźwięków"
         ]
     },
     {
