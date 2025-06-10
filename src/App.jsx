@@ -239,18 +239,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Długość fali lasera dla nosników CD-ROM jest:",
-    "options": [
-      "dłuższa niż dla DVD-ROM,",
-      "krótsza niż dla DVD-ROM,",
-      "pomiędzy DVR-ROM a DVD-RW,",
-      "taka sama jak dla DVD-ROM,"
-    ],
-    "correct": [
-      "dłuższa niż dla DVD-ROM,"
-    ]
-  },
-  {
     "question": "PhotoStimulating Luminescence pozwala na",
     "options": [
       "budowę obrazów radiograficznych",
