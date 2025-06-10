@@ -982,17 +982,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Kompensacja ruchu to:",
-        "options": [
-            "Algorytm redukcji drgań w zapisie video",
-            "Usuwanie obiektów ruchomych ze strumienia video",
-            "Sposób zapisu wektorów przesunięć"
-        ],
-        "correct": [
-            "Sposób zapisu wektorów przesunięć"
-        ]
-    },
-    {
         "question": "Cele cyfrowego znakowania wodnego:",
         "options": [
             "śledzenie transakcji,",
@@ -1005,32 +994,6 @@ const allQuestions =
             "ochrona praw autorskich,",
             "uwierzytelnianie treści,",
             "ukrycie tajnej komunikacji,"
-        ]
-    },
-    {
-        "question": "Klatki typu P przechowują informację...",
-        "options": [
-            "Zrekonstruowaną z wektorów ruchu i klatek typu B",
-            "Różnicową",
-            "Całkowitą o obrazie",
-            "Wynikającą z sąsiadujących klatek I"
-        ],
-        "correct": [
-            "Różnicową",
-            "Wynikającą z sąsiadujących klatek I"
-        ]
-    },
-    {
-        "question": "Scentralizowany system VOD charakteryzuje się:",
-        "options": [
-            "dużą przepustowością",
-            "łatwością zarządzania",
-            "dobrą skalowalnością",
-            "stosunkowo niską przepustowością"
-        ],
-        "correct": [
-            "łatwością zarządzania",
-            "stosunkowo niską przepustowością"
         ]
     },
     {
@@ -1084,17 +1047,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Szum kwantyzacji obniża się",
-        "options": [
-            "wraz ze wzrostem głębokości bitowej rejestrowanego dźwięku",
-            "wraz ze zmniejszeniem się głębokości bitowej rejestrowanego dźwięku",
-            "nie zależy od głębokości bitowej rejestrowanego dźwięku"
-        ],
-        "correct": [
-            "wraz ze wzrostem głębokości bitowej rejestrowanego dźwięku"
-        ]
-    },
-    {
         "question": "MDCT (modified DCT) pozwala na",
         "options": [
             "Działanie na danych w skali logarytmicznej",
@@ -1116,34 +1068,6 @@ const allQuestions =
         ],
         "correct": [
             "Może zawierać maksymalnie 256 symboli"
-        ]
-    },
-    {
-        "question": "Elementy 'bezstratne' algorytmu kompresji JPEG to:",
-        "options": [
-            "subsampling kolorów",
-            "kwantyzację",
-            "skanowanie zig-zag",
-            "podział na bloki 8x8"
-        ],
-        "correct": [
-            "skanowanie zig-zag",
-            "podział na bloki 8x8"
-        ]
-    },
-    {
-        "question": "Kodeki parametryczne w kodowaniu mowy wykorzystują",
-        "options": [
-            "analizę parametrów mowy",
-            "transmisję parametrów modelu",
-            "model statystyczny sygnału",
-            "pasmo 20Hz - 20 kHz",
-            "syntezę mowy na podstawie otrzymanych parametrów"
-        ],
-        "correct": [
-            "analizę parametrów mowy",
-            "transmisję parametrów modelu",
-            "syntezę mowy na podstawie otrzymanych parametrów"
         ]
     }
 ]
