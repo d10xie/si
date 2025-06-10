@@ -1046,18 +1046,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Po wykonaniu algorytmu ByteRun na ciągu 1,1,1,1,2,2,2,3,3,3,3,1,2,3,1,2,3,4,5 uzyska się następujący wynik:",
-        "options": [
-            "4,1,3,2,4,3,0,7,1,2,3,1,2,3,4,5,0",
-            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5,0",
-            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5",
-            "3,1,3,2,4,3,0,7,1,2,3,1,2,3,4,5"
-        ],
-        "correct": [
-            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5"
-        ]
-    },
-    {
         "question": "W technologii nośników holograficznych wykorzystuje się:",
         "options": [
             "laser czerwony,",
