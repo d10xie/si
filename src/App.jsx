@@ -6,39 +6,42 @@ import { Button } from './components/ui/button/button';
 
 const allQuestions = [
   {
-    question: 'Które z poniższych są językami programowania?',
-    options: ['HTML', 'Java', 'CSS', 'Python'],
-    correct: ['Java', 'Python'],
+    question: 'Zasada Huygensa pozwala na',
+    options: [
+      'stworzenie pozornych źródeł poza obszarem odsłuchu',
+      'zmniejszenie echa w przypadku nagłaśniania dużych pomieszczeń',
+      'odwzorowanie przestrzennego rozkładu pola akustycznego',
+      'podwyższenie jakości dźwięku kompresowanego algorytmami stratnymi',
+    ],
+    correct: [
+      'odwzorowanie przestrzennego rozkładu pola akustycznego',
+      'stworzenie pozornych źródeł poza obszarem odsłuchu',
+    ],
   },
   {
-    question: 'Wybierz wszystkie liczby parzyste.',
-    options: ['1', '2', '8', '11', '14'],
-    correct: ['2', '8', '14'],
+    question: 'Wyróżniamy następujące rodzaje transmisji strumieniowej',
+    options: [
+      'Transmisja wielu-do-wielu (ang. Varicast)',
+      'Transmisja rozgłoszeniowa (ang. Broadcast)',
+      'Transmisja jeden-do-wielu (ang. Multicast)',
+      'Transmisja jeden-do-jednego (ang. Unicast)',
+    ],
+    correct: [
+      'Transmisja jeden-do-jednego (ang. Unicast)',
+      'Transmisja jeden-do-wielu (ang. Multicast)',
+      'Transmisja rozgłoszeniowa (ang. Broadcast)',
+    ],
   },
   {
-    question: 'Które z podanych stolic leżą w Europie?',
-    options: ['Warszawa', 'Kair', 'Berlin', 'Tokio'],
-    correct: ['Warszawa', 'Berlin'],
-  },
-  {
-    question: 'Które z tych zwierząt są ssakami?',
-    options: ['Pies', 'Krokodyl', 'Wieloryb', 'Orzeł'],
-    correct: ['Pies', 'Wieloryb'],
-  },
-  {
-    question: 'Które z tych planet są gazowymi olbrzymami?',
-    options: ['Mars', 'Jowisz', 'Saturn', 'Ziemia'],
-    correct: ['Jowisz', 'Saturn'],
-  },
-  {
-    question: 'Wybierz owoce cytrusowe.',
-    options: ['Banan', 'Pomarańcza', 'Jabłko', 'Cytryna', 'Grejpfrut'],
-    correct: ['Pomarańcza', 'Cytryna', 'Grejpfrut'],
-  },
-  {
-    question: 'Które z tych państw należą do Unii Europejskiej?',
-    options: ['Polska', 'Szwajcaria', 'Niemcy', 'Norwegia'],
-    correct: ['Polska', 'Niemcy'],
+    question:
+      'Wadą znakowania wodnego dla video wykorzystującego takie same znaki wodne dla każdej klatki jest:',
+    options: [
+      'problem z zachowaniem niewidzialności statystycznej,',
+      'łatwość usuwania znaków wodnych,',
+      'zmienny poziom szumu dla różnych klatek,',
+      'duża złożoność obliczeniowa,',
+    ],
+    correct: ['problem z zachowaniem niewidzialności statystycznej,'],
   },
 ];
 
