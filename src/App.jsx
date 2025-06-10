@@ -987,7 +987,332 @@ const allQuestions =
       "CALIC",
       "GIF"
     ]
-  }
+  },
+      {
+        "question": "Na odbiór danej barwy wpływ ma wiele bodźców, m. in.:",
+        "options": [
+            "liczba równoczesnych odbiorców",
+            "ilość energii świetlnej",
+            "samopoczucie odbiorcy odczuwane danego dnia",
+            "skład widmowy promieniowana",
+            "obecność innych barw w pobliżu"
+        ],
+        "correct": [
+            "ilość energii świetlnej",
+            "samopoczucie odbiorcy odczuwane danego dnia",
+            "skład widmowy promieniowana",
+            "obecność innych barw w pobliżu"
+        ]
+    },
+    {
+        "question": "Zmienna przepływność",
+        "options": [
+            "Zapisuje określony fragment nagrania przy pomocy różnej liczby bitów, zależnie od stopnia skomplikowania",
+            "Gwarantuje utrzymanie stałej jakości sygnału wyjściowego, nie zaś stałej ilości danych przypadających na daną jednostkę czasu",
+            "Zapisuje określony fragment nagrania zawsze przy pomocy tej samej liczby bitów, niezależnie od stopnia skomplikowania zapisywanych danych",
+            "Dopasowuje liczbę bitów do maksymalnej aplitudy sygnału"
+        ],
+        "correct": [
+            "Zapisuje określony fragment nagrania przy pomocy różnej liczby bitów, zależnie od stopnia skomplikowania",
+            "Gwarantuje utrzymanie stałej jakości sygnału wyjściowego, nie zaś stałej ilości danych przypadających na daną jednostkę czasu"
+        ]
+    },
+    {
+        "question": "Kompresja stratna obrazu jest możliwa m.in. dzięki:",
+        "options": [
+            "Niedoskonałości ludzkiego wzroku",
+            "Niskiej rozdzielczości współczesnych monitorów",
+            "Transformacji do dziedziny częstotliwości i kwantyzacji współczynników widma",
+            "Szumom wprowadzanym przez sensory CCD/CMOS"
+        ],
+        "correct": [
+            "Niedoskonałości ludzkiego wzroku",
+            "Transformacji do dziedziny częstotliwości i kwantyzacji współczynników widma"
+        ]
+    },
+    {
+        "question": "Wadą znakowania wodnego dla video wykorzystującego takie same znaki wodne dla każdej klatki jest:",
+        "options": [
+            "problem z zachowaniem niewidzialności statystycznej,",
+            "duża złożoność obliczeniowa,",
+            "zmienny poziom szumu dla różnych klatek,",
+            "łatwość usuwania znaków wodnych,"
+        ],
+        "correct": [
+            "problem z zachowaniem niewidzialności statystycznej,"
+        ]
+    },
+    {
+        "question": "Zaznacz rodzaje pamięci masowej:",
+        "options": [
+            "pamięć obiektowa,",
+            "pamięć równoległa,",
+            "pamięć szeregowa,",
+            "pamięć plikowa,",
+            "pamięć blokowa,"
+        ],
+        "correct": [
+            "pamięć obiektowa,",
+            "pamięć plikowa,",
+            "pamięć blokowa,"
+        ]
+    },
+    {
+        "question": "Po wykonaniu algorytmu ByteRun na ciągu 1,1,1,1,2,2,2,3,3,3,3,1,2,3,1,2,3,4,5 uzyska się następujący wynik:",
+        "options": [
+            "4,1,3,2,4,3,0,7,1,2,3,1,2,3,4,5,0",
+            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5,0",
+            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5",
+            "3,1,3,2,4,3,0,7,1,2,3,1,2,3,4,5"
+        ],
+        "correct": [
+            "-3,1,-2,2,-3,3,7,1,2,3,1,2,3,4,5"
+        ]
+    },
+    {
+        "question": "W technologii nośników holograficznych wykorzystuje się:",
+        "options": [
+            "laser czerwony,",
+            "laser niebieski,",
+            "laser biały,",
+            "laser zielony,"
+        ],
+        "correct": [
+            "laser czerwony,",
+            "laser zielony,"
+        ]
+    },
+    {
+        "question": "Utrata synchronizacji to sytuacja w znakowaniu wodnym, kiedy:",
+        "options": [
+            "znak wodny jest obecny ale nie może zostać wykryty,",
+            "obraz po dodaniu znaku wodnego staje się nieczytelny,",
+            "znak wodny przestaje korelować z obrazem,",
+            "znak wodny jest usuwany, ale jakość obrazu znacząco spada,"
+        ],
+        "correct": [
+            "znak wodny jest obecny ale nie może zostać wykryty,"
+        ]
+    },
+    {
+        "question": "Maskowanie w modelu psychoakustycznym dotyczy m.in.:",
+        "options": [
+            "Maskowania szumem dźwięków słyszalnych",
+            "\"Zagłuszania\" wybranych dźwięków po sobie następujących w określonych warunkach",
+            "Maskowania sąsiednich częstotliwości/dźwięków w obecności innych dźwięków",
+            "Maskowania częstotliwości mowy przez odpowiednią muzykę"
+        ],
+        "correct": [
+            "\"Zagłuszania\" wybranych dźwięków po sobie następujących w określonych warunkach",
+            "Maskowania sąsiednich częstotliwości/dźwięków w obecności innych dźwięków"
+        ]
+    },
+    {
+        "question": "Kompensacja ruchu to:",
+        "options": [
+            "Algorytm redukcji drgań w zapisie video",
+            "Usuwanie obiektów ruchomych ze strumienia video",
+            "Sposób zapisu wektorów przesunięć"
+        ],
+        "correct": [
+            "Sposób zapisu wektorów przesunięć"
+        ]
+    },
+    {
+        "question": "Cele cyfrowego znakowania wodnego:",
+        "options": [
+            "śledzenie transakcji,",
+            "zabezpieczenie przed nieuprawnionym dostępem,",
+            "ochrona praw autorskich,",
+            "uwierzytelnianie treści,",
+            "ukrycie tajnej komunikacji,"
+        ],
+        "correct": [
+            "ochrona praw autorskich,",
+            "uwierzytelnianie treści,",
+            "ukrycie tajnej komunikacji,"
+        ]
+    },
+    {
+        "question": "Klatki typu P przechowują informację...",
+        "options": [
+            "Zrekonstruowaną z wektorów ruchu i klatek typu B",
+            "Różnicową",
+            "Całkowitą o obrazie",
+            "Wynikającą z sąsiadujących klatek I"
+        ],
+        "correct": [
+            "Różnicową",
+            "Wynikającą z sąsiadujących klatek I"
+        ]
+    },
+    {
+        "question": "Scentralizowany system VOD charakteryzuje się:",
+        "options": [
+            "dużą przepustowością",
+            "łatwością zarządzania",
+            "dobrą skalowalnością",
+            "stosunkowo niską przepustowością"
+        ],
+        "correct": [
+            "łatwością zarządzania",
+            "stosunkowo niską przepustowością"
+        ]
+    },
+    {
+        "question": "Cechą wspólną algorytmów JPEG2000, WSQ i DjVu jest to, że",
+        "options": [
+            "działają na obrazach wielopoziomowych",
+            "dzielą obraz na bloki 8x8",
+            "wykorzystują transformatę falkową",
+            "dokonują segmentacji tła"
+        ],
+        "correct": [
+            "działają na obrazach wielopoziomowych",
+            "wykorzystują transformatę falkową"
+        ]
+    },
+    {
+        "question": "Wielkość pojedynczego piksela w typowej matrycy CCD jest w przedziale",
+        "options": [
+            "3 - 25 mikrometrów",
+            "0.2 - 0.5 nanometra",
+            "3 - 25 nanometrów",
+            "0.2 - 0.5 milimetra"
+        ],
+        "correct": [
+            "3 - 25 mikrometrów"
+        ]
+    },
+    {
+        "question": "Długość fali lasera dla nośników CD-ROM jest:",
+        "options": [
+            "dłuższa niż dla DVD-ROM,",
+            "krótsza niż dla DVD-ROM,",
+            "pomiędzy DVR-ROM a DVD-RW,",
+            "taka sama jak dla DVD-ROM,"
+        ],
+        "correct": [
+            "dłuższa niż dla DVD-ROM,"
+        ]
+    },
+    {
+        "question": "PhotoStimulating Luminescence pozwala na:",
+        "options": [
+            "budowę obrazów radiograficznych",
+            "rejestrację promieniowania X w cyfrowych urządzeniach medycznych",
+            "pomiar energii przenoszonej przez promieniowanie cieplne",
+            "wykrywanie obiektów o naturalnej luminescencji w obrazach mikroskopowych"
+        ],
+        "correct": [
+            "budowę obrazów radiograficznych",
+            "rejestrację promieniowania X w cyfrowych urządzeniach medycznych"
+        ]
+    },
+    {
+        "question": "Kodowanie Huffmana jest",
+        "options": [
+            "Metodą zmniejszania szumów w strumieniach audio",
+            "Metodą kompresji stratnej lub bezstratnej w zależności od danych",
+            "Metodą kompresji stratnej",
+            "Metodą kompresji bezstratnej",
+            "Metodą kodowania sygnału stereo w strumieniu mono"
+        ],
+        "correct": [
+            "Metodą kompresji bezstratnej"
+        ]
+    },
+    {
+        "question": "Szum kwantyzacji obniża się",
+        "options": [
+            "wraz ze wzrostem głębokości bitowej rejestrowanego dźwięku",
+            "wraz ze zmniejszeniem się głębokości bitowej rejestrowanego dźwięku",
+            "nie zależy od głębokości bitowej rejestrowanego dźwięku"
+        ],
+        "correct": [
+            "wraz ze wzrostem głębokości bitowej rejestrowanego dźwięku"
+        ]
+    },
+    {
+        "question": "MDCT (modified DCT) pozwala na",
+        "options": [
+            "Działanie na danych w skali logarytmicznej",
+            "Obliczanie jedynie połowy współczynników widma DCT dla zwiększenia szybkości działania",
+            "Zmniejszenie zniekształceń na granicach ramek audio w kompresji stratnej",
+            "Realizację przekształcenia na blokach nachodzących na siebie w czasie"
+        ],
+        "correct": [
+            "Zmniejszenie zniekształceń na granicach ramek audio w kompresji stratnej",
+            "Realizację przekształcenia na blokach nachodzących na siebie w czasie"
+        ]
+    },
+    {
+        "question": "Typowy rozmiar skompresowanych ramek P w kompresji wideo...",
+        "options": [
+            "jest znacznie mniejszy niż ramek I",
+            "zależy silnie od ramek B",
+            "nie zależy od ramek I",
+            "jest znacznie większy niż ramek B"
+        ],
+        "correct": [
+            "jest znacznie mniejszy niż ramek I",
+            "jest znacznie większy niż ramek B"
+        ]
+    },
+    {
+        "question": "Dla dowolnego obrazka kolorowego zapisanego z dokładnością 8-bitową alfabet kompresora LZW...",
+        "options": [
+            "Może zawierać maksymalnie 256 symboli",
+            "Będzie równy liczbie symboli w słowniku",
+            "Będzie zawierał więcej niż 256 symboli"
+        ],
+        "correct": [
+            "Może zawierać maksymalnie 256 symboli"
+        ]
+    },
+    {
+        "question": "Elementy 'bezstratne' algorytmu kompresji JPEG to:",
+        "options": [
+            "subsampling kolorów",
+            "kwantyzację",
+            "skanowanie zig-zag",
+            "podział na bloki 8x8"
+        ],
+        "correct": [
+            "skanowanie zig-zag",
+            "podział na bloki 8x8"
+        ]
+    },
+    {
+        "question": "Wyróżniamy następujące znaczenie komunikatu:",
+        "options": [
+            "wewnętrzne (prawdziwe, obiektywne)",
+            "wirtualne (domniemane)",
+            "wtórne (odbiór, subiektywne)",
+            "pierwotne (założenie, projekt)",
+            "zewnętrzne (zakładane)"
+        ],
+        "correct": [
+            "wewnętrzne (prawdziwe, obiektywne)",
+            "wtórne (odbiór, subiektywne)",
+            "pierwotne (założenie, projekt)"
+        ]
+    },
+    {
+        "question": "Kodeki parametryczne w kodowaniu mowy wykorzystują",
+        "options": [
+            "analizę parametrów mowy",
+            "transmisję parametrów modelu",
+            "model statystyczny sygnału",
+            "pasmo 20Hz - 20 kHz",
+            "syntezę mowy na podstawie otrzymanych parametrów"
+        ],
+        "correct": [
+            "analizę parametrów mowy",
+            "transmisję parametrów modelu",
+            "syntezę mowy na podstawie otrzymanych parametrów"
+        ]
+    }
 ]
 
 const shuffle = (array) => {
