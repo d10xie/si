@@ -209,3 +209,32 @@
   width: auto;
   padding: 10px 20px;
 }
+
+.checkbox-label {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #555;
+  background-color: #333;
+  color: white;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkbox-label:hover {
+  background-color: #444;
+}
+
+.checkbox-label.selected {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
