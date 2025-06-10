@@ -73,20 +73,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Pakiety w transmisji cyfrowej TV poddaje się tzw. randomizacji aby:",
-    "options": [
-      "zaszyfrować przekaz",
-      "zwiększyć odporność przekazu na zakłócenia",
-      "rozproszyć energię sygnału",
-      "zabezpieczyć przed wysyłaniem pozornie niemodulowanej fali nośnej"
-    ],
-    "correct": [
-      "rozproszyć energię sygnału",
-      "zabezpieczyć przed wysyłaniem pozornie niemodulowanej fali nośnej",
-      "zwiększyć odporność przekazu na zakłócenia"
-    ]
-  },
-  {
     "question": "Po wykonaniu algorytmu ByteRun na ciągu 1,1,1,1,2,2,2,3,3,3,3,1,2,3,1,2,3,4,5 uzyska się następujący wynik:",
     "options": [
       "4,1,3,2,4,3,0,7,1,2,3,1,2,3,4,5,0",
