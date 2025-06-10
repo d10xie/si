@@ -214,19 +214,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "cechą wspólną algorytmów JPEG2000, WSQ i DjVu jest to, że",
-    "options": [
-      "działają na obazach wielopoziomowych",
-      "dzielą obraz na bloki 8x8",
-      "wykorzystują transformatę falkową",
-      "dokonują segmentacji tła"
-    ],
-    "correct": [
-      "wykorzystują transformatę falkową",
-      "działają na obazach wielopoziomowych"
-    ]
-  },
-  {
     "question": "PhotoStimulating Luminescence pozwala na",
     "options": [
       "budowę obrazów radiograficznych",
@@ -925,21 +912,6 @@ const allQuestions =
         ]
     },
     {
-        "question": "Zaznacz rodzaje pamięci masowej:",
-        "options": [
-            "pamięć obiektowa,",
-            "pamięć równoległa,",
-            "pamięć szeregowa,",
-            "pamięć plikowa,",
-            "pamięć blokowa,"
-        ],
-        "correct": [
-            "pamięć obiektowa,",
-            "pamięć plikowa,",
-            "pamięć blokowa,"
-        ]
-    },
-    {
         "question": "Utrata synchronizacji to sytuacja w znakowaniu wodnym, kiedy:",
         "options": [
             "znak wodny jest obecny ale nie może zostać wykryty,",
@@ -949,21 +921,6 @@ const allQuestions =
         ],
         "correct": [
             "znak wodny jest obecny ale nie może zostać wykryty,"
-        ]
-    },
-    {
-        "question": "Cele cyfrowego znakowania wodnego:",
-        "options": [
-            "śledzenie transakcji,",
-            "zabezpieczenie przed nieuprawnionym dostępem,",
-            "ochrona praw autorskich,",
-            "uwierzytelnianie treści,",
-            "ukrycie tajnej komunikacji,"
-        ],
-        "correct": [
-            "ochrona praw autorskich,",
-            "uwierzytelnianie treści,",
-            "ukrycie tajnej komunikacji,"
         ]
     },
     {
@@ -1001,32 +958,6 @@ const allQuestions =
         ],
         "correct": [
             "dłuższa niż dla DVD-ROM,"
-        ]
-    },
-    {
-        "question": "PhotoStimulating Luminescence pozwala na:",
-        "options": [
-            "budowę obrazów radiograficznych",
-            "rejestrację promieniowania X w cyfrowych urządzeniach medycznych",
-            "pomiar energii przenoszonej przez promieniowanie cieplne",
-            "wykrywanie obiektów o naturalnej luminescencji w obrazach mikroskopowych"
-        ],
-        "correct": [
-            "budowę obrazów radiograficznych",
-            "rejestrację promieniowania X w cyfrowych urządzeniach medycznych"
-        ]
-    },
-    {
-        "question": "MDCT (modified DCT) pozwala na",
-        "options": [
-            "Działanie na danych w skali logarytmicznej",
-            "Obliczanie jedynie połowy współczynników widma DCT dla zwiększenia szybkości działania",
-            "Zmniejszenie zniekształceń na granicach ramek audio w kompresji stratnej",
-            "Realizację przekształcenia na blokach nachodzących na siebie w czasie"
-        ],
-        "correct": [
-            "Zmniejszenie zniekształceń na granicach ramek audio w kompresji stratnej",
-            "Realizację przekształcenia na blokach nachodzących na siebie w czasie"
         ]
     },
     {
