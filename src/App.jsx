@@ -227,18 +227,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Wielkość pojedynczego piksela w typowej matrycy CCD jest w przedziale",
-    "options": [
-      "3 - 25 mikrometrów",
-      "0.2 - 0.5 nanometra",
-      "3 - 25 nanometrów",
-      "0.2 - 0.5 milimetra"
-    ],
-    "correct": [
-      "3 - 25 mikrometrów"
-    ]
-  },
-  {
     "question": "PhotoStimulating Luminescence pozwala na",
     "options": [
       "budowę obrazów radiograficznych",
@@ -550,24 +538,6 @@ const allQuestions =
       "duży poziom szumu",
       "duże zniekształcenia",
       "duża skuteczność"
-    ]
-  },
-  {
-    "question": "Zaznacz metody/standardy stratnej kompresji dźwięku",
-    "options": [
-      "ADPCM",
-      "A-Law",
-      "ALAC",
-      "AAC",
-      "FLAC",
-      "APE",
-      "MP3"
-    ],
-    "correct": [
-      "A-Law",
-      "ADPCM",
-      "AAC",
-      "MP3"
     ]
   },
   {
