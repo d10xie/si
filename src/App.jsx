@@ -98,18 +98,6 @@ const allQuestions =
     ]
   },
   {
-    "question": "Utrata synchronizacji to sytuacja w znakowaniu wodnym, kiedy:",
-    "options": [
-      "znak wodny jest obecny ale nie może zostać wykryty,",
-      "obraz po dodaniu znaku wodnego staje się nieczytelny,",
-      "znak wodny przestaje korelować z obrazem,",
-      "znak wodny jest usuwany, ale jakość obrazu znacząco spada,"
-    ],
-    "correct": [
-      "znak wodny jest obecny ale nie może zostać wykryty,"
-    ]
-  },
-  {
     "question": "Maskowanie w modelu psychoakustycznym dotyczy m.in.:",
     "options": [
       "Maskowania szumem dźwięków słyszalnych",
