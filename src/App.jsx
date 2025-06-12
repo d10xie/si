@@ -958,7 +958,218 @@ const allQuestions =
         "correct": [
             "Może zawierać maksymalnie 256 symboli"
         ]
-    }
+    },
+    {
+  "question": "Kamera plenoptyczna pozwala na",
+  "options": [
+    "rejestrowanie animacji z szybkością większą niż 1000 klatek na sekundę",
+    "zapisanie obrazu, który można modyfikować, symulując zmianę przysłony",
+    "Rejestrację setek obrazów w ciągu jednego cyklu otwarcia migawki",
+    "zapisanie obrazu, który można modyfikować, symulując zmianę ostrości w różnych planach sceny",
+    "zapisanie obrazu, który można modyfikować, symulując zmianę perspektywy"
+  ],
+  "correct": [
+    "Rejestrację setek obrazów w ciągu jednego cyklu otwarcia migawki",
+    "zapisanie obrazu, który można modyfikować, symulując zmianę perspektywy"
+  ]
+},
+{
+  "question": "Rozproszony system VOD charakteryzuje się",
+  "options": [
+    "dużą przepustowością",
+    "większym opóźnieniem",
+    "stosunkowo dużą trudnością zarządzania",
+    "słabą skalowalnością"
+  ],
+  "correct": [
+    "dużą przepustowością",
+    "stosunkowo dużą trudnością zarządzania"
+  ]
+},
+{
+  "question": "System multimedialny składa się z:",
+  "options": [
+    "systemu rzeczywistości poznawczej",
+    "kontekstu sytuacyjnego",
+    "systemu rzeczywistości wirtualnej",
+    "systemu rzeczywistości rozszerzonej"
+  ],
+  "correct": [
+    "systemu rzeczywistości poznawczej",
+    "kontekstu sytuacyjnego",
+    "systemu rzeczywistości wirtualnej"
+  ]
+},
+{
+  "question": "Standard AES42 to",
+  "options": [
+    "rozwinięcie interfejsu mikrofonów cyfrowych AES/EBU",
+    "system szyfrowania sygnałów audio w sieciach otwartych",
+    "format zapisu dźwięku cyfrowego w rejestratorach audio"
+  ],
+  "correct": [
+    "rozwinięcie interfejsu mikrofonów cyfrowych AES/EBU"
+  ]
+},
+{
+  "question": "Sprawność kodowania R dla ciągu informacyjnego o długości k=3 bity i ciągu kodowego n=6 bitów wynosi:",
+  "options": [
+    "R = k·n, czyli R = 3·6",
+    "R = k/n, czyli R = 1/2",
+    "R = n–k, czyli R = 3",
+    "R = n/k, czyli R = 2"
+  ],
+  "correct": [
+    "R = k/n, czyli R = 1/2"
+  ]
+},
+{
+  "question": "W algorytmie LZW alfabet jest znany",
+  "options": [
+    "W zależności od wielkości alfabetu, przez kompresor albo dekompresor",
+    "Wyłącznie przez dekompresor",
+    "wyłącznie przez kompresor",
+    "zarówno przez kompresor jak i dekompresor"
+  ],
+  "correct": [
+    "zarówno przez kompresor jak i dekompresor"
+  ]
+},
+{
+  "question": "Zaznacz metody/standardy bezstratnej kompresji dźwięku",
+  "options": [
+    "FLAC",
+    "ALAC",
+    "ADPCM",
+    "A-Law",
+    "APE"
+  ],
+  "correct": [
+    "FLAC",
+    "ALAC",
+    "APE"
+  ]
+},
+{
+  "question": "Dane bardzo trudne lub niemożliwe do skompresowania metodami bezstratnymi to:",
+  "options": [
+    "strumienie liczb pseudolosowych",
+    "dane skompresowane za pomocą tego samego lub innego algorytmu",
+    "pliki JPEG i MP3",
+    "strumienie liczb losowych",
+    "wszystkie obrazy monochromatyczne"
+  ],
+  "correct": [
+    "dane skompresowane za pomocą tego samego lub innego algorytmu",
+    "strumienie liczb pseudolosowych",
+     "strumienie liczb losowych"	
+  ]
+},
+{
+  "question": "Skuteczność mikrofonu to",
+  "options": [
+    "stosunek napięcia na nieobciążonym wyjściu mikrofonu do wartości ciśnienia akustycznego przy określonej częstotliwości i kierunku padania dźwięku",
+    "informacja, jak ciche dźwięki mikrofon jest w stanie przechwycić",
+    "wykres charakterystyki kierunkowej mikrofonu dla kąta 0 stopni"
+  ],
+  "correct": [
+    "stosunek napięcia na nieobciążonym wyjściu mikrofonu do wartości ciśnienia akustycznego przy określonej częstotliwości i kierunku padania dźwięku",
+"informacja, jak ciche dźwięki mikrofon jest w stanie przechwycić",
+  ]
+},
+{
+  "question": "W standardzie MPEG-4 podstawą jest (są):",
+  "options": [
+    "Binary Format Encoding Scheme",
+    "Audio-Visual Object",
+    "Shape-Adaptive DCT",
+    "Shape-Adaptive Motion Compensation"
+  ],
+  "correct": [
+    "Audio-Visual Object"
+  ]
+},
+{
+  "question": "Bolometr (mikrobolometr) służy do",
+  "options": [
+    "tworzenia termogramów",
+    "rejestracji promieniowania X w cyfrowych urządzeniach medycznych",
+    "oceny kształtów małych obiektów kulistych w skanowaniu laserowym",
+    "pomiaru energii przenoszonej przez promieniowanie cieplne"
+  ],
+  "correct": [
+    "pomiaru energii przenoszonej przez promieniowanie cieplne"
+  ]
+},
+{
+  "question": "Proces w systemie czasu rzeczywistego...",
+  "options": [
+    "dostarcza wyniki przetwarzania w czasie mniejszym niż 1 sekunda",
+    "nie może być synchronizowany z innymi procesami, które mogą opóźniać jego działanie",
+    "dostarcza wyniki przetwarzania w określonym przedziale czasu",
+    "gwarantuje bezbłędne obliczenia"
+  ],
+  "correct": [
+    "dostarcza wyniki przetwarzania w określonym przedziale czasu",
+    "gwarantuje bezbłędne obliczenia"
+  ]
+},
+{
+  "question": "Efektywność kwantowa sensorów CCD i CMOS jest w przedziale",
+  "options": [
+    "45–75 procent",
+    "75–100 procent",
+    "60–95 procent",
+    "90–95 procent"
+  ],
+  "correct": [
+    "60–95 procent"
+  ]
+},
+{
+  "question": "Z punktu widzenia fizyki, częstotliwość dźwięku odbierana jako:",
+  "options": [
+    "barwa dźwięku",
+    "stosunek (proporcje) częstotliwości podstawowej do aktualnie rejestrowanej",
+    "wysokość tonu",
+    "kontur melodii"
+  ],
+  "correct": [
+    "wysokość tonu"
+  ]
+},
+{
+  "question": "Kryteria dotyczące wymagań aplikacji multimedialnych i strumieni danych to m.in.",
+  "options": [
+    "opóźnienie globalne (od końca do końca)",
+    "liczba obsługiwanych plików w lokalnym systemie plików",
+    "przepustowość",
+    "niezawodność",
+    "rozmiar zaalokowanej pamięci wirtualnej",
+    "jitter",
+    "opóźnienie lokalne (przy zasobie)"
+  ],
+  "correct": [
+    "opóźnienie globalne (od końca do końca)",
+    "przepustowość",
+    "niezawodność",
+    "jitter",
+    "opóźnienie lokalne (przy zasobie)"
+  ]
+},
+{
+  "question": "Punktowy detektor światła charakteryzuje się",
+  "options": [
+    "Brakiem potrzeby mechanicznego skanowania w przypadku rejestrowania dużych płaszczyzn",
+    "Stosunkowo niskim poziomem złożoności technicznej",
+    "Wysoką czułością i powtarzalnością",
+    "Niską czułością i wysoką komplikacją techniczną"
+  ],
+  "correct": [
+    "Stosunkowo niskim poziomem złożoności technicznej",
+    "Wysoką czułością i powtarzalnością"
+  ]
+}
 ]
 
 const shuffle = (array) => {
