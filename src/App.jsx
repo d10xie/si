@@ -1320,28 +1320,48 @@ export default function App() {
               Twój wynik: {score} / {shuffledQuestions.length} ({((score / shuffledQuestions.length) * 100).toFixed(2)}%)
             </h2>
             {selectedSummaryQuestion !== null ? (
-              <div className="question-detail">
-                <h3 className="text-lg font-bold">{shuffledQuestions[selectedSummaryQuestion]?.question}</h3>
-                {answers[selectedSummaryQuestion] ? (
-                  <>
-                    <p><strong>Twoja odpowiedź:</strong> {
-                      answers[selectedSummaryQuestion].selected.length > 0
-                        ? answers[selectedSummaryQuestion].selected.map(i => answers[selectedSummaryQuestion].options[i]).join(', ')
-                        : "Brak odpowiedzi"
-                    }</p>
-                    <p><strong>Poprawna odpowiedź:</strong> {answers[selectedSummaryQuestion].correct.join(', ')}</p>
-                  </>
-                ) : (
-                  <>
-                    <p style={{ color: "red", fontWeight: "bold" }}>Nie odpowiedziałeś na to pytanie.</p>
-                    <p><strong>Poprawna odpowiedź:</strong> {shuffledQuestions[selectedSummaryQuestion]?.correct.join(', ')}</p>
-                  </>
-                )}
-                <Button onClick={() => setSelectedSummaryQuestion(null)}>Zamknij</Button>
-              </div>
-            ) : (
-              <p className="info-text">Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
-            )}
+  <div className="question-detail">
+    <h3 className="text-lg font-bold">
+      {shuffledQuestions[selectedSummaryQuestion]?.question}
+    </h3>
+
+    {answers[selectedSummaryQuestion] ? (
+      <>
+        <p><strong>Twoja odpowiedź:</strong></p>
+        <ul className="clean-list">
+          {answers[selectedSummaryQuestion].selected.length > 0
+            ? answers[selectedSummaryQuestion].selected.map(i => (
+                <li key={i}>{answers[selectedSummaryQuestion].options[i]}</li>
+              ))
+            : <li>Brak odpowiedzi</li>
+          }
+        </ul>
+
+        <p><strong>Poprawna odpowiedź:</strong></p>
+        <ul className="clean-list">
+          {answers[selectedSummaryQuestion].correct.map((opt, idx) => (
+            <li key={idx}>{opt}</li>
+          ))}
+        </ul>
+      </>
+    ) : (
+      <>
+        <p style={{ color: "red", fontWeight: "bold" }}>Nie odpowiedziałeś na to pytanie.</p>
+        <p><strong>Poprawna odpowiedź:</strong></p>
+        <ul className="clean-list">
+          {shuffledQuestions[selectedSummaryQuestion]?.correct.map((opt, idx) => (
+            <li key={idx}>{opt}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    <Button onClick={() => setSelectedSummaryQuestion(null)}>Zamknij</Button>
+  </div>
+) : (
+  <p className="info-text">Kliknij pytanie w siatce, aby zobaczyć szczegóły.</p>
+)}
+
             <Button className="mt-4" onClick={handleRestartQuiz}>Spróbuj ponownie</Button>
           </Card>
         ) : shuffledQuestions.length > 0 ? (
