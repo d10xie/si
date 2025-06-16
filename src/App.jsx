@@ -25,8 +25,8 @@ export default function App() {
   const [answers, setAnswers] = useState([]);
   const [selectedSummaryQuestion, setSelectedSummaryQuestion] = useState(null);
   const [score, setScore] = useState(0);
+  const [learningMode, setLearningMode] = useState(false);
 
- 
   const shuffledQuestions = useMemo(() => {
     if (!startQuiz) return [];
     return questions.map(q => ({
@@ -34,6 +34,13 @@ export default function App() {
       options: shuffle(q.options),
     }));
   }, [questions, startQuiz]);
+
+const handleCheckAnswer = () => {
+  const newAnswers = [...answers];
+  if (!newAnswers[currentQuestion]) return;
+  newAnswers[currentQuestion].showFeedback = true;
+  setAnswers(newAnswers);
+};
 
 
   const handleNumQuestionsChange = (e) => {
@@ -80,27 +87,31 @@ const handleStartQuiz = () => {
 };
 
 
-  const handleAnswer = (optionIndex) => {
-    const newAnswers = [...answers];
-    const currentAnswer = newAnswers[currentQuestion];
-    const existingSelections = currentAnswer?.selected || [];
-    
-    const optionPosition = existingSelections.indexOf(optionIndex);
-    let newSelections;
+const handleAnswer = (optionIndex) => {
+  const newAnswers = [...answers];
+  const currentAnswer = newAnswers[currentQuestion];
+  const existingSelections = currentAnswer?.selected || [];
 
-    if (optionPosition > -1) {
-      newSelections = existingSelections.filter(item => item !== optionIndex);
-    } else {
-      newSelections = [...existingSelections, optionIndex];
-    }
+  const optionPosition = existingSelections.indexOf(optionIndex);
+  let newSelections;
 
-    newAnswers[currentQuestion] = {
-      ...shuffledQuestions[currentQuestion],
-      selected: newSelections.sort((a, b) => a - b),
-    };
+  if (optionPosition > -1) {
+    newSelections = existingSelections.filter(item => item !== optionIndex);
+  } else {
+    newSelections = [...existingSelections, optionIndex];
+  }
 
-    setAnswers(newAnswers);
+  newAnswers[currentQuestion] = {
+    ...shuffledQuestions[currentQuestion],
+    selected: newSelections.sort((a, b) => a - b),
+    showFeedback: currentAnswer?.showFeedback || false,
   };
+
+  setAnswers(newAnswers);
+};
+
+
+
 
   const goToQuestion = (index) => {
     setCurrentQuestion(index);
@@ -220,6 +231,17 @@ const handleStartQuiz = () => {
           <Button className="mt-4" onClick={handleStartQuiz} disabled={selectedSets.length === 0}>
             Rozpocznij quiz
           </Button>
+          <div className="mt-4">
+  <label className="flex items-center gap-2">
+    <input
+      type="checkbox"
+      checked={learningMode}
+      onChange={(e) => setLearningMode(e.target.checked)}
+    />
+    Tryb nauki (od razu pokazuj poprawną odpowiedź, brak punktów)
+  </label>
+</div>
+
         </Card>
       </div>
     );
@@ -231,6 +253,22 @@ const handleStartQuiz = () => {
       const selectedOptions = answer.selected.map(i => question.options[i]);
       return JSON.stringify(correctOptions.sort()) === JSON.stringify(selectedOptions.sort());
   }
+
+  const showFeedbackClass = (optionIndex) => {
+  const answer = answers[currentQuestion];
+  const question = shuffledQuestions[currentQuestion];
+  if (!learningMode || !answer?.showFeedback) return "";
+
+  const isSelected = answer.selected.includes(optionIndex);
+  const optionText = question.options[optionIndex];
+  const isCorrect = question.correct.includes(optionText);
+
+  if (isSelected && isCorrect) return "correct-option";
+  if (isSelected && !isCorrect) return "incorrect-option";
+  if (!isSelected && isCorrect) return "missed-correct";
+  return "";
+};
+
 
   return (
     <div className="quiz-container">
@@ -293,18 +331,25 @@ const handleStartQuiz = () => {
             <CardContent>
               <h3 className="question-counter">Pytanie {currentQuestion + 1} / {shuffledQuestions.length}</h3>
               <h2 className="text-lg font-bold question-text">{shuffledQuestions[currentQuestion]?.question}</h2>
-              <div className="options-container">
-                {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
-                  <label key={index} className="option-label">
-                    <input
-                      type="checkbox"
-                      checked={answers[currentQuestion]?.selected?.includes(index) || false}
-                      onChange={() => handleAnswer(index)}
-                    />
-                    {option}
-                  </label>
-                ))}
-              </div>
+<div className="options-container">
+  {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
+    <label key={index} className={`option-label ${showFeedbackClass(index)}`}>
+      <input
+        type="checkbox"
+        checked={answers[currentQuestion]?.selected?.includes(index) || false}
+        onChange={() => handleAnswer(index)}
+      />
+      {option}
+    </label>
+  ))}
+
+  {learningMode && !answers[currentQuestion]?.showFeedback && (
+    <Button className="mt-2" onClick={handleCheckAnswer} disabled={!answers[currentQuestion]?.selected?.length}>
+      Sprawdź odpowiedź
+    </Button>
+  )}
+</div>
+
               <div className="navigation-buttons">
                 <Button className="nav-button" onClick={() => goToQuestion(currentQuestion - 1)} disabled={currentQuestion === 0}>⬅ Poprzednie</Button>
                 <Button className="nav-button" onClick={nextQuestion}>
