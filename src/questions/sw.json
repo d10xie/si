@@ -1,0 +1,1742 @@
+[
+  {
+    "question": "Która magistrala w mikrokontrolerach ARM Cortex-M jest przeznaczona dla modułów o wysokiej wydajności, które wymagają szybkich transferów danych?",
+    "options": [
+      "APB",
+      "I2C",
+      "AHB",
+      "SPI"
+    ],
+    "correct": [
+      "AHB"
+    ]
+  },
+  {
+    "question": "Aby włączyć port GPIO na konkretnej magistrali AHB, co należy aktywować?",
+    "options": [
+      "Rejestr STATUS",
+      "Sygnał zegarowy",
+      "Rejestr kontrolny DMA",
+      "Rejestr interrupcji"
+    ],
+    "correct": [
+      "Sygnał zegarowy"
+    ]
+  },
+  {
+    "question": "Jaki jest adres bazowy rejestru RCC AHB1 Peripheral Clock Enable dla STM32F407G z uwzględnieniem offsetu?",
+    "options": [
+      "0x40021000 + 0x14",
+      "0x40023800 + 0x30",
+      "0x40020000 + 0x0800000",
+      "0x40000000 + 0x04"
+    ],
+    "correct": [
+      "0x40023800 + 0x30"
+    ]
+  },
+  {
+    "question": "Jak jest taktowany TIM1 przez magistralę APB2, jeśli preskaler APB2 jest różny od 1?",
+    "options": [
+      "Sygnałem PCLK2",
+      "Sygnałem PCLK2/2",
+      "Sygnałem PCLK2 * 2",
+      "Sygnałem PCLK1"
+    ],
+    "correct": [
+      "Sygnałem PCLK2 * 2"
+    ]
+  },
+  {
+    "question": "Który podrejestr PSR przechowuje numer wyjątku aktualnie aktywnego przerwania?",
+    "options": [
+      "APSR",
+      "EPSR",
+      "IPSR",
+      "PRIMASK"
+    ],
+    "correct": [
+      "IPSR"
+    ]
+  },
+  {
+    "question": "Do czego służą rejestry maskujące wyjątki (PRIMASK, FAULTMASK, BASEPRI)?",
+    "options": [
+      "Do kontrolowania dostępu do pamięci.",
+      "Do maskowania wyjątków i przerwań.",
+      "Do przechowywania adresów powrotnych funkcji.",
+      "Do zarządzania priorytetami zadań w FreeRTOS."
+    ],
+    "correct": [
+      "Do maskowania wyjątków i przerwań."
+    ]
+  },
+  {
+    "question": "Jaki jest rozmiar obszaru pamięci operacyjnej SRAM w mikrokontrolerach ARM Cortex-M?",
+    "options": [
+      "0.5 GB",
+      "1.0 GB",
+      "32 MB",
+      "1 MB"
+    ],
+    "correct": [
+      "0.5 GB"
+    ]
+  },
+  {
+    "question": "Które z wymienionych peryferii znajdują się na magistrali AHB1 dla STM32F407G?",
+    "options": [
+      "FSMC, RNG, HASH",
+      "USB OTG FS, DCMI",
+      "RCC, CRC, GPIOA do GPIOK",
+      "TIM1, TIM8"
+    ],
+    "correct": [
+      "RCC, CRC, GPIOA do GPIOK"
+    ]
+  },
+  {
+    "question": "Jaki jest tryb pracy pinu GPIO, gdy w rejestrze MODER ustawione jest \"10\"?",
+    "options": [
+      "Wejście",
+      "Wyjście",
+      "Tryb analogowy",
+      "Funkcja alternatywna"
+    ],
+    "correct": [
+      "Tryb analogowy"
+    ]
+  },
+  {
+    "question": "Jaki jest offset rejestru ODR w konfiguracji GPIO?",
+    "options": [
+      "0x00",
+      "0x04",
+      "0x14",
+      "0x0C"
+    ],
+    "correct": [
+      "0x14"
+    ]
+  },
+  {
+    "question": "Który typ wyjścia GPIO jest określony przez wartość \"1\" w rejestrze OTYPER?",
+    "options": [
+      "Push-pull",
+      "Otwarty dren",
+      "Wysoka prędkość",
+      "Tryb analogowy"
+    ],
+    "correct": [
+      "Otwarty dren"
+    ]
+  },
+  {
+    "question": "Co oznacza instrukcja `LDR R0, [R1]`?",
+    "options": [
+      "Ładuje adres R1 do R0.",
+      "Ładuje wartość z adresu wskazywanego przez R1 do R0.",
+      "Zapisuje wartość z R0 pod adres wskazywany przez R1.",
+      "Odejmuje wartość 1 od R1 i zapisuje wynik w R0."
+    ],
+    "correct": [
+      "Ładuje wartość z adresu wskazywanego przez R1 do R0."
+    ]
+  },
+  {
+    "question": "Jaki jest efekt działania instrukcji `SUB R2, R2, #1`?",
+    "options": [
+      "Dodaje 1 do wartości w R2.",
+      "Mnoży wartość w R2 przez 1.",
+      "Odejmuje 1 od wartości w R2 i zapisuje wynik w R2.",
+      "Dzieli wartość w R2 przez 1."
+    ],
+    "correct": [
+      "Odejmuje 1 od wartości w R2 i zapisuje wynik w R2."
+    ]
+  },
+  {
+    "question": "Do czego służy instrukcja `CBZ`?",
+    "options": [
+      "Skacze do etykiety, jeśli wartość w rejestrze jest większa od zera.",
+      "Skacze do etykiety, jeśli wartość w rejestrze jest równa zero.",
+      "Porównuje dwie wartości.",
+      "Skacze bezwarunkowo."
+    ],
+    "correct": [
+      "Skacze do etykiety, jeśli wartość w rejestrze jest równa zero."
+    ]
+  },
+  {
+    "question": "Która flaga w APSR jest ustawiana, jeśli wynik operacji jest zerowy?",
+    "options": [
+      "N (Negative)",
+      "Z (Zero)",
+      "C (Carry)",
+      "V (Overflow)"
+    ],
+    "correct": [
+      "Z (Zero)"
+    ]
+  },
+  {
+    "question": "Gdzie w rejestrze PSR znajduje się numer wyjątku (Exception Number)?",
+    "options": [
+      "W APSR",
+      "W EPSR",
+      "W IPSR",
+      "W PRIMASK"
+    ],
+    "correct": [
+      "W IPSR"
+    ]
+  },
+  {
+    "question": "Czym jest arytmetyka saturacyjna?",
+    "options": [
+      "Rodzaj arytmetyki, w której wyniki operacji są zawsze zaokrąglane w górę.",
+      "Rodzaj arytmetyki, w której wyniki operacji przekraczające zakres są obcinane do wartości maksymalnej lub minimalnej.",
+      "Rodzaj arytmetyki, w której wyniki operacji są zawsze zaokrąglane w dół.",
+      "Rodzaj arytmetyki, w której wyniki operacji są zawsze sumowane modulo 2."
+    ],
+    "correct": [
+      "Rodzaj arytmetyki, w której wyniki operacji przekraczające zakres są obcinane do wartości maksymalnej lub minimalnej."
+    ]
+  },
+  {
+    "question": "Która flaga w APSR jest ustawiana, gdy wystąpi nasycenie w arytmetyce saturacyjnej?",
+    "options": [
+      "Z (Zero)",
+      "C (Carry)",
+      "V (Overflow)",
+      "Q (Saturation)"
+    ],
+    "correct": [
+      "Q (Saturation)"
+    ]
+  },
+  {
+    "question": "Co to jest NVIC?",
+    "options": [
+      "Moduł zarządzający pamięcią w mikrokontrolerach ARM Cortex-M.",
+      "Kontroler przerwań zagnieżdżonych, który zarządza wyjątkami i przerwaniami.",
+      "Protokół komunikacji szeregowej.",
+      "Rejestr ogólnego przeznaczenia w procesorze ARM."
+    ],
+    "correct": [
+      "Kontroler przerwań zagnieżdżonych, który zarządza wyjątkami i przerwaniami."
+    ]
+  },
+  {
+    "question": "Który z wymienionych wyjątków systemowych ma priorytet -2?",
+    "options": [
+      "Reset",
+      "NMI (Non-Maskable Interrupt)",
+      "HardFault",
+      "MemManage"
+    ],
+    "correct": [
+      "NMI (Non-Maskable Interrupt)"
+    ]
+  },
+  {
+    "question": "Ile przerwań maskowalnych (bez FPU) wspiera STM32F4?",
+    "options": [
+      "74",
+      "82",
+      "16",
+      "240"
+    ],
+    "correct": [
+      "82"
+    ]
+  },
+  {
+    "question": "Ile bitów priorytetów posiadają STM32F3/STM32F4?",
+    "options": [
+      "3 bity",
+      "4 bity",
+      "8 bitów",
+      "16 bitów"
+    ],
+    "correct": [
+      "4 bity"
+    ]
+  },
+  {
+    "question": "W przypadku, gdy dwa przerwania o tym samym priorytecie grupowym pojawią się jednocześnie, które z nich zostanie obsłużone jako pierwsze?",
+    "options": [
+      "To z wyższym numerem podpriorytetu.",
+      "To z niższym numerem podpriorytetu.",
+      "To, które pojawiło się pierwsze.",
+      "Wybór jest losowy."
+    ],
+    "correct": [
+      "To z niższym numerem podpriorytetu."
+    ]
+  },
+  {
+    "question": "Jakie rejestry służą do konfiguracji pinu generującego przerwanie na danej linii EXTI?",
+    "options": [
+      "GPIOx_MODER",
+      "SYSCFG_EXTICR",
+      "EXTI_IMR",
+      "NVIC_ISER"
+    ],
+    "correct": [
+      "SYSCFG_EXTICR"
+    ]
+  },
+  {
+    "question": "Na czym polega multipleksowanie linii przerwań EXTI?",
+    "options": [
+      "Jedna linia EXTI może być połączona tylko z jednym pinem GPIO.",
+      "Wiele pinów z różnych portów może współdzielić tę samą linię przerwania EXTI.",
+      "Przerwania EXTI mogą być generowane tylko z portu GPIOA.",
+      "Linie EXTI są połączone szeregowo."
+    ],
+    "correct": [
+      "Wiele pinów z różnych portów może współdzielić tę samą linię przerwania EXTI."
+    ]
+  },
+  {
+    "question": "Jaka jest główna cecha licznika SysTick pod względem kierunku zliczania i rozmiaru?",
+    "options": [
+      "Jest to 16-bitowy licznik zliczający w górę.",
+      "Jest to 24-bitowy licznik zliczający w dół.",
+      "Jest to 32-bitowy licznik zliczający w górę.",
+      "Jest to 8-bitowy licznik zliczający w dół."
+    ],
+    "correct": [
+      "Jest to 24-bitowy licznik zliczający w dół."
+    ]
+  },
+  {
+    "question": "W rejestrze STK_CTRL, który bit odpowiada za wybór źródła zegara (AHB/8 lub AHB)?",
+    "options": [
+      "Bit 0 (ENABLE)",
+      "Bit 1 (TICKINT)",
+      "Bit 2 (CLKSOURCE)",
+      "Bit 16 (COUNTFLAG)"
+    ],
+    "correct": [
+      "Bit 2 (CLKSOURCE)"
+    ]
+  },
+  {
+    "question": "Który bit w rejestrze STK_CTRL służy do włączenia/wyłączenia generowania przerwania przez SysTick?",
+    "options": [
+      "Bit 0 (ENABLE)",
+      "Bit 1 (TICKINT)",
+      "Bit 2 (CLKSOURCE)",
+      "Bit 16 (COUNTFLAG)"
+    ],
+    "correct": [
+      "Bit 1 (TICKINT)"
+    ]
+  },
+  {
+    "question": "Co to jest dostęp bitowy do pamięci (Bit-banding)?",
+    "options": [
+      "Sposób na adresowanie całej pamięci jako jednego dużego bloku.",
+      "Technika pozwalająca na atomową modyfikację pojedynczych bitów w określonych obszarach pamięci.",
+      "Metoda kompresji danych w pamięci.",
+      "Rodzaj szyfrowania danych w pamięci."
+    ],
+    "correct": [
+      "Technika pozwalająca na atomową modyfikację pojedynczych bitów w określonych obszarach pamięci."
+    ]
+  },
+  {
+    "question": "Jaki jest adres bazowy obszaru aliasu bit-band dla pamięci SRAM?",
+    "options": [
+      "0x20000000",
+      "0x22000000",
+      "0x40000000",
+      "0x42000000"
+    ],
+    "correct": [
+      "0x22000000"
+    ]
+  },
+  {
+    "question": "Jakie są konsekwencje zapisu słowa do regionu aliasów bit-band w kontekście modyfikacji bitów?",
+    "options": [
+      "Całe słowo jest zapisywane do pamięci.",
+      "Zapisywany jest tylko jeden bit (najmniej znaczący bit zapisanego słowa).",
+      "Wartości wszystkich bitów słowa są odwracane.",
+      "Zapis jest ignorowany."
+    ],
+    "correct": [
+      "Zapisywany jest tylko jeden bit (najmniej znaczący bit zapisanego słowa)."
+    ]
+  },
+  {
+    "question": "W jakim formacie RTC zlicza czas?",
+    "options": [
+      "Hexadecymalnym",
+      "BCD (Binary Coded Decimal)",
+      "Binarnym",
+      "ASCII"
+    ],
+    "correct": [
+      "BCD (Binary Coded Decimal)"
+    ]
+  },
+  {
+    "question": "Która z wymienionych funkcji **nie** jest główną możliwością RTC?",
+    "options": [
+      "Utrzymywanie rzeczywistego czasu i kalendarza.",
+      "Posiadanie dwóch programowalnych przerwań alarmu.",
+      "Automatyczne wybudzanie w celu zarządzania trybami niskiego poboru energii.",
+      "Bezpośrednia obsługa protokołu TCP/IP."
+    ],
+    "correct": [
+      "Bezpośrednia obsługa protokołu TCP/IP."
+    ]
+  },
+  {
+    "question": "Na jakiej magistrali komunikuje się z mikrokontrolerem zewnętrzny moduł RTC DS1307?",
+    "options": [
+      "SPI",
+      "UART",
+      "I2C",
+      "CAN"
+    ],
+    "correct": [
+      "I2C"
+    ]
+  },
+  {
+    "question": "Które z wymienionych nie jest głównym zastosowaniem timera TIM1?",
+    "options": [
+      "Pomiar długości impulsów sygnałów wejściowych.",
+      "Generowanie sygnałów PWM.",
+      "Zliczanie impulsów zewnętrznych.",
+      "Bezpośrednia obsługa wyświetlacza LCD."
+    ],
+    "correct": [
+      "Bezpośrednia obsługa wyświetlacza LCD."
+    ]
+  },
+  {
+    "question": "Od czego zależy częstotliwość generowania zdarzeń Update przez TIM1?",
+    "options": [
+      "Wyłącznie od Preskalera.",
+      "Wyłącznie od Period.",
+      "Wyłącznie od RepetitionCounter.",
+      "Od Preskalera, Period i RepetitionCounter."
+    ],
+    "correct": [
+      "Od Preskalera, Period i RepetitionCounter."
+    ]
+  },
+  {
+    "question": "Która z wymienionych funkcji jest funkcją inicjalizacyjną z biblioteki HAL dla TIM1?",
+    "options": [
+      "HAL_GPIO_Init()",
+      "HAL_TIM_BaseInit()",
+      "_HAL_RCC_TIMX_CLK_ENABLE()",
+      "_HAL_TIM_DISABLE()"
+    ],
+    "correct": [
+      "HAL_TIM_BaseInit()"
+    ]
+  },
+  {
+    "question": "Co jest główną zaletą kontrolera DMA?",
+    "options": [
+      "Zwiększenie obciążenia procesora podczas transferu danych.",
+      "Umożliwienie bezpośredniego transferu danych między pamięcią a peryferiami bez angażowania procesora.",
+      "Redukcja prędkości transferu danych.",
+      "Upraszczanie programowania interfejsów szeregowych."
+    ],
+    "correct": [
+      "Umożliwienie bezpośredniego transferu danych między pamięcią a peryferiami bez angażowania procesora."
+    ]
+  },
+  {
+    "question": "Ile kanałów DMA posiada kontroler DMA1 w STM32F407G?",
+    "options": [
+      "5 kanałów",
+      "7 kanałów",
+      "12 kanałów",
+      "14 kanałów"
+    ],
+    "correct": [
+      "7 kanałów"
+    ]
+  },
+  {
+    "question": "Który z wymienionych rodzajów transferów danych **nie** jest obsługiwany przez DMA?",
+    "options": [
+      "Pamięć do pamięci",
+      "Pamięć do peryferii",
+      "Peryferia do peryferii",
+      "CPU do CPU"
+    ],
+    "correct": [
+      "CPU do CPU"
+    ]
+  },
+  {
+    "question": "Co to jest \"wykradanie cyklu\" (bus stealing) w kontekście dostępu DMA do magistrali?",
+    "options": [
+      "DMA blokuje dostęp procesora do magistrali na dłuższy czas.",
+      "DMA uzyskuje dostęp do magistrali tylko na jeden cykl.",
+      "Procesor wykradanie cykle DMA.",
+      "DMA jest wywłaszczane przez inne moduły."
+    ],
+    "correct": [
+      "DMA uzyskuje dostęp do magistrali tylko na jeden cykl."
+    ]
+  },
+  {
+    "question": "Który ze sposobów obsługi kart SD charakteryzuje się bardziej przejrzystym interfejsem, ale niższą prędkością?",
+    "options": [
+      "SDBus",
+      "SPI",
+      "I2C",
+      "UART"
+    ],
+    "correct": [
+      "SPI"
+    ]
+  },
+  {
+    "question": "Z ilu bajtów składa się polecenie (komenda) wysyłane do karty SD?",
+    "options": [
+      "4 bajty",
+      "5 bajtów",
+      "6 bajtów",
+      "8 bajtów"
+    ],
+    "correct": [
+      "6 bajtów"
+    ]
+  },
+  {
+    "question": "Który z wymienionych systemów plików **nie** jest obsługiwany przez bibliotekę FatFs?",
+    "options": [
+      "FAT12",
+      "FAT16",
+      "FAT32",
+      "NTFS"
+    ],
+    "correct": [
+      "NTFS"
+    ]
+  },
+  {
+    "question": "Która z wymienionych funkcji jest funkcją dostępu do medium z biblioteki FatFs?",
+    "options": [
+      "f_open()",
+      "disk_initialize()",
+      "f_mount()",
+      "f_read()"
+    ],
+    "correct": [
+      "disk_initialize()"
+    ]
+  },
+  {
+    "question": "Która z wymienionych cech jest charakterystyczna dla sieci CAN?",
+    "options": [
+      "Maksymalna prędkość transmisji 20 kb/s.",
+      "Obsługa do 8 bajtów na ramkę z prędkością do 1 Mb/s.",
+      "Wykorzystanie światłowodu jako jedynej warstwy fizycznej.",
+      "Determinatyzm i wysoki koszt."
+    ],
+    "correct": [
+      "Obsługa do 8 bajtów na ramkę z prędkością do 1 Mb/s."
+    ]
+  },
+  {
+    "question": "Do czego zazwyczaj używana jest sieć LIN?",
+    "options": [
+      "Transmisja sygnałów multimedialnych.",
+      "Aplikacje zarządzające komfortem (np. drzwi, fotele).",
+      "Zastosowania high-performance ECU.",
+      "Sieci zdeterminowanym czasem rzeczywistym."
+    ],
+    "correct": [
+      "Aplikacje zarządzające komfortem (np. drzwi, fotele)."
+    ]
+  },
+  {
+    "question": "Jaka jest maksymalna prędkość transmisji dla MOST150?",
+    "options": [
+      "20 Mb/s",
+      "1 Mb/s",
+      "150 Mb/s",
+      "6 Mb/s"
+    ],
+    "correct": [
+      "150 Mb/s"
+    ]
+  },
+  {
+    "question": "Ile bajtów danych może przesłać ramka CAN-FD i jaka jest maksymalna prędkość transmisji?",
+    "options": [
+      "Do 8 bajtów, do 1 Mb/s.",
+      "Do 64 bajtów, do 6 Mb/s.",
+      "Do 254 bajtów, do 10 Mb/s.",
+      "Do 4096 bajtów, do 1 Mb/s."
+    ],
+    "correct": [
+      "Do 64 bajtów, do 6 Mb/s."
+    ]
+  },
+  {
+    "question": "Która z wymienionych **nie** jest rodzajem ramki CAN?",
+    "options": [
+      "Ramka danych",
+      "Ramka zdalna",
+      "Ramka startowa",
+      "Ramka błędu"
+    ],
+    "correct": [
+      "Ramka startowa"
+    ]
+  },
+  {
+    "question": "Co to jest bit stuffing i do czego służy?",
+    "options": [
+      "Mechanizm służący do wypełniania ramek danymi, gdy brakuje informacji.",
+      "Mechanizm używany do zapewnienia synchronizacji i wykrywania błędów poprzez wstawianie bitów o przeciwnej wartości po pięciu kolejnych bitach o tej samej wartości.",
+      "Metoda szyfrowania danych w ramce CAN.",
+      "Sposób na zwiększenie prędkości transmisji CAN."
+    ],
+    "correct": [
+      "Mechanizm używany do zapewnienia synchronizacji i wykrywania błędów poprzez wstawianie bitów o przeciwnej wartości po pięciu kolejnych bitach o tej samej wartości."
+    ]
+  },
+  {
+    "question": "Jaką funkcję pełni pole DLC (Data Length Code) w ramce CAN?",
+    "options": [
+      "Definiuje priorytet komunikatu.",
+      "Wskazuje typ ramki (dane, zdalna).",
+      "Definiuje liczbę bajtów przesyłanych w polu danych.",
+      "Zawiera sumę kontrolną wiadomości."
+    ],
+    "correct": [
+      "Definiuje liczbę bajtów przesyłanych w polu danych."
+    ]
+  },
+  {
+    "question": "Na czym polega zasada różnicowego przesyłu sygnałów w warstwie fizycznej CAN?",
+    "options": [
+      "Dane są przesyłane jako pojedynczy sygnał.",
+      "Dane są przesyłane jako różnica napięć między dwiema liniami: CANH i CANL.",
+      "Dane są przesyłane za pomocą światłowodu.",
+      "Dane są przesyłane za pomocą impulsów prądowych."
+    ],
+    "correct": [
+      "Dane są przesyłane jako różnica napięć między dwiema liniami: CANH i CANL."
+    ]
+  },
+  {
+    "question": "Jaka jest różnica napięć (Vdiff) między CANH a CANL w stanie dominującym?",
+    "options": [
+      "Mniejsza niż 0.5V.",
+      "Większa niż 0.9V.",
+      "Dokładnie 0V.",
+      "Między 0.5V a 0.9V."
+    ],
+    "correct": [
+      "Większa niż 0.9V."
+    ]
+  },
+  {
+    "question": "Dlaczego w CAN bit dominujący \"wygrywa\" nad bitem recesywnym?",
+    "options": [
+      "Ponieważ bit dominujący odpowiada logicznemu \"1\", a recesywny \"0\".",
+      "Ponieważ bit dominujący odpowiada logicznemu \"0\", a recesywny \"1\", a stan dominujący zawsze zwycięża.",
+      "Z powodu mechanizmu time-slicingu.",
+      "Jest to losowy wybór."
+    ],
+    "correct": [
+      "Ponieważ bit dominujący odpowiada logicznemu \"0\", a recesywny \"1\", a stan dominujący zawsze zwycięża."
+    ]
+  },
+  {
+    "question": "Co oznacza tryb pracy \"Wywłaszczanie\" (Preemptive) w FreeRTOS?",
+    "options": [
+      "Zadania same decydują, kiedy oddają kontrolę planiście.",
+      "Planista może wstrzymać wykonanie bieżącego zadania o niższym priorytecie, aby uruchomić zadanie o wyższym priorytecie.",
+      "Zadania są wykonywane sekwencyjnie.",
+      "Wszystkie zadania mają ten sam priorytet."
+    ],
+    "correct": [
+      "Planista może wstrzymać wykonanie bieżącego zadania o niższym priorytecie, aby uruchomić zadanie o wyższym priorytecie."
+    ]
+  },
+  {
+    "question": "Do czego służą Kolejki (Queues) w FreeRTOS?",
+    "options": [
+      "Do sterowania dostępem do współdzielonych zasobów.",
+      "Do komunikacji między zadaniami oraz między zadaniami a przerwaniami.",
+      "Do synchronizacji zadań w oparciu o kombinację wielu bitów zdarzeń.",
+      "Do wywoływania funkcji zwrotnej w określonym czasie."
+    ],
+    "correct": [
+      "Do komunikacji między zadaniami oraz między zadaniami a przerwaniami."
+    ]
+  },
+  {
+    "question": "Jaki jest główny cel stosowania Muteksów w FreeRTOS?",
+    "options": [
+      "Liczenie zdarzeń.",
+      "Zarządzanie zasobami.",
+      "Zapewnienie wzajemnego wykluczenia (kontrolowanie dostępu do współdzielonych zasobów).",
+      "Synchronizacja zadań na zasadzie FIFO."
+    ],
+    "correct": [
+      "Zapewnienie wzajemnego wykluczenia (kontrolowanie dostępu do współdzielonych zasobów)."
+    ]
+  },
+  {
+    "question": "W jakim stanie znajduje się zadanie w FreeRTOS, jeśli jest gotowe do wykonania, ale oczekuje na dostęp do procesora?",
+    "options": [
+      "Uruchomiony (Running)",
+      "Gotowości (Ready)",
+      "Zawieszony (Suspended)",
+      "Zablokowany (Blocked)"
+    ],
+    "correct": [
+      "Gotowości (Ready)"
+    ]
+  },
+  {
+    "question": "Co powoduje przejście zadania ze stanu \"Zablokowany\" (Blocked) do stanu \"Gotowości\" (Ready)?",
+    "options": [
+      "Celowe zawieszenie przez inną funkcję.",
+      "Zakończenie operacji I/O.",
+      "Osiągnięcie stanu Ready przez zadanie o wyższym priorytecie.",
+      "Odbiór nowych danych z pustej kolejki lub zwolnienie miejsca w pełnej kolejce po zapisie."
+    ],
+    "correct": [
+      "Odbiór nowych danych z pustej kolejki lub zwolnienie miejsca w pełnej kolejce po zapisie."
+    ]
+  },
+  {
+    "question": "Do czego używany jest stos (Stack) w FreeRTOS dla każdego zadania?",
+    "options": [
+      "Do dynamicznej alokacji pamięci dla obiektów.",
+      "Do przechowywania lokalnych zmiennych funkcji, adresów powrotnych i kontekstu zadania.",
+      "Do komunikacji między zadaniami.",
+      "Do przechowywania globalnych zmiennych programu."
+    ],
+    "correct": [
+      "Do przechowywania lokalnych zmiennych funkcji, adresów powrotnych i kontekstu zadania."
+    ]
+  },
+  {
+    "question": "Jaki jest główny wyróżnik modelu sterty `heap_1` w FreeRTOS?",
+    "options": [
+      "Umożliwia łączenie sąsiednich wolnych bloków.",
+      "Wykorzystuje standardowe funkcje malloc() i free().",
+      "Brak możliwości zwolnienia pamięci po alokacji.",
+      "Posiada możliwość rozciągnięcia sterty na niesąsiadujące ze sobą obszary."
+    ],
+    "correct": [
+      "Brak możliwości zwolnienia pamięci po alokacji."
+    ]
+  },
+  {
+    "question": "Który model sterty FreeRTOS umożliwia łączenie sąsiednich wolnych bloków pamięci, co pomaga w uniknięciu fragmentacji?",
+    "options": [
+      "heap_1",
+      "heap_2",
+      "heap_3",
+      "heap_4"
+    ],
+    "correct": [
+      "heap_4"
+    ]
+  },
+  {
+    "question": "Co jest główną zaletą używania CMSIS-RTOS w programowaniu systemów z FreeRTOS?",
+    "options": [
+      "Bezpośredni dostęp do wszystkich funkcji FreeRTOS.",
+      "Większa przenośność kodu między różnymi mikrokontrolerami Cortex-M i różnymi RTOS-ami.",
+      "Wysoka kontrola nad konfiguracją RTOS.",
+      "Mniejszy rozmiar kodu wynikowego."
+    ],
+    "correct": [
+      "Większa przenośność kodu między różnymi mikrokontrolerami Cortex-M i różnymi RTOS-ami."
+    ]
+  },
+  {
+    "question": "W CMSIS-RTOS V2, jakie funkcje są używane do zarządzania flagami wątków?",
+    "options": [
+      "xTaskCreate, xQueueSend",
+      "osThread FlagsSet, osEventFlagsSet",
+      "osKernelStart, osThreadCreate",
+      "xTaskGetTickCountFromISR"
+    ],
+    "correct": [
+      "osThread FlagsSet, osEventFlagsSet"
+    ]
+  },
+  {
+    "question": "Na jakiej zasadzie (jaki typ bufora) działają Kolejki w FreeRTOS?",
+    "options": [
+      "LIFO (Last In First Out)",
+      "FILO (First In Last Out)",
+      "FIFO (First In First Out)",
+      "Random Access"
+    ],
+    "correct": [
+      "FIFO (First In First Out)"
+    ]
+  },
+  {
+    "question": "Co się dzieje, gdy zadanie próbuje odczytać dane z pustej kolejki w FreeRTOS?",
+    "options": [
+      "Generowany jest błąd krytyczny i system się zawiesza.",
+      "Zadanie jest automatycznie blokowane i przenoszone do stanu Blocked.",
+      "Zadanie kontynuuje działanie, oczekując na dane.",
+      "Kolejka jest automatycznie resetowana."
+    ],
+    "correct": [
+      "Zadanie jest automatycznie blokowane i przenoszone do stanu Blocked."
+    ]
+  },
+  {
+    "question": "Która funkcja API jest używana do pobrania semafora w FreeRTOS?",
+    "options": [
+      "xSemaphoreGiveFromISR()",
+      "xQueueSend()",
+      "xSemaphoreTake()",
+      "vQueueDelete()"
+    ],
+    "correct": [
+      "xSemaphoreTake()"
+    ]
+  },
+  {
+    "question": "Jaki jest cel stosowania mechanizmu \"Dziedziczenie priorytetów\" (Priority Inheritance) w muteksach FreeRTOS?",
+    "options": [
+      "Zwiększenie liczby dostępnych zasobów.",
+      "Zapobieganie zakleszczeniom poprzez tymczasowe podniesienie priorytetu zadania posiadacza muteksa.",
+      "Umożliwienie temu samemu zadaniu pobrania muteksa wiele razy.",
+      "Gwarantowanie kolejności obsługi zadań."
+    ],
+    "correct": [
+      "Zapobieganie zakleszczeniom poprzez tymczasowe podniesienie priorytetu zadania posiadacza muteksa."
+    ]
+  },
+  {
+    "question": "Czym jest zakleszczenie zadań (Deadlock)?",
+    "options": [
+      "Sytuacja, w której zadania wykonują się zbyt szybko.",
+      "Sytuacja, w której dwa lub więcej zadań wzajemnie oczekują na zasoby, które są utrzymywane przez inne zadania w grupie.",
+      "Błąd w alokacji pamięci.",
+      "Niewystarczająca liczba semaforów w systemie."
+    ],
+    "correct": [
+      "Sytuacja, w której dwa lub więcej zadań wzajemnie oczekują na zasoby, które są utrzymywane przez inne zadania w grupie."
+    ]
+  },
+  {
+    "question": "Jakie mechanizmy pomagają zapobiegać zakleszczeniom w FreeRTOS?",
+    "options": [
+      "Zwiększenie częstotliwości taktowania procesora.",
+      "Wyłączenie wszystkich przerwań.",
+      "Dziedziczenie priorytetów w muteksach i użycie Gatekeepera.",
+      "Redukcja liczby zadań w systemie."
+    ],
+    "correct": [
+      "Dziedziczenie priorytetów w muteksach i użycie Gatekeepera."
+    ]
+  },
+  {
+    "question": "Kiedy uruchamia się funkcja \"Idle Hook\" (vApplicationIdleHook) w FreeRTOS?",
+    "options": [
+      "Za każdym razem, gdy wystąpi zdarzenie taktowania timera SysTick.",
+      "Gdy nie ma innych zadań gotowych do wykonania (procesor jest bezczynny).",
+      "W przypadku problemów z alokacją pamięci.",
+      "Gdy zostanie wykryte przepełnienie stosu zadania."
+    ],
+    "correct": [
+      "Gdy nie ma innych zadań gotowych do wykonania (procesor jest bezczynny)."
+    ]
+  },
+  {
+    "question": "Do czego służy funkcja \"Malloc Failed Hook\" (vApplicationMallocFailedHook)?",
+    "options": [
+      "Do zbierania statystyk zużycia procesora.",
+      "Do wywoływania funkcji okresowych.",
+      "Do uruchomienia w przypadku problemów z alokacją pamięci.",
+      "Do wykrywania przepełnienia stosu."
+    ],
+    "correct": [
+      "Do uruchomienia w przypadku problemów z alokacją pamięci."
+    ]
+  },
+  {
+    "question": "Jakie argumenty przyjmuje funkcja \"Stack Overflow Hook\" (vApplicationStackOverflowHook)?",
+    "options": [
+      "Brak argumentów.",
+      "Uchwyt zadania i nazwę zadania.",
+      "Rozmiar stosu i aktualne zużycie.",
+      "Numer błędu i adres pamięci."
+    ],
+    "correct": [
+      "Uchwyt zadania i nazwę zadania."
+    ]
+  },
+  {
+    "question": "Jakie dwa główne bloki łączy w sobie platforma Xilinx Zynq?",
+    "options": [
+      "CPU i GPU",
+      "Processing System (PS) i Programmable Logic (PL)",
+      "Pamięć RAM i Pamięć Flash",
+      "Mikrokontroler i Mikrokontroler"
+    ],
+    "correct": [
+      "Processing System (PS) i Programmable Logic (PL)"
+    ]
+  },
+  {
+    "question": "Który interfejs AXI jest używany do sterowania rejestrami i konfiguracji peryferii o niższej przepustowości?",
+    "options": [
+      "AXI4 (Full/Memory-Mapped)",
+      "AXI4-Lite",
+      "AXI4-Stream",
+      "AXI-DMA"
+    ],
+    "correct": [
+      "AXI4-Lite"
+    ]
+  },
+  {
+    "question": "Co umożliwia DMA (Direct Memory Access) w kontekście współdziałania PS i PL na platformie Zynq?",
+    "options": [
+      "Generowanie przerwań dla procesorów w PS.",
+      "Bezpośrednie przenoszenie dużych bloków danych między PS i PL bez angażowania CPU.",
+      "Zmianę konfiguracji sprzętowej w PL podczas działania systemu.",
+      "Implementację niestandardowych protokołów komunikacyjnych."
+    ],
+    "correct": [
+      "Bezpośrednie przenoszenie dużych bloków danych między PS i PL bez angażowania CPU."
+    ]
+  },
+  {
+    "question": "Jakie języki są używane w High-Level Synthesis (HLS) do automatycznego generowania kodu HDL?",
+    "options": [
+      "VHDL, Verilog",
+      "C, C++, SystemC, MATLAB/Simulink",
+      "Asembler",
+      "Java, Python"
+    ],
+    "correct": [
+      "C, C++, SystemC, MATLAB/Simulink"
+    ]
+  },
+  {
+    "question": "Co jest pierwszym etapem w procesie projektowania w syntezie na poziomie systemu?",
+    "options": [
+      "Generowanie kodu HDL.",
+      "Podział na sprzęt i oprogramowanie.",
+      "Integracja komponentów.",
+      "Abstrakcja na wysokim poziomie."
+    ],
+    "correct": [
+      "Abstrakcja na wysokim poziomie."
+    ]
+  },
+  {
+    "question": "Która z wymienionych jest główną zaletą układów reprogramowalnych?",
+    "options": [
+      "Niższe koszty produkcji w dużych wolumenach.",
+      "Złożoność projektowania.",
+      "Elastyczność i rekonfigurowalność po produkcji układu.",
+      "Dłuższy czas projektowania."
+    ],
+    "correct": [
+      "Elastyczność i rekonfigurowalność po produkcji układu."
+    ]
+  },
+  {
+    "question": "Które z wymienionych jest ograniczeniem układów reprogramowalnych?",
+    "options": [
+      "Możliwość implementacji specjalizowanych interfejsów.",
+      "Znaczna poprawa wydajności dzięki akceleracji sprzętowej.",
+      "Wysoka krzywa uczenia się i złożoność projektowania.",
+      "Możliwość skalowania zasobów sprzętowych."
+    ],
+    "correct": [
+      "Wysoka krzywa uczenia się i złożoność projektowania."
+    ]
+  },
+  {
+    "question": "Co umożliwia rekonfigurowalność dynamiczna w układach FPGA?",
+    "options": [
+      "Zmianę całej konfiguracji sprzętowej układu tylko po jego wyłączeniu.",
+      "Zmianę części lub całości konfiguracji sprzętowej układu podczas jego normalnego działania.",
+      "Tylko jednorazową konfigurację układu.",
+      "Programowanie układu za pomocą języków wysokopoziomowych."
+    ],
+    "correct": [
+      "Zmianę części lub całości konfiguracji sprzętowej układu podczas jego normalnego działania."
+    ]
+  },
+  {
+    "question": "Co to jest Partial Reconfiguration (PR) w kontekście rekonfigurowalności dynamicznej?",
+    "options": [
+      "Zmiana całej konfiguracji układu FPGA.",
+      "Zmiana tylko wybranego obszaru układu FPGA, podczas gdy reszta działa normalnie.",
+      "Resetowanie całej logiki układu.",
+      "Wyłącznie programowanie początkowe układu."
+    ],
+    "correct": [
+      "Zmiana tylko wybranego obszaru układu FPGA, podczas gdy reszta działa normalnie."
+    ]
+  },
+  {
+    "question": "Która z wymienionych jest zaletą rekonfigurowalności dynamicznej?",
+    "options": [
+      "Zwiększona złożoność projektowania.",
+      "Dłuższy czas rekonfiguracji.",
+      "Optymalizacja zasobów i zarządzanie energią.",
+      "Dodatkowe koszty i zasoby."
+    ],
+    "correct": [
+      "Optymalizacja zasobów i zarządzanie energią."
+    ]
+  },
+  {
+    "question": "Które z wymienionych kryteriów jest kluczowe dla systemów zasilanych bateryjnie?",
+    "options": [
+      "Wysoka wydajność obliczeniowa.",
+      "Duży rozmiar i waga.",
+      "Niskie zużycie energii.",
+      "Brak odporności na środowisko."
+    ],
+    "correct": [
+      "Niskie zużycie energii."
+    ]
+  },
+  {
+    "question": "Jaka jest główna cecha procesorów ARM Cortex-A w porównaniu do Cortex-M?",
+    "options": [
+      "Niższe zużycie energii.",
+      "Brak MMU (Memory Management Unit).",
+      "Wyższa wydajność i zdolność do uruchamiania pełnych systemów operacyjnych.",
+      "Prostsza architektura."
+    ],
+    "correct": [
+      "Wyższa wydajność i zdolność do uruchamiania pełnych systemów operacyjnych."
+    ]
+  },
+  {
+    "question": "Które z wymienionych elementów należy do \"Ekosystemu i wsparcia\" przy wyborze platformy sprzętowej?",
+    "options": [
+      "Ilość pamięci RAM.",
+      "Dostępność kompilatorów, debugerów i IDE.",
+      "Typ procesora.",
+      "Odporność na wibracje."
+    ],
+    "correct": [
+      "Dostępność kompilatorów, debugerów i IDE."
+    ]
+  },
+  {
+    "question": "Co jest głównym zadaniem programu rozruchowego (Bootloader) w systemie Linux embedded?",
+    "options": [
+      "Zarządzanie procesami i pamięcią.",
+      "Inicjalizacja sprzętu i załadowanie jądra Linuxa do pamięci.",
+      "Udostępnianie interaktywnej powłoki po uruchomieniu systemu.",
+      "Kompilacja aplikacji użytkownika."
+    ],
+    "correct": [
+      "Inicjalizacja sprzętu i załadowanie jądra Linuxa do pamięci."
+    ]
+  },
+  {
+    "question": "Który z wymienionych elementów jest częścią Toolchaina?",
+    "options": [
+      "Program rozruchowy (Bootloader).",
+      "Jądro systemu (Linux Kernel).",
+      "Kompilator (Cross-compiler).",
+      "System plików (Root Filesystem)."
+    ],
+    "correct": [
+      "Kompilator (Cross-compiler)."
+    ]
+  },
+  {
+    "question": "Co jest rdzeniem systemu operacyjnego Linux, odpowiedzialnym za zarządzanie podstawowymi zasobami sprzętowymi i oprogramowaniem?",
+    "options": [
+      "Bootloader",
+      "Toolchain",
+      "Jądro systemu (Linux Kernel)",
+      "System plików"
+    ],
+    "correct": [
+      "Jądro systemu (Linux Kernel)"
+    ]
+  },
+  {
+    "question": "Jakie jest główne zadanie Kompilatora w Toolchainie?",
+    "options": [
+      "Łączenie skompilowanych plików obiektowych.",
+      "Konwertowanie kodu źródłowego na kod maszynowy lub asemblera.",
+      "Zarządzanie archiwami bibliotek statycznych.",
+      "Znajdowanie i usuwanie błędów w programie."
+    ],
+    "correct": [
+      "Konwertowanie kodu źródłowego na kod maszynowy lub asemblera."
+    ]
+  },
+  {
+    "question": "Co to jest Cross-toolchain?",
+    "options": [
+      "Zestaw narzędzi programistycznych działający i generujący kod dla tej samej architektury.",
+      "Zestaw narzędzi programistycznych działający na jednej architekturze (hosta) i generujący kod dla innej architektury (docelowej).",
+      "Zestaw narzędzi do zarządzania bazami danych.",
+      "Zestaw narzędzi do testowania wydajności sprzętu."
+    ],
+    "correct": [
+      "Zestaw narzędzi programistycznych działający na jednej architekturze (hosta) i generujący kod dla innej architektury (docelowej)."
+    ]
+  },
+  {
+    "question": "Które narzędzie z pakietu Binutils służy do usuwania symboli z plików binarnych w celu zmniejszenia ich rozmiaru?",
+    "options": [
+      "ar",
+      "nm",
+      "objdump",
+      "strip"
+    ],
+    "correct": [
+      "strip"
+    ]
+  },
+  {
+    "question": "Czym jest Kompilacja skrośna (Cross-compilation)?",
+    "options": [
+      "Proces kompilacji programu na docelowym urządzeniu.",
+      "Proces kompilacji programu na jednej architekturze (host), gdzie wynikowy kod jest przeznaczony dla innej architektury (target).",
+      "Proces łączenia wielu plików źródłowych w jeden program.",
+      "Proces tworzenia kodu asemblera z kodu źródłowego."
+    ],
+    "correct": [
+      "Proces kompilacji programu na jednej architekturze (host), gdzie wynikowy kod jest przeznaczony dla innej architektury (target)."
+    ]
+  },
+  {
+    "question": "Co to jest GDB Server w kontekście debugowania skrośnego?",
+    "options": [
+      "Program debugujący działający na hostcie.",
+      "Lekki program działający na urządzeniu docelowym, służący jako pośrednik.",
+      "Narzędzie do analizy plików binarnych.",
+      "Biblioteka do obsługi grafiki."
+    ],
+    "correct": [
+      "Lekki program działający na urządzeniu docelowym, służący jako pośrednik."
+    ]
+  },
+  {
+    "question": "Jakie łącze komunikacyjne jest zazwyczaj używane do komunikacji między hostem a targetem w debugowaniu skrośnym?",
+    "options": [
+      "Tylko USB.",
+      "Tylko Wi-Fi.",
+      "Łącze szeregowe (UART) lub Ethernet.",
+      "Bluetooth."
+    ],
+    "correct": [
+      "Łącze szeregowe (UART) lub Ethernet."
+    ]
+  },
+  {
+    "question": "Jakie było główne pierwotne przeznaczenie protokołu JTAG?",
+    "options": [
+      "Debugowanie procesorów.",
+      "Programowanie pamięci Flash.",
+      "Testowanie połączeń na płytkach drukowanych (Boundary Scan).",
+      "Komunikacja między mikrokontrolerami."
+    ],
+    "correct": [
+      "Testowanie połączeń na płytkach drukowanych (Boundary Scan)."
+    ]
+  },
+  {
+    "question": "Który sygnał JTAG służy do taktowania operacji JTAG?",
+    "options": [
+      "TDI",
+      "TDO",
+      "TCK",
+      "TMS"
+    ],
+    "correct": [
+      "TCK"
+    ]
+  },
+  {
+    "question": "Co umożliwia JTAG w kontekście programowania układów już zainstalowanych w urządzeniu?",
+    "options": [
+      "Programowanie tylko poprzez odłączanie układu.",
+      "Programowanie w trybie In-System Programming (ISP).",
+      "Tylko testowanie połączeń, nie programowanie.",
+      "Programowanie wyłącznie z wykorzystaniem protokołu SPI."
+    ],
+    "correct": [
+      "Programowanie w trybie In-System Programming (ISP)."
+    ]
+  },
+  {
+    "question": "Co jest główną funkcją programów rozruchowych (Bootloaders)?",
+    "options": [
+      "Uruchamianie aplikacji użytkownika bezpośrednio.",
+      "Inicjalizacja sprzętu, załadowanie jądra systemu operacyjnego do pamięci RAM i przekazanie mu kontroli.",
+      "Zarządzanie systemem plików na nośnikach wymiennych.",
+      "Debugowanie kodu aplikacji w czasie rzeczywistym."
+    ],
+    "correct": [
+      "Inicjalizacja sprzętu, załadowanie jądra systemu operacyjnego do pamięci RAM i przekazanie mu kontroli."
+    ]
+  },
+  {
+    "question": "Który z wymienionych programów rozruchowych jest najbardziej popularnym i wieloplatformowym, open-source'owym rozwiązaniem?",
+    "options": [
+      "RedBoot",
+      "Barebox",
+      "U-Boot",
+      "GRUB"
+    ],
+    "correct": [
+      "U-Boot"
+    ]
+  },
+  {
+    "question": "Co oferuje U-Boot w zakresie narzędzi obsługi pamięci?",
+    "options": [
+      "Pełny system plików z węzłami urządzeń w /dev.",
+      "Narzędzia do odczytu, zapisu i kasowania sektorów pamięci flash.",
+      "Wyłącznie obsługę pamięci RAM.",
+      "Zarządzanie wirtualną pamięcią."
+    ],
+    "correct": [
+      "Narzędzia do odczytu, zapisu i kasowania sektorów pamięci flash."
+    ]
+  },
+  {
+    "question": "Co to są łaty PREEMPT_RT w kontekście Linuxa embedded?",
+    "options": [
+      "Zestaw sterowników do obsługi sieci przemysłowych.",
+      "Rozwiązanie wprowadzające mechanizmy wywłaszczania do jądra Linuxa, poprawiające możliwości soft real-time.",
+      "Narzędzia do optymalizacji rozmiaru systemu plików.",
+      "Biblioteka do zarządzania interfejsami graficznymi."
+    ],
+    "correct": [
+      "Rozwiązanie wprowadzające mechanizmy wywłaszczania do jądra Linuxa, poprawiające możliwości soft real-time."
+    ]
+  },
+  {
+    "question": "Które z wymienionych jest ograniczeniem standardowego Linuxa w zastosowaniach czasu rzeczywistego?",
+    "options": [
+      "Duży ekosystem i zasoby.",
+      "Brak natywnego determinizmu czasowego.",
+      "Wsparcie dla wielu architektur.",
+      "Możliwość optymalizacji standardowego jądra."
+    ],
+    "correct": [
+      "Brak natywnego determinizmu czasowego."
+    ]
+  },
+  {
+    "question": "Jakie czynniki mogą powodować opóźnienia w standardowym Linuxie, wpływając na jego niedeterminatyzm czasowy?",
+    "options": [
+      "Tylko operacje I/O o krótkim czasie trwania.",
+      "Niemaskowalne przerwania (NMI), operacje I/O o długim czasie trwania, zarządzanie pamięcią (np. swap).",
+      "Wyłącznie operacje jądra w pełni wywłaszczalne.",
+      "Stała częstotliwość taktowania (timer tick)."
+    ],
+    "correct": [
+      "Niemaskowalne przerwania (NMI), operacje I/O o długim czasie trwania, zarządzanie pamięcią (np. swap)."
+    ]
+  },
+  {
+    "question": "Jaki model komunikacji wykorzystuje protokół MQTT?",
+    "options": [
+      "Klient-serwer (Point-to-point)",
+      "Publikuj/subskrybuj (Publish/Subscribe - Pub/Sub)",
+      "Request-response",
+      "Peer-to-peer"
+    ],
+    "correct": [
+      "Publikuj/subskrybuj (Publish/Subscribe - Pub/Sub)"
+    ]
+  },
+  {
+    "question": "Ile poziomów jakości usługi (Quality of Service - QoS) obsługuje protokół MQTT?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      "3"
+    ]
+  },
+  {
+    "question": "Na jakim protokole warstwy transportowej oparty jest protokół MQTT?",
+    "options": [
+      "UDP",
+      "ICMP",
+      "TCP/IP",
+      "HTTP"
+    ],
+    "correct": [
+      "TCP/IP"
+    ]
+  },
+  {
+    "question": "Jaka jest główna funkcja brokera MQTT w architekturze protokołu?",
+    "options": [
+      "Bezpośrednia komunikacja między wydawcami a subskrybentami.",
+      "Pośredniczenie w wysyłaniu informacji między nadawcami a wybranymi odbiorcami.",
+      "Szyfrowanie wszystkich wiadomości.",
+      "Kontrolowanie dostępu do internetu."
+    ],
+    "correct": [
+      "Pośredniczenie w wysyłaniu informacji między nadawcami a wybranymi odbiorcami."
+    ]
+  },
+  {
+    "question": "Co broker MQTT filtruje i dystrybuuje na podstawie odebranych wiadomości?",
+    "options": [
+      "Adresy IP klientów.",
+      "Priorytety wiadomości.",
+      "Tematy (topics).",
+      "Typy danych."
+    ],
+    "correct": [
+      "Tematy (topics)."
+    ]
+  },
+  {
+    "question": "W kontekście mikrokontrolerów ARM Cortex-M, która z magistral - AHB czy APB - byłaby bardziej odpowiednia do podłączenia modułu pamięci zewnętrznej i dlaczego?",
+    "options": [
+      "APB, ponieważ jest zoptymalizowana pod kątem urządzeń o niższej prędkości, co redukuje zakłócenia.",
+      "AHB, ponieważ jest przeznaczona dla modułów o wysokiej wydajności wymagających szybkich transferów danych, takich jak interfejsy pamięci zewnętrznej.",
+      "Obie magistrale są równie odpowiednie, ponieważ ich wybór zależy wyłącznie od dostępności pinów.",
+      "Żadna z nich, ponieważ pamięć zewnętrzna zawsze wymaga dedykowanej magistrali niezależnej od AHB i APB."
+    ],
+    "correct": [
+      "AHB, ponieważ jest przeznaczona dla modułów o wysokiej wydajności wymagających szybkich transferów danych, takich jak interfejsy pamięci zewnętrznej."
+    ]
+  },
+  {
+    "question": "W jaki sposób, zgodnie z notatką, włączenie zegara dla portu GPIO D na STM32F407G różni się od włączenia zegara dla portu GPIO A na STM32F303RE, biorąc pod uwagę ich połączenie z magistralami AHB?",
+    "options": [
+      "GPIO D na STM32F407G jest włączane poprzez bit 3 w rejestrze RCC AHB1 Peripheral Clock Enable pod adresem 0x40023800 + 0x30, podczas gdy GPIO A na STM32F303RE jest podłączone do AHB2 i włączane poprzez bit 0 w rejestrze RCC AHB1 Peripheral Clock Enable pod adresem 0x40021000 + 0x14.",
+      "GPIO D i GPIO A są zawsze włączane tym samym bitem w tym samym rejestrze, niezależnie od modelu mikrokontrolera.",
+      "Włączenie zegara dla GPIO D wymaga specjalnej procedury bezpieczeństwa, której GPIO A nie posiada.",
+      "W STM32F407G zegar dla GPIO D jest włączany automatycznie, podczas gdy w STM32F303RE wymaga ręcznej konfiguracji."
+    ],
+    "correct": [
+      "GPIO D na STM32F407G jest włączane poprzez bit 3 w rejestrze RCC AHB1 Peripheral Clock Enable pod adresem 0x40023800 + 0x30, podczas gdy GPIO A na STM32F303RE jest podłączone do AHB2 i włączane poprzez bit 0 w rejestrze RCC AHB1 Peripheral Clock Enable pod adresem 0x40021000 + 0x14."
+    ]
+  },
+  {
+    "question": "W jaki sposób zmiana wartości preskalera APB2 z 1 na inną wartość wpływa na taktowanie licznika TIM1 i jakie to ma znaczenie dla precyzji odmierzania czasu?",
+    "options": [
+      "Jeśli preskaler APB2 jest równy 1, TIM1 jest taktowany sygnałem PCLK2; jeśli różny od 1, TIM1 jest taktowany sygnałem PCLK2×2. Zmiana preskalera zmienia częstotliwość taktowania TIM1, co bezpośrednio wpływa na precyzję odmierzania czasu.",
+      "Zmiana preskalera APB2 nie ma wpływu na taktowanie TIM1, ponieważ TIM1 zawsze jest taktowany sygnałem PCLK1.",
+      "Preskaler APB2 wpływa tylko na taktowanie magistrali, a nie na pojedyncze moduły peryferyjne, takie jak TIM1.",
+      "Taktowanie TIM1 jest zawsze stałe i niezależne od preskalera APB2, ponieważ jest to układ krytyczny czasowo."
+    ],
+    "correct": [
+      "Jeśli preskaler APB2 jest równy 1, TIM1 jest taktowany sygnałem PCLK2; jeśli różny od 1, TIM1 jest taktowany sygnałem PCLK2×2. Zmiana preskalera zmienia częstotliwość taktowania TIM1, co bezpośrednio wpływa na precyzję odmierzania czasu."
+    ]
+  },
+  {
+    "question": "Analizując rejestr stanu programu (PSR), w jakiej sytuacji programista powinien zwrócić uwagę na zawartość podrejestru IPSR, a w jakiej na flagę Q w APSR?",
+    "options": [
+      "IPSR jest istotny podczas obsługi przerwań systemowych, aby zidentyfikować źródło, natomiast flaga Q w APSR jest kluczowa w diagnostyce błędów logicznych instrukcji.",
+      "IPSR jest używany wyłącznie do debugowania kodu w trybie uprzywilejowanym, a flaga Q w APSR jest wykorzystywana do optymalizacji pętli programowych.",
+      "IPSR wskazuje numer wyjątku aktualnie aktywnego przerwania, co jest kluczowe w debugowaniu i obsłudze przerwań, natomiast flaga Q w APSR jest istotna w operacjach arytmetyki saturacyjnej, sygnalizując nasycenie.",
+      "Zarówno IPSR, jak i flaga Q w APSR są zarezerwowane do użytku wewnętrznego procesora i nie powinny być bezpośrednio interpretowane przez programistę."
+    ],
+    "correct": [
+      "IPSR wskazuje numer wyjątku aktualnie aktywnego przerwania, co jest kluczowe w debugowaniu i obsłudze przerwań, natomiast flaga Q w APSR jest istotna w operacjach arytmetyki saturacyjnej, sygnalizując nasycenie."
+    ]
+  },
+  {
+    "question": "W jaki sposób rejestry maskujące wyjątki (PRIMASK, FAULTMASK, BASEPRI) przyczyniają się do stabilności i bezpieczeństwa systemu wbudowanego?",
+    "options": [
+      "Poprzez dynamiczną alokację pamięci dla wyjątków, co zapobiega ich kolizjom.",
+      "Poprzez maskowanie wyjątków i przerwań, co pozwala na kontrolowanie, które zdarzenia mogą przerwać bieżące wykonanie kodu, zwiększając determinizm i bezpieczeństwo krytycznych sekcji.",
+      "Poprzez monitorowanie statusu rejestrów ogólnego przeznaczenia w czasie rzeczywistym.",
+      "Poprzez automatyczne generowanie kodu obsługi przerwań, co eliminuje błędy programistyczne."
+    ],
+    "correct": [
+      "Poprzez maskowanie wyjątków i przerwań, co pozwala na kontrolowanie, które zdarzenia mogą przerwać bieżące wykonanie kodu, zwiększając determinizm i bezpieczeństwo krytycznych sekcji."
+    ]
+  },
+  {
+    "question": "Mając na uwadze mapę pamięci mikrokontrolerów ARM Cortex-M, dlaczego obszar peryferii (0x40000000 - 0x5FFFFFFF) i pamięci operacyjnej SRAM (0x20000000 - 0x3FFFFFFF) posiadają aliasy bit-band, a obszar programu (0x00000000 - 0x1FFFFFFF) nie?",
+    "options": [
+      "Obszar programu nie wymaga dostępu bit-band, ponieważ kod jest wykonywany sekwencyjnie i nie ma potrzeby atomowej modyfikacji pojedynczych bitów instrukcji.",
+      "Obszar pamięci operacyjnej i peryferii posiadają aliasy bit-band, ponieważ często wymagają atomowej modyfikacji pojedynczych bitów (np. sterowanie GPIO, flagi statusu), podczas gdy obszar programu, przeznaczony na kod, nie potrzebuje takiej funkcjonalności.",
+      "Obszar programu mógłby posiadać alias bit-band, ale byłoby to zbyt kosztowne w implementacji sprzętowej.",
+      "W rzeczywistości wszystkie obszary pamięci posiadają aliasy bit-band, a notatka zawiera niepełne informacje."
+    ],
+    "correct": [
+      "Obszar pamięci operacyjnej i peryferii posiadają aliasy bit-band, ponieważ często wymagają atomowej modyfikacji pojedynczych bitów (np. sterowanie GPIO, flagi statusu), podczas gdy obszar programu, przeznaczony na kod, nie potrzebuje takiej funkcjonalności."
+    ]
+  },
+  {
+    "question": "Wyjaśnij, w jaki sposób kombinacja rejestrów MODER, OTYPER i OSPEEDR pozwala na kompleksową konfigurację pojedynczego pinu GPIO dla specyficznych zastosowań, takich jak generowanie sygnału PWM o wysokiej częstotliwości.",
+    "options": [
+      "MODER ustawia pin w tryb funkcji alternatywnej, OTYPER konfigurowałby go jako otwarty dren dla elastyczności, a OSPEEDR zapewniłby wysoką prędkość przełączania, niezbędną dla PWM o wysokiej częstotliwości.",
+      "MODER wybiera tryb wejściowy, OTYPER określa typ push-pull, a OSPEEDR ustawia niską prędkość, co jest standardową konfiguracją dla PWM.",
+      "Te rejestry kontrolują tylko podstawowe funkcje wejścia/wyjścia i nie mają zastosowania w konfiguracji PWM.",
+      "Konfiguracja PWM na pinie GPIO wymaga wyłącznie aktywacji odpowiedniego timera, a rejestry MODER, OTYPER i OSPEEDR są ignorowane."
+    ],
+    "correct": [
+      "MODER ustawia pin w tryb funkcji alternatywnej, OTYPER konfigurowałby go jako otwarty dren dla elastyczności, a OSPEEDR zapewniłby wysoką prędkość przełączania, niezbędną dla PWM o wysokiej częstotliwości."
+    ]
+  },
+  {
+    "question": "W jaki sposób mechanizm adresowania bit-bandingu przyczynia się do bezpieczeństwa i efektywności operacji na pojedynczych bitach w pamięci mikrokontrolera, eliminując ryzyko race condition?",
+    "options": [
+      "Mechanizm bit-bandingu wprowadza opóźnienia w dostępie do pamięci, co spowalnia operacje i minimalizuje błędy.",
+      "Dostęp bit-band eliminuje konieczność operacji odczytu, modyfikacji i zapisu (RMW - Read-Modify-Write), zapewniając atomową modyfikację pojedynczego bitu poprzez unikalne adresowanie, co zapobiega race condition.",
+      "Bit-banding jest wyłącznie funkcją zwiększającą przestrzeń adresową, nie wpływającą na bezpieczeństwo operacji na bitach.",
+      "Bezpieczeństwo operacji na bitach jest zapewnione wyłącznie przez zastosowanie semaforów na poziomie oprogramowania, a bit-banding nie ma na to wpływu."
+    ],
+    "correct": [
+      "Dostęp bit-band eliminuje konieczność operacji odczytu, modyfikacji i zapisu (RMW - Read-Modify-Write), zapewniając atomową modyfikację pojedynczego bitu poprzez unikalne adresowanie, co zapobiega race condition."
+    ]
+  },
+  {
+    "question": "W jaki sposób instrukcja `CBZ R2, led_OFF` demonstruje efektywność języka asemblera w mikrokontrolerach, szczególnie w kontekście optymalizacji kodu krytycznego czasowo?",
+    "options": [
+      "Instrukcja `CBZ` jest wyłącznie instrukcją debugowania i nie ma wpływu na wydajność kodu.",
+      "`CBZ` jest zaawansowaną instrukcją arytmetyczną, która przyspiesza obliczenia, co jest kluczowe dla optymalizacji kodu.",
+      "Instrukcja `CBZ` pozwala na warunkowy skok, jeśli wartość w rejestrze jest zerowa, co jest szybkim i efektywnym sposobem na realizację prostych warunków bez potrzeby wielu instrukcji, optymalizując wykonanie kodu krytycznego czasowo.",
+      "Efektywność języka asemblera w mikrokontrolerach wynika głównie z możliwości bezpośredniego dostępu do sprzętu, a instrukcje takie jak `CBZ` są drugorzędne."
+    ],
+    "correct": [
+      "Instrukcja `CBZ` pozwala na warunkowy skok, jeśli wartość w rejestrze jest zerowa, co jest szybkim i efektywnym sposobem na realizację prostych warunków bez potrzeby wielu instrukcji, optymalizując wykonanie kodu krytycznego czasowo."
+    ]
+  },
+  {
+    "question": "Analizując flagi w APSR, w jakiej konkretnie sytuacji, podczas debugowania algorytmu DSP, programista powinien zwrócić szczególną uwagę na flagę Q, a w jakiej na flagę V?",
+    "options": [
+      "Flaga Q jest istotna, gdy operacje arytmetyczne przekraczają zakres i są obcinane (nasycenie), co jest kluczowe w DSP; flaga V natomiast wskazuje na przepełnienie w arytmetyce ze znakiem, sygnalizując utratę poprawności wyniku.",
+      "Obie flagi, Q i V, są używane wyłącznie do optymalizacji kompilatora i nie mają bezpośredniego znaczenia dla programisty.",
+      "Flaga Q sygnalizuje błąd dostępu do pamięci, a flaga V informuje o dzieleniu przez zero, co jest ważne w każdym algorytmie.",
+      "W algorytmach DSP najważniejsze są flagi N i Z, które informują o znaku i zerowości wyniku, a Q i V są mniej istotne."
+    ],
+    "correct": [
+      "Flaga Q jest istotna, gdy operacje arytmetyczne przekraczają zakres i są obcinane (nasycenie), co jest kluczowe w DSP; flaga V natomiast wskazuje na przepełnienie w arytmetyce ze znakiem, sygnalizując utratę poprawności wyniku."
+    ]
+  },
+  {
+    "question": "W jaki sposób zagnieżdżony kontroler przerwań (NVIC) w mikrokontrolerach ARM Cortex-M minimalizuje opóźnienia w obsłudze krytycznych zdarzeń w porównaniu do prostszych architektur mikrokontrolerów?",
+    "options": [
+      "NVIC wprowadza dodatkowe opóźnienia, ponieważ musi przetwarzać priorytety przerwań, co czyni go wolniejszym.",
+      "NVIC poprzez zagnieżdżanie przerwań, obsługę priorytetów sprzętowych i możliwość ich maskowania, minimalizuje czas opóźnienia, co jest kluczowe dla obsługi krytycznych zdarzeń w czasie rzeczywistym.",
+      "NVIC jest modułem wyłącznie programowym, a jego szybkość zależy od wydajności procesora.",
+      "Zagnieżdżanie przerwań w NVIC sprawia, że system staje się bardziej niestabilny i podatny na błędy."
+    ],
+    "correct": [
+      "NVIC poprzez zagnieżdżanie przerwań, obsługę priorytetów sprzętowych i możliwość ich maskowania, minimalizuje czas opóźnienia, co jest kluczowe dla obsługi krytycznych zdarzeń w czasie rzeczywistym."
+    ]
+  },
+  {
+    "question": "Rozważając podział 4 bitów priorytetu na priorytet grupowy i podpriorytet w STM32F3/STM32F4. Jaki jest praktyczny wpływ wyboru konfiguracji [3:2] Priorytet grupowy (2 bity - 4 poz.) / [1:0] Podpriorytet (2 bity - 4 poziomy) na zarządzanie przerwaniami w systemie z wieloma źródłami przerwań?",
+    "options": [
+      "Konfiguracja ta pozwala na wywłaszczanie przerwań na podstawie 4 poziomów priorytetu grupowego, a w przypadku tego samego priorytetu grupowego, kolejność obsługi jest determinowana przez 4 poziomy podpriorytetu. Daje to elastyczność w zarządzaniu dużą liczbą przerwań.",
+      "Wybór tej konfiguracji oznacza, że przerwania nie mogą się wywłaszczać, a ich kolejność jest zawsze losowa.",
+      "Ta konfiguracja jest nieprawidłowa i nie jest obsługiwana przez mikrokontrolery STM32F3/STM32F4.",
+      "Liczba bitów priorytetu nie ma praktycznego wpływu na zarządzanie przerwaniami, ponieważ zawsze działa to na zasadzie FIFO."
+    ],
+    "correct": [
+      "Konfiguracja ta pozwala na wywłaszczanie przerwań na podstawie 4 poziomów priorytetu grupowego, a w przypadku tego samego priorytetu grupowego, kolejność obsługi jest determinowana przez 4 poziomy podpriorytetu. Daje to elastyczność w zarządzaniu dużą liczbą przerwań."
+    ]
+  },
+  {
+    "question": "Wyjaśnij, w jaki sposób multipleksowanie linii przerwań EXTI za pomocą rejestrów SYSCFG_EXTICR pozwala na elastyczne projektowanie sprzętowe i programowe, minimalizując zużycie pinów mikrokontrolera.",
+    "options": [
+      "Multipleksowanie EXTI oznacza, że tylko jeden pin z całego mikrokontrolera może generować przerwania.",
+      "Multipleksowanie EXTI wymusza, aby każdy pin GPIO miał własną, dedykowaną linię przerwania, co zwiększa zużycie pinów.",
+      "Multipleksowanie linii przerwań EXTI pozwala na przypisanie wielu pinów z różnych portów (np. PA0, PB0, PC0) do tej samej linii przerwania EXTI (np. EXTI0), co zwiększa elastyczność w projektowaniu i minimalizuje liczbę wymaganych linii przerwań.",
+      "Rejestry SYSCFG_EXTICR służą jedynie do odczytu statusu przerwania, a nie do konfiguracji."
+    ],
+    "correct": [
+      "Multipleksowanie linii przerwań EXTI pozwala na przypisanie wielu pinów z różnych portów (np. PA0, PB0, PC0) do tej samej linii przerwania EXTI (np. EXTI0), co zwiększa elastyczność w projektowaniu i minimalizuje liczbę wymaganych linii przerwań."
+    ]
+  },
+  {
+    "question": "Analizując rejestr STK_CTRL licznika SysTick, w jaki sposób programista może skonfigurować go do generowania precyzyjnych, okresowych przerwań, które mogą być wykorzystane jako podstawa dla systemu operacyjnego czasu rzeczywistego (RTOS)?",
+    "options": [
+      "Programista może ustawić bit ENABLE na 1, TICKINT na 1 (aby generować przerwanie), wybrać źródło zegara (CLKSOURCE) i zapisać wartość początkową w STK_LOAD, aby określić okres przerwań. To tworzy stały rytm dla RTOS.",
+      "SysTick jest wyłącznie przeznaczony do ręcznego odliczania i nie może generować okresowych przerwań.",
+      "Konfiguracja SysTick do generowania przerwań wymaga zewnętrznego obwodu zegarowego, którego nie ma w mikrokontrolerze.",
+      "Programista musi ręcznie resetować SysTick w każdej iteracji pętli głównej, aby uzyskać okresowe przerwania."
+    ],
+    "correct": [
+      "Programista może ustawić bit ENABLE na 1, TICKINT na 1 (aby generować przerwanie), wybrać źródło zegara (CLKSOURCE) i zapisać wartość początkową w STK_LOAD, aby określić okres przerwań. To tworzy stały rytm dla RTOS."
+    ]
+  },
+  {
+    "question": "W jaki sposób dostęp bitowy do pamięci (Bit-banding) optymalizuje operacje na pojedynczych bitach, wpływając na wydajność i atomowość w systemach wbudowanych?",
+    "options": [
+      "Bit-banding zwiększa złożoność operacji na bitach, co negatywnie wpływa na wydajność.",
+      "Bit-banding pozwala na atomową modyfikację pojedynczych bitów poprzez unikalne adresowanie każdego bitu, eliminując potrzebę sekwencji Read-Modify-Write, co przyspiesza operacje i zapewnia ich atomowość bez blokowania.",
+      "Bit-banding służy wyłącznie do szyfrowania danych na poziomie bitów, co nie wpływa na wydajność.",
+      "Optymalizacja operacji na bitach jest osiągana tylko poprzez zastosowanie dedykowanych koprocesorów, a bit-banding jest nieistotny."
+    ],
+    "correct": [
+      "Bit-banding pozwala na atomową modyfikację pojedynczych bitów poprzez unikalne adresowanie każdego bitu, eliminując potrzebę sekwencji Read-Modify-Write, co przyspiesza operacje i zapewnia ich atomowość bez blokowania."
+    ]
+  },
+  {
+    "question": "W jaki sposób RTC, pomimo niskiego poboru energii, może efektywnie zarządzać trybami niskiego poboru mocy mikrokontrolera i dlaczego zlicza czas w kodzie BCD?",
+    "options": [
+      "RTC aktywnie pobiera dużą ilość energii, aby utrzymać swoją funkcjonalność, co wyklucza zarządzanie trybami niskiego poboru mocy.",
+      "RTC, zliczając czas w kodzie BCD, umożliwia bezpośrednie wyświetlanie czasu bez konwersji, ale nie ma wpływu na tryby niskiego poboru mocy mikrokontrolera.",
+      "RTC, jako niezależny układ z własnym oscylatorem i zliczalny w BCD (ułatwiający wyświetlanie czasu), może zaprogramować znacznik wybudzenia lub alarmy, aby automatycznie wybudzić mikrokontroler z trybów niskiego poboru mocy, co pozwala na oszczędność energii.",
+      "Zliczanie czasu w kodzie BCD w RTC jest archaizmem i nie ma żadnego praktycznego zastosowania w nowoczesnych systemach wbudowanych."
+    ],
+    "correct": [
+      "RTC, jako niezależny układ z własnym oscylatorem i zliczalny w BCD (ułatwiający wyświetlanie czasu), może zaprogramować znacznik wybudzenia lub alarmy, aby automatycznie wybudzić mikrokontroler z trybów niskiego poboru mocy, co pozwala na oszczędność energii."
+    ]
+  },
+  {
+    "question": "W jaki sposób układ czasowo-licznikowy TIM1, poprzez swoje zaawansowane możliwości, takie jak generowanie uzupełniającego PWM z wprowadzeniem czasu martwego (dead time), staje się kluczowym elementem w sterowaniu złożonymi układami napędowymi?",
+    "options": [
+      "TIM1 jest używany wyłącznie do podstawowego zliczania impulsów i nie posiada funkcji do sterowania złożonymi układami napędowymi.",
+      "Generowanie uzupełniającego PWM z dead time pozwala TIM1 na precyzyjne sterowanie tranzystorami w mostkach H, zapobiegając zwarciom i optymalizując efektywność, co jest kluczowe w sterowaniu silnikami i innymi układami napędowymi.",
+      "TIM1 jest przestarzałym rozwiązaniem, a jego funkcje zostały zastąpione przez dedykowane kontrolery silników.",
+      "Czas martwy w PWM jest wyłącznie błędem projektowym i nie ma praktycznego zastosowania w sterowaniu napędami."
+    ],
+    "correct": [
+      "Generowanie uzupełniającego PWM z dead time pozwala TIM1 na precyzyjne sterowanie tranzystorami w mostkach H, zapobiegając zwarciom i optymalizując efektywność, co jest kluczowe w sterowaniu silnikami i innymi układami napędowymi."
+    ]
+  },
+  {
+    "question": "W jaki sposób kontroler DMA, poprzez swoją zdolność do transferu danych bez angażowania procesora, wpływa na ogólną wydajność systemu wbudowanego, w szczególności w aplikacjach wymagających wysokiej przepustowości danych (np. przetwarzanie sygnałów)?",
+    "options": [
+      "DMA zwiększa obciążenie procesora, ponieważ musi on zarządzać każdym transferem danych, co obniża wydajność.",
+      "DMA, poprzez odciążenie procesora z zadań transferu danych, pozwala mu skupić się na bardziej złożonych obliczeniach. Zapewnia to wyższą przepustowość danych i ogólną wydajność systemu, co jest kluczowe w aplikacjach DSP.",
+      "DMA jest używane tylko do transferu małych pakietów danych, a w przypadku wysokiej przepustowości jest nieefektywne.",
+      "Wydajność systemu wbudowanego zależy wyłącznie od częstotliwości taktowania procesora, a DMA nie ma na to wpływu."
+    ],
+    "correct": [
+      "DMA, poprzez odciążenie procesora z zadań transferu danych, pozwala mu skupić się na bardziej złożonych obliczeniach. Zapewnia to wyższą przepustowość danych i ogólną wydajność systemu, co jest kluczowe w aplikacjach DSP."
+    ]
+  },
+  {
+    "question": "Porównując magistralę SDBus i SPI dla obsługi kart SD, w jakiej sytuacji programista powinien preferować SPI, mimo jego niższej prędkości, a w jakiej SDBus?",
+    "options": [
+      "SPI jest zawsze lepsze ze względu na wyższą prędkość, niezależnie od złożoności interfejsu.",
+      "SDBus jest preferowany, gdy wymagana jest większa szybkość transferu danych, pomimo bardziej skomplikowanego interfejsu. SPI jest lepsze, gdy priorytetem jest prostota implementacji i dostępność w mikrokontrolerach, nawet kosztem niższej prędkości.",
+      "Obie magistrale są wymienne i wybór zależy wyłącznie od preferencji programisty.",
+      "SDBus jest przeznaczony wyłącznie dla kart SDHC, a SPI dla kart SDXC."
+    ],
+    "correct": [
+      "SDBus jest preferowany, gdy wymagana jest większa szybkość transferu danych, pomimo bardziej skomplikowanego interfejsu. SPI jest lepsze, gdy priorytetem jest prostota implementacji i dostępność w mikrokontrolerach, nawet kosztem niższej prędkości."
+    ]
+  },
+  {
+    "question": "W jaki sposób mechanizm Bit stuffing w sieci CAN przyczynia się do zapewnienia synchronizacji i wykrywania błędów transmisji, jednocześnie minimalizując ryzyko długich sekwencji bitów o tej samej wartości?",
+    "options": [
+      "Bit stuffing polega na dodawaniu losowych bitów do strumienia danych, aby zwiększyć jego długość.",
+      "Bit stuffing jest wykorzystywany do kompresji danych, co redukuje liczbę przesyłanych bitów.",
+      "Bit stuffing polega na wstawianiu bitu o przeciwnej wartości po każdych pięciu kolejnych bitach o tej samej wartości, co zapewnia regularne zmiany sygnału, ułatwia synchronizację i wykrywanie błędów niezgodności bitów.",
+      "Bit stuffing jest mechanizmem szyfrującym dane, co zwiększa bezpieczeństwo transmisji w sieci CAN."
+    ],
+    "correct": [
+      "Bit stuffing polega na wstawianiu bitu o przeciwnej wartości po każdych pięciu kolejnych bitach o tej samej wartości, co zapewnia regularne zmiany sygnału, ułatwia synchronizację i wykrywanie błędów niezgodności bitów."
+    ]
+  },
+  {
+    "question": "W kontekście warstwy fizycznej CAN, wyjaśnij, dlaczego ujemna logika magistrali (bit dominujący = logiczne \"0\") jest kluczowa dla bezstratnego mechanizmu arbitrażu i w jaki sposób to działa w przypadku kolizji transmisji.",
+    "options": [
+      "Ujemna logika magistrali oznacza, że wyższa wartość napięcia odpowiada bitowi dominującemu, co ułatwia synchronizację.",
+      "Ujemna logika magistrali (dominujący bit '0', recesywny bit '1') jest kluczowa, ponieważ stan dominujący zawsze 'wygrywa' nad recesywnym. W przypadku kolizji, węzeł wysyłający bit recesywny, który odczyta bit dominujący, natychmiast wycofuje się z transmisji, umożliwiając węzłowi z wyższym priorytetem (niższym ID) kontynuowanie transmisji bez utraty danych.",
+      "Ujemna logika magistrali powoduje, że kolizje są niemożliwe w sieci CAN.",
+      "Mechanizm arbitrażu jest niezależny od logiki magistrali i opiera się wyłącznie na zegarze systemowym."
+    ],
+    "correct": [
+      "Ujemna logika magistrali (dominujący bit '0', recesywny bit '1') jest kluczowa, ponieważ stan dominujący zawsze 'wygrywa' nad recesywnym. W przypadku kolizji, węzeł wysyłający bit recesywny, który odczyta bit dominujący, natychmiast wycofuje się z transmisji, umożliwiając węzłowi z wyższym priorytetem (niższym ID) kontynuowanie transmisji bez utraty danych."
+    ]
+  },
+  {
+    "question": "W jaki sposób podejście 'Wywłaszczanie' (Preemptive) w FreeRTOS wpływa na determinizm i responsywność systemu czasu rzeczywistego w porównaniu do podejścia 'Współpraca' (Co-operative)?",
+    "options": [
+      "Wywłaszczanie ogranicza determinizm i responsywność, ponieważ zadania muszą czekać na zakończenie innych zadań.",
+      "Wywłaszczanie (Preemptive) zwiększa determinizm i responsywność systemu czasu rzeczywistego, ponieważ planista może wstrzymać zadanie o niższym priorytecie, aby natychmiast uruchomić zadanie o wyższym priorytecie, co jest kluczowe dla aplikacji z surowymi wymaganiami czasowymi. Współpraca wymaga, aby zadania same oddawały kontrolę.",
+      "Oba podejścia oferują ten sam poziom determinizmu, różnią się jedynie złożonością implementacji.",
+      "Wywłaszczanie jest odpowiednie tylko dla systemów o niskim priorytecie, podczas gdy Współpraca jest używana w systemach krytycznych czasowo."
+    ],
+    "correct": [
+      "Wywłaszczanie (Preemptive) zwiększa determinizm i responsywność systemu czasu rzeczywistego, ponieważ planista może wstrzymać zadanie o niższym priorytecie, aby natychmiast uruchomić zadanie o wyższym priorytecie, co jest kluczowe dla aplikacji z surowymi wymaganiami czasowymi. Współpraca wymaga, aby zadania same oddawały kontrolę."
+    ]
+  },
+  {
+    "question": "W jaki sposób Kolejki w FreeRTOS, poprzez swoją funkcjonalność FIFO i możliwość blokowania zadań, zapewniają bezpieczną i efektywną komunikację między zadaniami i przerwaniami w środowisku wielozadaniowym, minimalizując ryzyko utraty danych?",
+    "options": [
+      "Kolejki są wyłącznie buforami danych, które nie posiadają mechanizmów synchronizacji zadań.",
+      "Kolejki w FreeRTOS, działając na zasadzie FIFO, pozwalają na bezpieczne przesyłanie kopii danych między zadaniami i przerwaniami. Automatyczne blokowanie zadań, gdy kolejka jest pusta lub pełna, oraz odblokowywanie ich w kolejności priorytetów lub czasu oczekiwania, zapewnia efektywną komunikację i minimalizuje utratę danych.",
+      "Kolejki powodują blokowanie całego systemu, gdy są pełne, co prowadzi do niestabilności.",
+      "Komunikacja między zadaniami i przerwaniami powinna być realizowana wyłącznie za pomocą globalnych zmiennych, a kolejki są zbędne."
+    ],
+    "correct": [
+      "Kolejki w FreeRTOS, działając na zasadzie FIFO, pozwalają na bezpieczne przesyłanie kopii danych między zadaniami i przerwaniami. Automatyczne blokowanie zadań, gdy kolejka jest pusta lub pełna, oraz odblokowywanie ich w kolejności priorytetów lub czasu oczekiwania, zapewnia efektywną komunikację i minimalizuje utratę danych."
+    ]
+  },
+  {
+    "question": "Mając na uwadze różne modele stert (heap_1 do heap_5) w FreeRTOS, w jakiej sytuacji programista powinien bezwzględnie unikać modelu `heap_1`, a w jakiej `heap_2`, biorąc pod uwagę długotrwałe działanie systemu i ryzyko fragmentacji pamięci?",
+    "options": [
+      "`heap_1` należy unikać w systemach wymagających dynamicznego zwalniania pamięci, ponieważ nie ma takiej możliwości. `heap_2`, choć pozwala na zwalnianie, należy unikać w długotrwałych systemach z częstą alokacją/dealokacją, ze względu na ryzyko fragmentacji pamięci (brak łączenia wolnych bloków).",
+      "`heap_1` i `heap_2` są najbardziej efektywnymi modelami i zawsze powinny być preferowane.",
+      "Wszystkie modele stert mają podobne właściwości i wybór jest kwestią estetyki kodu.",
+      "`heap_1` jest odpowiedni tylko dla bardzo dużych systemów, a `heap_2` dla bardzo małych systemów wbudowanych."
+    ],
+    "correct": [
+      "`heap_1` należy unikać w systemach wymagających dynamicznego zwalniania pamięci, ponieważ nie ma takiej możliwości. `heap_2`, choć pozwala na zwalnianie, należy unikać w długotrwałych systemach z częstą alokacją/dealokacją, ze względu na ryzyko fragmentacji pamięci (brak łączenia wolnych bloków)."
+    ]
+  },
+  {
+    "question": "Porównując FreeRTOS API z CMSIS-RTOS API, w jakiej sytuacji programista powinien wybrać FreeRTOS API dla maksymalnej kontroli i optymalizacji, a w jakiej CMSIS-RTOS API dla większej przenośności i standardyzacji projektu?",
+    "options": [
+      "Zawsze należy wybierać CMSIS-RTOS API, ponieważ jest to nowoczesne rozwiązanie.",
+      "FreeRTOS API zapewnia bezpośredni dostęp do funkcji RTOS, co daje maksymalną kontrolę i optymalizację, ale kosztem przenośności. CMSIS-RTOS API jest warstwą abstrakcji, która ujednolica interfejs, zwiększając przenośność kodu między mikrokontrolerami Cortex-M i różnymi RTOS-ami, kosztem pewnej utraty bezpośredniej kontroli.",
+      "Wybór między API zależy wyłącznie od preferowanego języka programowania.",
+      "Żadne z tych API nie jest zalecane do krytycznych zastosowań, ponieważ wprowadzają zbyt duże narzuty."
+    ],
+    "correct": [
+      "FreeRTOS API zapewnia bezpośredni dostęp do funkcji RTOS, co daje maksymalną kontrolę i optymalizację, ale kosztem przenośności. CMSIS-RTOS API jest warstwą abstrakcji, która ujednolica interfejs, zwiększając przenośność kodu między mikrokontrolerami Cortex-M i różnymi RTOS-ami, kosztem pewnej utraty bezpośredniej kontroli."
+    ]
+  },
+  {
+    "question": "W jaki sposób funkcje typu \"hook\" w FreeRTOS, takie jak `vApplicationIdleHook` i `vApplicationStackOverflowHook`, wspierają programistę w diagnozowaniu problemów systemowych i optymalizacji zużycia zasobów?",
+    "options": [
+      "Funkcje \"hook\" są używane wyłącznie do wyświetlania wiadomości debugowania i nie wpływają na diagnostykę błędów.",
+      "Funkcje \"hook\" automatycznie naprawiają błędy w systemie bez interwencji programisty.",
+      "`vApplicationIdleHook` pozwala na implementację zadań niskiego priorytetu lub optymalizację zużycia energii, gdy procesor jest bezczynny, natomiast `vApplicationStackOverflowHook` jest kluczowa do wykrywania i diagnozowania przepełnień stosu, co jest niezbędne dla stabilności i optymalizacji zużycia pamięci. Umożliwiają one wgląd w działanie systemu w krytycznych momentach.",
+      "Funkcje \"hook\" są przestarzałym mechanizmem i nie są już używane w nowoczesnych systemach z FreeRTOS."
+    ],
+    "correct": [
+      "`vApplicationIdleHook` pozwala na implementację zadań niskiego priorytetu lub optymalizację zużycia energii, gdy procesor jest bezczynny, natomiast `vApplicationStackOverflowHook` jest kluczowa do wykrywania i diagnozowania przepełnień stosu, co jest niezbędne dla stabilności i optymalizacji zużycia pamięci. Umożliwiają one wgląd w działanie systemu w krytycznych momentach."
+    ]
+  },
+  {
+    "question": "Rozważając architekturę platformy Xilinx Zynq (Processing System - PS i Programmable Logic - PL), w jaki sposób ścisła integracja PS i PL, komunikujących się za pomocą magistral AXI, umożliwia realizację złożonych funkcji, które byłyby nieosiągalne lub nieefektywne na tradycyjnych mikroprocesorach?",
+    "options": [
+      "Integracja PS i PL w Zynq ogranicza możliwości systemu do prostych zadań, ponieważ wzajemnie się blokują.",
+      "Integracja PS i PL umożliwia równoległe wykonywanie złożonych algorytmów (np. DSP, przetwarzanie obrazu) w sprzęcie (PL) z jednoczesnym zarządzaniem systemem operacyjnym i aplikacjami przez procesor (PS), komunikując się przez szybkie magistrale AXI. Pozwala to na osiągnięcie wydajności niemożliwej dla samego CPU.",
+      "PS i PL działają całkowicie niezależnie i nie wymieniają ze sobą danych, co sprawia, że integracja jest bezcelowa.",
+      "Zynq jest wyłącznie układem FPGA i nie posiada żadnego wbudowanego procesora."
+    ],
+    "correct": [
+      "Integracja PS i PL umożliwia równoległe wykonywanie złożonych algorytmów (np. DSP, przetwarzanie obrazu) w sprzęcie (PL) z jednoczesnym zarządzaniem systemem operacyjnym i aplikacjami przez procesor (PS), komunikując się przez szybkie magistrale AXI. Pozwala to na osiągnięcie wydajności niemożliwej dla samego CPU."
+    ]
+  },
+  {
+    "question": "W jaki sposób synteza na poziomie systemu (SLS) i narzędzia HLS (High-Level Synthesis) zmieniają proces projektowania systemów wbudowanych, przyspieszając Time-to-market i umożliwiając projektantom pracę na wyższym poziomie abstrakcji?",
+    "options": [
+      "SLS i HLS zwiększają złożoność procesu projektowania, wydłużając Time-to-market i wymagając od projektantów szczegółowej znajomości HDL.",
+      "SLS i HLS pozwalają na projektowanie systemów od abstrakcyjnego opisu w językach wysokiego poziomu (C/C++, SystemC), a narzędzia HLS automatycznie generują kod HDL. To przyspiesza projektowanie, skraca Time-to-market i umożliwia programistom bez głębokiej wiedzy o sprzęcie tworzenie niestandardowej logiki.",
+      "SLS i HLS są przestarzałymi metodologiami, które nie mają zastosowania w nowoczesnym projektowaniu systemów wbudowanych.",
+      "Narzędzia HLS służą wyłącznie do weryfikacji poprawności kodu HDL, a nie do jego generowania."
+    ],
+    "correct": [
+      "SLS i HLS pozwalają na projektowanie systemów od abstrakcyjnego opisu w językach wysokiego poziomu (C/C++, SystemC), a narzędzia HLS automatycznie generują kod HDL. To przyspiesza projektowanie, skraca Time-to-market i umożliwia programistom bez głębokiej wiedzy o sprzęcie tworzenie niestandardowej logiki."
+    ]
+  },
+  {
+    "question": "Pomimo zalet rekonfigurowalności dynamicznej, takich jak optymalizacja zasobów i zarządzanie energią, jakie kluczowe wyzwania projektowe muszą być rozwiązane, aby skutecznie wdrożyć tę technikę w złożonych systemach czasu rzeczywistego?",
+    "options": [
+      "Główne wyzwania to uproszczenie narzędzi projektowych i skrócenie czasu rekonfiguracji, co jest już standardem w nowoczesnych FPGA.",
+      "Kluczowe wyzwania obejmują znaczną złożoność projektowania (np. tworzenie modułów rekonfigurowalnych, zarządzanie timingiem między modułami statycznymi i dynamicznymi), dodatkowe koszty i zasoby sprzętowe/oprogramowania, oraz czas rekonfiguracji, który musi być uwzględniony w projekcie czasu rzeczywistego.",
+      "Rekonfigurowalność dynamiczna jest z natury niestabilna i nie powinna być używana w systemach czasu rzeczywistego.",
+      "Wyzwania te dotyczą wyłącznie urządzeń mobilnych, a nie systemów wbudowanych."
+    ],
+    "correct": [
+      "Kluczowe wyzwania obejmują znaczną złożoność projektowania (np. tworzenie modułów rekonfigurowalnych, zarządzanie timingiem między modułami statycznymi i dynamicznymi), dodatkowe koszty i zasoby sprzętowe/oprogramowania, oraz czas rekonfiguracji, który musi być uwzględniony w projekcie czasu rzeczywistego."
+    ]
+  },
+  {
+    "question": "W jaki sposób wybór platformy sprzętowej z procesorem ARM Cortex-A zamiast Cortex-M wpływa na możliwości systemu w kontekście uruchamiania złożonych systemów operacyjnych (np. Linux) i aplikacji multimedialnych, biorąc pod uwagę ich architektoniczne różnice?",
+    "options": [
+      "Procesor Cortex-M jest bardziej odpowiedni do uruchamiania systemów Linux i aplikacji multimedialnych ze względu na swoją prostotę.",
+      "Wybór Cortex-A (z wyższą wydajnością i MMU) umożliwia uruchamianie pełnych systemów operacyjnych, takich jak Linux i Android, co jest kluczowe dla złożonych aplikacji multimedialnych i wymagających większej mocy obliczeniowej, czego Cortex-M (bez MMU, niższa moc) nie jest w stanie efektywnie zrealizować.",
+      "Różnice między Cortex-A i Cortex-M są wyłącznie w zużyciu energii, co nie ma wpływu na uruchamianie systemów operacyjnych.",
+      "Żaden z tych procesorów nie jest odpowiedni do uruchamiania systemów operacyjnych, ponieważ wymagają one dedykowanych chipów."
+    ],
+    "correct": [
+      "Wybór Cortex-A (z wyższą wydajnością i MMU) umożliwia uruchamianie pełnych systemów operacyjnych, takich jak Linux i Android, co jest kluczowe dla złożonych aplikacji multimedialnych i wymagających większej mocy obliczeniowej, czego Cortex-M (bez MMU, niższa moc) nie jest w stanie efektywnie zrealizować."
+    ]
+  },
+  {
+    "question": "W jaki sposób Toolchain, będący zbiorem narzędzi takich jak cross-compiler, linker i debugger, umożliwia programiście efektywny rozwój oprogramowania dla systemów embedded Linux, gdzie host i target mają różne architektury?",
+    "options": [
+      "Toolchain jest tylko zbiorem narzędzi, które nie posiadają funkcji debugowania skrośnego.",
+      "Toolchain umożliwia kompilację kodu źródłowego na architekturę docelową (cross-compilation) na komputerze hosta, a następnie debugowanie tego kodu na urządzeniu docelowym (cross-debugging) za pomocą GDB Servera, co jest niezbędne, gdy urządzenie docelowe nie ma wystarczających zasobów do samodzielnego rozwoju oprogramowania.",
+      "Toolchain jest używany wyłącznie do emulacji systemu embedded Linux na komputerze hosta, bez potrzeby fizycznego urządzenia.",
+      "Funkcje Toolchaina są wbudowane w mikrokontroler i nie wymagają zewnętrznych narzędzi."
+    ],
+    "correct": [
+      "Toolchain umożliwia kompilację kodu źródłowego na architekturę docelową (cross-compilation) na komputerze hosta, a następnie debugowanie tego kodu na urządzeniu docelowym (cross-debugging) za pomocą GDB Servera, co jest niezbędne, gdy urządzenie docelowe nie ma wystarczających zasobów do samodzielnego rozwoju oprogramowania."
+    ]
+  },
+  {
+    "question": "W jaki sposób programy rozruchowe (Bootloaders), takie jak U-Boot, przyczyniają się do elastyczności i możliwości aktualizacji systemu Linux embedded, zwłaszcza w kontekście zarządzania pamięcią i aktualizacji obrazów?",
+    "options": [
+      "Programy rozruchowe są wyłącznie odpowiedzialne za uruchomienie jądra i nie posiadają funkcji zarządzania pamięcią ani aktualizacji.",
+      "Programy rozruchowe (np. U-Boot) inicjalizują podstawowy sprzęt, ładują jądro Linuxa do RAM i przekazują mu kontrolę. Ponadto, oferują interaktywną powłokę, narzędzia do obsługi pamięci flash (odczyt, zapis, kasowanie) oraz możliwość aktualizacji obrazów systemu operacyjnego i firmware'u, co zapewnia elastyczność i łatwość konserwacji w terenie.",
+      "U-Boot jest przestarzałym programem rozruchowym, który nie wspiera nowoczesnych systemów Linux embedded.",
+      "Aktualizacje systemu Linux embedded są zawsze przeprowadzane wyłącznie przez system operacyjny, a bootloader nie ma w tym udziału."
+    ],
+    "correct": [
+      "Programy rozruchowe (np. U-Boot) inicjalizują podstawowy sprzęt, ładują jądro Linuxa do RAM i przekazują mu kontrolę. Ponadto, oferują interaktywną powłokę, narzędzia do obsługi pamięci flash (odczyt, zapis, kasowanie) oraz możliwość aktualizacji obrazów systemu operacyjnego i firmware'u, co zapewnia elastyczność i łatwość konserwacji w terenie."
+    ]
+  },
+  {
+    "question": "Analizując Linux embedded jako system czasu rzeczywistego, w jaki sposób łaty PREEMPT_RT transformują standardowe jądro Linuxa w system soft real-time, minimalizując niedeterminizm i poprawiając responsywność, a jednocześnie jakie ograniczenia nadal pozostają?",
+    "options": [
+      "Łaty PREEMPT_RT sprawiają, że Linux staje się twardym systemem czasu rzeczywistego bez żadnych ograniczeń.",
+      "Łaty PREEMPT_RT wprowadzają pełne wywłaszczanie jądra, konwersję spinlocków na muteksy z dziedziczeniem priorytetów oraz ujednoliconą obsługę przerwań (IRQ threads), co znacznie redukuje niedeterminizm i poprawia responsywność. Jednakże, nadal istnieją ograniczenia wynikające z niemaskowalnych przerwań, długotrwałych operacji I/O i ogólnego narzutu złożonego jądra, co sprawia, że jest to system soft real-time, nie twardy.",
+      "Łaty PREEMPT_RT są wyłącznie optymalizacją zużycia energii i nie mają wpływu na determinizm czasowy.",
+      "Linux z łatami PREEMPT_RT jest wolniejszy od standardowego Linuxa, ponieważ wymaga większych zasobów."
+    ],
+    "correct": [
+      "Łaty PREEMPT_RT wprowadzają pełne wywłaszczanie jądra, konwersję spinlocków na muteksy z dziedziczeniem priorytetów oraz ujednoliconą obsługę przerwań (IRQ threads), co znacznie redukuje niedeterminizm i poprawia responsywność. Jednakże, nadal istnieją ograniczenia wynikające z niemaskowalnych przerwań, długotrwałych operacji I/O i ogólnego narzutu złożonego jądra, co sprawia, że jest to system soft real-time, nie twardy."
+    ]
+  },
+  {
+    "question": "W jaki sposób protokół MQTT, poprzez swój lekki charakter i model publikuj/subskrybuj z różnymi poziomami QoS, optymalizuje komunikację w środowiskach Internetu Rzeczy (IoT), gdzie zasoby i przepustowość sieci są często ograniczone?",
+    "options": [
+      "MQTT jest protokołem ciężkim i wymagającym dużych zasobów, dlatego nie nadaje się do IoT.",
+      "MQTT wykorzystuje model klient-serwer, co zwiększa złożoność komunikacji w IoT.",
+      "MQTT, dzięki swojej lekkości i asynchronicznemu modelowi publikuj/subskrybuj, minimalizuje narzut danych i pozwala urządzeniom o ograniczonych zasobach efektywnie komunikować się poprzez brokera. Różne poziomy QoS pozwalają na elastyczne zarządzanie niezawodnością dostarczania wiadomości w zależności od potrzeb aplikacji i warunków sieci, co jest kluczowe w IoT.",
+      "MQTT jest przeznaczony wyłącznie do przesyłania danych tekstowych i nie wspiera sensorów ani urządzeń wykonawczych."
+    ],
+    "correct": [
+      "MQTT, dzięki swojej lekkości i asynchronicznemu modelowi publikuj/subskrybuj, minimalizuje narzut danych i pozwala urządzeniom o ograniczonych zasobach efektywnie komunikować się poprzez brokera. Różne poziomy QoS pozwalają na elastyczne zarządzanie niezawodnością dostarczania wiadomości w zależności od potrzeb aplikacji i warunków sieci, co jest kluczowe w IoT."
+    ]
+  },
+  {
+    "question": "W jaki sposób funkcja brokera MQTT, poprzez filtrowanie i dystrybucję wiadomości na podstawie tematów oraz zarządzanie sesjami, przyczynia się do skalowalności i elastyczności systemu IoT, jednocześnie oddzielając wydawców od subskrybentów?",
+    "options": [
+      "Broker MQTT służy wyłącznie do uwierzytelniania klientów i nie zajmuje się filtrowaniem wiadomości.",
+      "Broker MQTT zwiększa złożoność systemu, ponieważ wydawcy i subskrybenci muszą bezpośrednio komunikować się z każdym urządzeniem.",
+      "Broker MQTT, poprzez model publikuj/subskrybuj i filtrowanie wiadomości na podstawie tematów, oddziela przestrzennie, czasowo i logicznie wydawców od subskrybentów. Dodatkowo, zarządzanie sesjami i buforowanie wiadomości przyczynia się do wysokiej skalowalności, zdolności do obsługi milionów klientów i elastyczności systemu IoT, co upraszcza integrację i zarządzanie.",
+      "Broker MQTT jest redundantnym elementem w architekturze IoT, ponieważ każde urządzenie może bezpośrednio komunikować się z chmurą."
+    ],
+    "correct": [
+      "Broker MQTT, poprzez model publikuj/subskrybuj i filtrowanie wiadomości na podstawie tematów, oddziela przestrzennie, czasowo i logicznie wydawców od subskrybentów. Dodatkowo, zarządzanie sesjami i buforowanie wiadomości przyczynia się do wysokiej skalowalności, zdolności do obsługi milionów klientów i elastyczności systemu IoT, co upraszcza integrację i zarządzanie."
+    ]
+  }
+]
