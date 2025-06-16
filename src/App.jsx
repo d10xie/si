@@ -65,15 +65,20 @@ useEffect(() => {
 }, [selectedSets]);
 
 
-  const handleStartQuiz = () => {
-    const combinedQuestions = selectedSets.flatMap(set => allQuestionSets[set]);
-    const selectedQuestions = shuffle(combinedQuestions).slice(0, numQuestions);
-    setQuestions(selectedQuestions);
-    setAnswers(new Array(numQuestions).fill(null));
-    setCurrentQuestion(0);
-    setShowResult(false);
-    setStartQuiz(true);
-  };
+const handleStartQuiz = () => {
+  const combinedQuestions = selectedSets.flatMap(set => allQuestionSets[set]);
+  if (combinedQuestions.length === 0) {
+    alert("Brak pytań w wybranym zestawie.");
+    return;
+  }
+  const selectedQuestions = shuffle(combinedQuestions).slice(0, numQuestions);
+  setQuestions(selectedQuestions);
+  setAnswers(new Array(numQuestions).fill(null));
+  setCurrentQuestion(0);
+  setShowResult(false);
+  setStartQuiz(true);
+};
+
 
   const handleAnswer = (optionIndex) => {
     const newAnswers = [...answers];
@@ -192,23 +197,24 @@ useEffect(() => {
 
           <div className="mt-4 text-left">
             <p className="font-bold">Wybierz zestawy pytań:</p>
-            {allOptions.map((set) => (
-              <label key={set} className="block mt-2">
-                <input
-                  type="checkbox"
-                  value={set}
-                  checked={selectedSets.includes(set)}
-                  onChange={handleSetChange}
-                  className="mr-2"
-                />
-                {{
-  multimedia: "Systemy Multimedialne",
-  si: "Sztuczna Inteligencja",
-  sw: "Systemy Wbudowane"
-}[set]}
+{allOptions.map((set) => (
+  <label key={set} className="block mt-2">
+    <input
+      type="radio"
+      name="questionSet"
+      value={set}
+      checked={selectedSets.includes(set)}
+      onChange={() => setSelectedSets([set])}
+      className="mr-2"
+    />
+    {{
+      multimedia: "Systemy Multimedialne",
+      si: "Sztuczna Inteligencja",
+      sw: "Systemy Wbudowane"
+    }[set]}
+  </label>
+))}
 
-              </label>
-            ))}
           </div>
 
           <Button className="mt-4" onClick={handleStartQuiz} disabled={selectedSets.length === 0}>
