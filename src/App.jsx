@@ -221,7 +221,7 @@ const handleAnswer = (optionIndex) => {
       className="mr-2"
     />
     {{
-      multimedia: "Systemy Multimedialne",
+      sm: "Systemy Multimedialne",
       si: "Sztuczna Inteligencja",
       sw: "Systemy Wbudowane",
       po: "Projektowanie Oprogramowania"
