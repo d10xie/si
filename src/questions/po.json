@@ -1,3 +1,4 @@
+[
 {
   "question": "Język opisu architektury ArchiMate 3.1 przedstawia poziomy",
   "options": [
@@ -286,7 +287,5 @@
   "correct": [
     "Wszystkie wymienione"
   ]
-},
-
-
-
+}
+]
