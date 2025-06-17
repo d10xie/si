@@ -54,7 +54,7 @@ const handleCheckAnswer = () => {
     }
   };
 
-  const [selectedSets, setSelectedSets] = useState(['multimedia']);
+  const [selectedSets, setSelectedSets] = useState(['sm']);
 
   const handleSetChange = (e) => {
   const value = e.target.value;
