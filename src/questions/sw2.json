@@ -298,5 +298,17 @@
   "correct": [
     "Trzeba korzystać z gotowych modułów do karty"
   ]
+},
+{
+  "question": "Czym różni się CMSIS-FreeRTOS od zwykłego FreeRTOS pod względem zastosowań?(wymyślone pytanko bo było podobne)",
+  "options": [
+    "CMSIS-FreeRTOS nadaje się lepiej do projektów przenośnych i zgodnych ze standardami ARM",
+    "Zwykły FreeRTOS nadaje się tylko do prostych aplikacji bez przerwań",
+    "CMSIS-FreeRTOS jest dedykowany wyłącznie systemom czasu rzeczywistego hard real-time",
+    "Zwykły FreeRTOS nie obsługuje wielu zadań jednocześnie"
+  ],
+  "correct": [
+    "CMSIS-FreeRTOS nadaje się lepiej do projektów przenośnych i zgodnych ze standardami ARM"
+  ]
 }
 ]
