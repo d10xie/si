@@ -82,5 +82,173 @@
     "correct": [
       "LIN"
     ]
-  }
+  },
+              {
+    "question": "Ile jest heapów",
+    "options": [
+      "7",
+      "8",
+      "5",
+      "4"
+    ],
+    "correct": [
+      "5"
+    ]
+  },
+                {
+    "question": "Ile jest Rejestrow Ogolnego przeznacznie ",
+    "options": [
+      "12",
+      "14",
+      "7",
+      "32"
+    ],
+    "correct": [
+      "12"
+    ]
+  },
+                  {
+    "question": "Co umozliwia NVIC (Nested Vectored Interrupt Controller) ",
+    "options": [
+      "Przerwania zagnieżdżone",
+    "Zarządzanie pamięcią Flash",
+    "Generowanie sygnałów PWM",
+    "Obsługę komunikacji I²C"
+    ],
+    "correct": [
+      "Przerwania zagnieżdżone"
+    ]
+  },
+  {
+    "question": "Która ramka w magistrali CAN nie zawiera danych ?",
+    "options": [
+      "Ramka danych (Data Frame)",
+    "Ramka błędu (Error Frame)",
+    "Ramka zdalna (Remote Frame)",
+    "Ramka ACK (Acknowledge Frame)"
+    ],
+    "correct": [
+      "Ramka zdalna (Remote Frame)"
+    ]
+  },
+    {
+    "question": "Która ramka w magistrali CAN nie zawiera danych ?",
+    "options": [
+      "Ramka danych (Data Frame)",
+    "Ramka błędu (Error Frame)",
+    "Ramka zdalna (Remote Frame)",
+    "Ramka ACK (Acknowledge Frame)"
+    ],
+    "correct": [
+      "Ramka zdalna (Remote Frame)"
+    ]
+  },
+  {
+  "question": "Co się dzieje, gdy w magistrali CAN jednocześnie wystąpi bit dominujący i recesywny?",
+  "options": [
+    "Bit recesywny nadpisuje dominujący",
+    "Dochodzi do kolizji i transmisja jest zatrzymywana",
+    "Bit dominujący wygrywa i decyduje o dalszej transmisji",
+    "Wszystkie urządzenia kontynuują nadawanie niezależnie"
+  ],
+  "correct": [
+    "Bit dominujący wygrywa i decyduje o dalszej transmisji"
+  ]
+},
+{
+  "question": "Czym się różnią standardy CAN ?",
+  "options": [
+    "długością ramki",
+    "prędkością transmisji danych",
+    "strukturą adresowania w warstwie fizycznej",
+    "zakresem temperatury pracy"
+  ],
+  "correct": [
+    "długością ramki"
+  ]
+},
+{
+  "question": "Wybierz prawdziwe zdanie o Cortex-M",
+  "options": [
+    "Charakterystyka ilościowa wyjątków: że Cortex-M maksymalnie ma 240",
+    "Cortex-M nie obsługuje przerwań sprzętowych",
+    "Cortex-M wykorzystuje architekturę Harvard z jedną magistralą",
+    "Cortex-M zawsze wymaga systemu operacyjnego do działania"
+  ],
+  "correct": [
+    "Charakterystyka ilościowa wyjątków: że Cortex-M maksymalnie ma 240"
+  ]
+},
+{
+  "question": "Czy rdzeń Cortex-M pozwala na obsługę przerwań zewnętrznych?",
+  "options": [
+    "Tak, z wykorzystaniem kontrolera EXTI i NVIC",
+    "Nie, obsługuje tylko przerwania wewnętrzne",
+    "Tylko poprzez DMA",
+    "Tylko jeśli używany jest system czasu rzeczywistego (RTOS)"
+  ],
+  "correct": [
+    "Tak, z wykorzystaniem kontrolera EXTI i NVIC"
+  ]
+},
+{
+  "question": "Czy rdzeń Cortex-M pozwala na obsługę przerwań zewnętrznych?",
+  "options": [
+    "Tak, z wykorzystaniem kontrolera EXTI i NVIC",
+    "Nie, obsługuje tylko przerwania wewnętrzne",
+    "Tylko poprzez DMA",
+    "Tylko jeśli używany jest system czasu rzeczywistego (RTOS)"
+  ],
+  "correct": [
+    "Tak, z wykorzystaniem kontrolera EXTI i NVIC"
+  ]
+},
+{
+  "question": "Co umożliwia peryferyjny moduł TIM (Timer) w mikrokontrolerze STM32?",
+  "options": [
+    "Generowanie sygnału PWM",
+    "Obsługę magistrali I²C",
+    "Zarządzanie pamięcią Flash",
+    "Programowanie przerwań NVIC"
+  ],
+  "correct": [
+    "Generowanie sygnału PWM"
+  ]
+},
+{
+  "question": "Na co pozwala moduł DMA w mikrokontrolerach (np. STM32)?",
+  "options": [
+    "Przesyłanie danych między peryferiami a pamięcią bez udziału CPU",
+    "Zwiększenie rozdzielczości przetwornika ADC",
+    "Programowanie taktowania magistrali systemowej",
+    "Generowanie sygnałów PWM bez użycia timera"
+  ],
+  "correct": [
+    "Przesyłanie danych między peryferiami a pamięcią bez udziału CPU"
+  ]
+},
+{
+  "question": "Z jakich rejestrów składa się rejestr PSR (Program Status Register) w rdzeniach Cortex-M?",
+  "options": [
+    "APSR, EPSR, IPSR",
+    "MSP, PSP, EPSR",
+    "CPSR, SPSR, APSR",
+    "xPSR, PC, LR"
+  ],
+  "correct": [
+    "APSR, EPSR, IPSR"
+  ]
+}
+{
+  "question": "Zmienne globalne w FreeRTOS:",
+  "options": [
+    "są zalecane",
+    "są niezalecane",
+    "są wygodne",
+    "są niedozwolone"
+  ],
+  "correct": [
+    "są niezalecane"
+  ]
+}
 ]
