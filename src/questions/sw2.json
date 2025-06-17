@@ -95,7 +95,7 @@
       "5"
     ]
   },
-                {
+    {
     "question": "Ile jest Rejestrow Ogolnego przeznacznie ",
     "options": [
       "12",
@@ -107,7 +107,7 @@
       "12"
     ]
   },
-                  {
+   {
     "question": "Co umozliwia NVIC (Nested Vectored Interrupt Controller) ",
     "options": [
       "Przerwania zagnieżdżone",
@@ -120,18 +120,6 @@
     ]
   },
   {
-    "question": "Która ramka w magistrali CAN nie zawiera danych ?",
-    "options": [
-      "Ramka danych (Data Frame)",
-    "Ramka błędu (Error Frame)",
-    "Ramka zdalna (Remote Frame)",
-    "Ramka ACK (Acknowledge Frame)"
-    ],
-    "correct": [
-      "Ramka zdalna (Remote Frame)"
-    ]
-  },
-    {
     "question": "Która ramka w magistrali CAN nie zawiera danych ?",
     "options": [
       "Ramka danych (Data Frame)",
