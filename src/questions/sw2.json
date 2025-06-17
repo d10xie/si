@@ -250,5 +250,17 @@
   "correct": [
     "są niezalecane"
   ]
+},
+{
+  "question": "Czym jest funkcja vApplicationIdleHook w FreeRTOS?",
+  "options": [
+    "możliwa do uruchomienia tylko z najwyższym priorytetem",
+    "możliwa do uruchomienia tylko z najniższym priorytetem",
+    "możliwa do współdzielenia tego samego priorytetu z innym zadaniem",
+    "wykonywana tylko po wyjściu z przerwania"
+  ],
+  "correct": [
+    "możliwa do uruchomienia tylko z najniższym priorytetem"
+  ]
 }
 ]
