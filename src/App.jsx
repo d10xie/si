@@ -7,13 +7,15 @@ import si from './questions/si.json';
 import sw from './questions/sw.json';
 import po from './questions/po.json';
 import giw from './questions/giw.json';
+import sw2 from './questions/sw2.json';
 
 const allQuestionSets = {
   sm,
   si,
   sw,
   po,
-  giw
+  giw,
+  sw2
 };
 
 const shuffle = (array) => {
@@ -225,7 +227,8 @@ const handleAnswer = (optionIndex) => {
     {{
       sm: "Systemy Multimedialne",
       si: "Sztuczna Inteligencja",
-      sw: "Systemy Wbudowane",
+      sw: "Systemy Wbudowane(urojone pytania)",
+      sw2: "Systemy Wbudowane(baza)",
       po: "Projektowanie Oprogramowania",
       giw: "Grafika i Wizualizacja"
     }[set]}

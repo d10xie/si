@@ -1,0 +1,86 @@
+[
+  {
+    "question": "MQTT to protokół przesyłania:",
+    "options": [
+      "w zdalnych urządzeniach z niewielką przepustowością sieci",
+      "zastępujący sieć CAN w urządzeniu",
+      "Multimedialnych strumienowych o ograniczonej przepustowości",
+      "O położeniu pomiędzy poruszającymi się samochodami warunkach rzeczywistych"
+    ],
+    "correct": [
+      "w zdalnych urządzeniach z niewielką przepustowością sieci"
+    ]
+  },
+  {
+    "question": "Narzędzie do konsturowania w systemie embedded to:",
+    "options": [
+      "PetaLinux",
+      "BuildRoot",
+      "U-boot",
+      "Bootloader"
+    ],
+    "correct": [
+      "BuildRoot"
+    ]
+  },
+    {
+    "question": "Linux embedded to system czasu rzeczywistego",
+    "options": [
+      "każdej dystrybucji w każdych warunkach",
+      "typu Hard Real Time",
+      "po zastosowaniu odpowiedniej zmiany",
+      "Linux w żadnych warunkach nie może być system czasu rzeczywistego"
+    ],
+    "correct": [
+      "po zastosowaniu odpowiedniej zmiany"
+    ]
+  },
+      {
+    "question": "JTAG to:",
+    "options": [
+      "magistrala wewnętrzna mikrokontrolera",
+      "standard fizycznego złącza do programowania",
+      "kontroler sprzętowy wbudowanego ... programowego",
+      "Interfejs i protokół testowania i programowania układów cyfrowych"
+    ],
+    "correct": [
+      "Interfejs i protokół testowania i programowania układów cyfrowych"
+    ]
+  },
+        {
+    "question": "W skład łańcucha programowego wchodzą",
+    "options": [
+      "jądro systemu i biblioteka systemowa",
+      "kompilator i pliki nagłówkowe jądra",
+      "debugger i interfejs programowy JTAG",
+      "System plików i biblioteka FPU"
+    ],
+    "correct": [
+      "kompilator i pliki nagłówkowe jądra"
+    ]
+  },
+          {
+    "question": "Jaki rejestr może zastąpić rejestr ODR (Output Data Register) w mikrokontrolerach STM32 do ustawiania stanu wyjścia GPIO?",
+    "options": [
+      "BSRR",
+      "IDR",
+      "MODER",
+      "PUPDR"
+    ],
+    "correct": [
+      "BSRR"
+    ]
+  },
+            {
+    "question": "Jaką sieć użyjemy do komunikacji z lusterkami zewnętrznymi w samochodzie (np. do sterowania ich ustawieniem lub podgrzewaniem)?",
+    "options": [
+      "LIN",
+      "MOST",
+      "CAN",
+      "FlexRay"
+    ],
+    "correct": [
+      "LIN"
+    ]
+  }
+]
