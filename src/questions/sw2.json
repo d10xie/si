@@ -262,5 +262,41 @@
   "correct": [
     "możliwa do uruchomienia tylko z najniższym priorytetem"
   ]
+},
+{
+  "question": "Zaznacz zdanie prawdziwe o Real-Time Clock (RTC):",
+  "options": [
+    "może być podłączony przez magistralę I²C lub działać jako wewnętrzny moduł mikrokontrolera",
+    "działa tylko, gdy aktywny jest system operacyjny",
+    "wymaga taktowania zegarem CPU",
+    "nie trzeba go kalibrować i jest dokładny do sekundy"
+  ],
+  "correct": [
+    "może być podłączony przez magistralę I²C lub działać jako wewnętrzny moduł mikrokontrolera"
+  ]
+},
+{
+  "question": "Zaznacz zdanie prawdziwe o SysTick(ten co liczy w dół i ma 24 bity)",
+  "options": [
+    "wymaga ręcznego czyszczenia po zapełnieniu",
+    "jest 64-bitowym licznikiem sprzętowym",
+    "może generować przerwanie okresowe dla systemu operacyjnego",
+    "działa tylko w trybie debugowania"
+  ],
+  "correct": [
+    "może generować przerwanie okresowe dla systemu operacyjnego"
+  ]
+},
+{
+  "question": "Jak zapisywać dane na kartę MicroSD w systemach embedded (np. STM32)?",
+  "options": [
+    "Trzeba korzystać z rejestrów",
+    "Trzeba korzystać z gotowych modułów do karty",
+    "Dane są zapisywane automatycznie przez DMA",
+    "Tylko system operacyjny może zapisywać na kartę SD"
+  ],
+  "correct": [
+    "Trzeba korzystać z gotowych modułów do karty"
+  ]
 }
 ]
