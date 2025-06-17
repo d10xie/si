@@ -6,12 +6,14 @@ import sm from './questions/sm.json';
 import si from './questions/si.json';
 import sw from './questions/sw.json';
 import po from './questions/po.json';
+import giw from './questions/giw.json';
 
 const allQuestionSets = {
   sm,
   si,
   sw,
-  po
+  po,
+  giw
 };
 
 const shuffle = (array) => {
@@ -224,7 +226,8 @@ const handleAnswer = (optionIndex) => {
       sm: "Systemy Multimedialne",
       si: "Sztuczna Inteligencja",
       sw: "Systemy Wbudowane",
-      po: "Projektowanie Oprogramowania"
+      po: "Projektowanie Oprogramowania",
+      giw: "Grafika i Wizualizacja"
     }[set]}
   </label>
 ))}
@@ -241,7 +244,7 @@ const handleAnswer = (optionIndex) => {
       checked={learningMode}
       onChange={(e) => setLearningMode(e.target.checked)}
     />
-    Tryb nauki (od razu pokazuj poprawną odpowiedź, brak punktów)
+    Tryb nauki (od razu pokazuj poprawną odpowiedź)
   </label>
 </div>
 
@@ -325,7 +328,7 @@ const handleAnswer = (optionIndex) => {
 )}
 
             <div className="flex flex-col gap-2 mt-4">
-  <Button onClick={handleRestartSameSettings}>Zagraj ponownie</Button>
+  <Button onClick={handleRestartSameSettings}>Spróbuj ponownie</Button>
   <Button variant="outline" onClick={handleRestartQuiz}>Wróć do wyboru</Button>
 </div>
           </Card>
