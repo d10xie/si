@@ -238,7 +238,7 @@
   "correct": [
     "APSR, EPSR, IPSR"
   ]
-}
+},
 {
   "question": "Zmienne globalne w FreeRTOS:",
   "options": [
