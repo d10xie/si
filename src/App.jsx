@@ -2,14 +2,16 @@ import React, { useState, useMemo, useEffect } from 'react';
 import './App.css';
 import { Card, CardContent } from './components/ui/card/card';
 import { Button } from './components/ui/button/button';
-import multimedia from './questions/multimedia.json';
+import sm from './questions/sm.json';
 import si from './questions/si.json';
 import sw from './questions/sw.json';
+import po from './questions/po.json';
 
 const allQuestionSets = {
-  multimedia,
+  sm,
   si,
-  sw
+  sw,
+  po
 };
 
 const shuffle = (array) => {
@@ -221,7 +223,8 @@ const handleAnswer = (optionIndex) => {
     {{
       multimedia: "Systemy Multimedialne",
       si: "Sztuczna Inteligencja",
-      sw: "Systemy Wbudowane"
+      sw: "Systemy Wbudowane",
+      po: "Projektowanie Oprogramowania"
     }[set]}
   </label>
 ))}

@@ -1,0 +1,292 @@
+{
+  "question": "Język opisu architektury ArchiMate 3.1 przedstawia poziomy",
+  "options": [
+    "Biznesowy, aplikacji i technologii",
+    "Logiczny, deweloperski i fizyczny",
+    "Kreacyjny, behawioralny i strukturalny",
+    "Żaden z wymienionych"
+  ],
+  "correct": [
+    "Biznesowy, aplikacji i technologii"
+  ]
+},
+{
+  "question": "Czym jest moduł oprogramowania?",
+  "options": [
+    "to zestaw testów jednostkowych",
+    "to inaczej zespół developerski",
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury",
+    "to synonim klasy w obiektowym języku programowania"
+  ],
+  "correct": [
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury"
+  ]
+},
+{
+  "question": "Czym jest storyboard?",
+  "options": [
+    "uruchamialny prototyp interfejsu użytkownika",
+    "sekwencja wizualnych \"klatek\" ilustrujących wzajemne oddziaływanie pomiędzy użytkownikiem a projektowanym systemem",
+    "szczegółowy projekt wysokiej wierności poszczególnych ekranów",
+    "słowne przedstawienie historii użytkownika w metodyce zwinnej"
+  ],
+  "correct": [
+    "sekwencja wizualnych \"klatek\" ilustrujących wzajemne oddziaływanie pomiędzy użytkownikiem a projektowanym systemem"
+  ]
+},
+{
+  "question": "Metody quasi-empiryczne służące do oceny projektu interakcji z użytkownikiem",
+  "options": [
+    "nie angażują użytkowników",
+    "muszą być stosowane wyłącznie w miejscu wdrożenia systemu (siedzibie klienta)",
+    "obejmują precyzyjnie określony proces i kolejność poszczególnych działań",
+    "obejmują zbieranie danych od uczestników"
+  ],
+  "correct": [
+    "obejmują zbieranie danych od uczestników"
+  ]
+},
+{
+  "question": "Poziom testowania integracyjnego dotyczy",
+  "options": [
+    "funkcjonalności opisanej w specyfikacji wymagań systemu",
+    "zatwierdzenia produktu przez klienta i dopasowania do jego potrzeb",
+    "współpracy zbioru jednostek programu",
+    "podstawowych jednostek programu"
+  ],
+  "correct": [
+    "współpracy zbioru jednostek programu"
+  ]
+},
+{
+  "question": "Którego wzorca architektonicznego dotyczy następujący opis: system składa się zestawu komponentów, gdzie każdy z nich w odpowiedni sposób przetwarza strumień danych i przekazuje dalej, a komponenty można zestawiać w różnej kolejności tworząc rodziny systemów?",
+  "options": [
+    "model-widok-kontroler",
+    "potoki i filtry",
+    "klient-serwer",
+    "mikrojądro"
+  ],
+  "correct": [
+    "potoki i filtry"
+  ]
+},
+{
+  "question": "Co jest celem procesu specyfikacji oprogramowania?",
+  "options": [
+    "przydzielenie zadań programistycznych do deweloperów",
+    "architektura systemu",
+    "plan wytwarzania oprogramowania",
+    "wymagane funkcje oraz ograniczenia systemu"
+  ],
+  "correct": [
+    "wymagane funkcje oraz ograniczenia systemu"
+  ]
+},
+{
+  "question": "Co jest celem weryfikacji oprogramowania?",
+  "options": [
+    "wykazanie, że oprogramowanie spełnia potrzeby klienta",
+    "wykazanie, że deweloperzy zrealizowali przydzielone zadania programistyczne",
+    "wykazanie, że umowa na realizację projektu jest zgodna z przepisami prawa",
+    "wykazanie, że oprogramowanie spełnia zdefiniowane wymagania"
+  ],
+  "correct": [
+    "wykazanie, że oprogramowanie spełnia zdefiniowane wymagania"
+  ]
+},
+{
+  "question": "Które z poniższych NIE dotyczy ewolucji oprogramowania?",
+  "options": [
+    "zmiana platformy wymaga zmian w aplikacjach",
+    "nowe technologie otwierają nowe możliwości doskonalenia wdrożonych systemów",
+    "zmiany biznesowe prowadzą do nowych i zmienionych wymagań systemowych",
+    "przydzielenie nowego dewelopera do zespołu"
+  ],
+  "correct": [
+    "przydzielenie nowego dewelopera do zespołu"
+  ]
+},
+{
+  "question": "Czym jest moduł oprogramowania?",
+  "options": [
+    "to zestaw testów jednostkowych",
+    "to inaczej zespół developerski",
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury",
+    "to synonim klasy w obiektowym języku programowania"
+  ],
+  "correct": [
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury"
+  ]
+},
+{
+  "question": "Które z poniższych stwierdzeń dotyczących zastosowania wzorca singleton jest prawdziwe?",
+  "options": [
+    "tworzenie obiektu z wykorzystaniem wzorca singleton jest zawsze bardziej wydajne niż tradycyjnie za pomocą operatora 'new'",
+    "można stworzyć dowolną ilość egzemplarzy singletonu",
+    "nie można stworzyć kolejnego egzemplarza singletonu",
+    "wykorzystanie tego wzorca jest rekomendowane do tworzenia wszystkich obiektów w systemie"
+  ],
+  "correct": [
+    "nie można stworzyć kolejnego egzemplarza singletonu"
+  ]
+},
+{
+  "question": "Testowanie oparte na wymaganiach",
+  "options": [
+    "dotyczy wyłącznie interakcji między komponentami systemu",
+    "polega na spontanicznym projektowaniu i wykonywaniu testów na podstawie własnego doświadczenia testera",
+    "obejmuje wykorzystanie precyzyjnego formalnego modelu zachowania systemu",
+    "ma na celu zapewnienie, że wymagania dotyczące elementu testowego zostały zaadresowane (tj. \"pokryte\") podczas testowania"
+  ],
+  "correct": [
+    "ma na celu zapewnienie, że wymagania dotyczące elementu testowego zostały zaadresowane (tj. \"pokryte\") podczas testowania"
+  ]
+},
+{
+  "question": "Czego dotyczy standard WS-BPEL?",
+  "options": [
+    "łączenia usług sieciowych w ciąg/przepływ",
+    "opisu dziedziny biznesowej wymagań systemu",
+    "opisu interfejsów i funkcji usługi sieciowej",
+    "zdalnego wywoływania usług przez sieć"
+  ],
+  "correct": [
+    "łączenia usług sieciowych w ciąg/przepływ"
+  ]
+},
+{
+  "question": "Testowanie oparte na doświadczeniu",
+  "options": [
+    "dotyczy wyłącznie interakcji między komponentami systemu",
+    "polega na spontanicznym projektowaniu i wykonywaniu testów na podstawie własnego doświadczenia testera",
+    "ma na celu zapewnienie, że wymagania dotyczące elementu testowego zostały zaadresowane (tj. \"pokryte\") podczas testowania",
+    "obejmuje wykorzystanie precyzyjnego formalnego modelu zachowania systemu"
+  ],
+  "correct": [
+    "polega na spontanicznym projektowaniu i wykonywaniu testów na podstawie własnego doświadczenia testera"
+  ]
+},
+{
+  "question": "Czym jest ideacja w odniesieniu do projektu interakcji z użytkownikiem?",
+  "options": [
+    "oceną stopnia zaawansowania użytkowników w korzystaniu z danej platformy sprzętowej",
+    "procesem grupowym służącym tworzeniu pomysłów na projekt",
+    "procesem wyceny kosztu wytworzenia projektu",
+    "projektowaniem interfejsu użytkownika w narzędziu IntelliJ IDEA"
+  ],
+  "correct": [
+    "procesem grupowym służącym tworzeniu pomysłów na projekt"
+  ]
+},
+{
+  "question": "Którego wzorca architektonicznego dotyczy następujący opis: umożliwia stworzenie projektu oprogramowania, gdzie komponenty można podzielić na grupy realizujące rodzaje zadań i gdzie każda grupa znajduje się na określonym poziomie abstrakcji?",
+  "options": [
+    "mikrojądro",
+    "architektura warstwowa",
+    "potoki i filtry",
+    "klient-serwer"
+  ],
+  "correct": [
+    "architektura warstwowa"
+  ]
+},{
+  "question": "Czego dotyczy standard REST?",
+  "options": [
+    "łączenia usług sieciowych w ciąg/przepływ",
+    "zdalnego wywoływania usług przez sieć",
+    "opisu interfejsów i funkcji usługi sieciowej",
+    "zarządzania czasem pracy deweloperów"
+  ],
+  "correct": [
+    "zdalnego wywoływania usług przez sieć"
+  ]
+},
+{
+  "question": "Czego dotyczy standard REST?",
+  "options": [
+    "łączenia usług sieciowych w ciąg/przepływ",
+    "zdalnego wywoływania usług przez sieć",
+    "opisu interfejsów i funkcji usługi sieciowej",
+    "zarządzania czasem pracy deweloperów"
+  ],
+  "correct": [
+    "zdalnego wywoływania usług przez sieć"
+  ]
+},
+{
+  "question": "Czym jest moduł oprogramowania?",
+  "options": [
+    "to zestaw testów jednostkowych",
+    "to synonim klasy w obiektowym języku programowania",
+    "to inaczej zespół developerski",
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury"
+  ],
+  "correct": [
+    "każda z zestawu ustandaryzowanych części lub niezależnych jednostek, które mogą być użyte do zbudowania bardziej złożonej struktury"
+  ]
+},
+{
+  "question": "Którego wzorca projektowego należy użyć, gdy musi istnieć dokładnie jedno wystąpienie klasy i musi być dostępne dla klientów przez dobrze znany punkt dostępu?",
+  "options": [
+    "Most",
+    "Prototyp",
+    "Metoda fabryczna",
+    "Singleton"
+  ],
+  "correct": [
+    "Singleton"
+  ]
+},
+{
+  "question": "Którego wzorca projektowego należy użyć, gdy system powinien być skonfigurowany z jedną z wielu rodzin produktów?",
+  "options": [
+    "Kompozyt",
+    "Budowniczy",
+    "Metoda fabryczna",
+    "Fabryka abstrakcyjna"
+  ],
+  "correct": [
+    "Fabryka abstrakcyjna"
+  ]
+},
+{
+  "question": "Które procesy wytwarzania oprogramowania są lepsze:",
+  "options": [
+    "Procesy hybrydowe łączące elementy procesów tradycyjnych i zwinnych",
+    "Tradycyjne oparte na planowaniu",
+    "Procesy oparte na podejściu zwinnym",
+    "Nie ma dobrych ani złych procesów wytwarzania oprogramowania.",
+    "Iteracyjne"
+  ],
+  "correct": [
+    "Nie ma dobrych ani złych procesów wytwarzania oprogramowania."
+  ]
+},
+{
+  "question": "Wzorce integracyjne przedsiębiorstw (EIP) dotyczą następujących strategii integracyjnych",
+  "options": [
+    "Wszystkich wymienionych",
+    "Zdalnego wywoływania procedur (RPC)",
+    "Wspólnej bazy danych",
+    "Transferu przez pliki",
+    "Asynchronicznych komunikatów"
+  ],
+  "correct": [
+    "Wszystkich wymienionych"
+  ]
+},
+{
+  "question": "Które z poniższych prezentują problemy projektowania architektonicznego?",
+  "options": [
+    "Zastosowanie funkcji zapewniających bezpieczeństwo zwykle oznacza większy nakład na komunikację, co prowadzi do pogorszenia wydajności",
+    "Stosowanie elementów o dużej ziarnistości poprawia wydajność, ale zmniejsza łatwość konserwacji",
+    "Wszystkie wymienione",
+    "Wprowadzenie nadmiarowych danych poprawia dostępność, ale utrudnia bezpieczeństwo"
+  ],
+  "correct": [
+    "Wszystkie wymienione"
+  ]
+},
+
+
+
