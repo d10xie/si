@@ -8,6 +8,7 @@ import sw from './questions/sw.json';
 import po from './questions/po.json';
 import giw from './questions/giw.json';
 import sw2 from './questions/sw2.json';
+import giw2 from './questions/giw2.json';
 
 const allQuestionSets = {
   sm,
@@ -15,7 +16,8 @@ const allQuestionSets = {
   sw,
   po,
   giw,
-  sw2
+  sw2,
+  giw2
 };
 
 const shuffle = (array) => {
@@ -230,7 +232,8 @@ const handleAnswer = (optionIndex) => {
       sw: "Systemy Wbudowane(urojone pytania)",
       sw2: "Systemy Wbudowane(baza)",
       po: "Projektowanie Oprogramowania",
-      giw: "Grafika i Wizualizacja"
+      giw: "Grafika i Wizualizacja(pdf)",
+      giw2: "Grafika i Wizualizacja(białe)"
     }[set]}
   </label>
 ))}

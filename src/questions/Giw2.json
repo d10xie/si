@@ -1,0 +1,1085 @@
+{
+  "question": "Model oświetlenia nazywany jest lokalnym, jeżeli:",
+  "options": [
+    "kolor powierzchni obliczany jest tylko na podstawie światła docierającego bezpośrednio ze źródeł światła.",
+    "uwzględnia tylko białe źródła światła.",
+    "uwzględnia tylko punktowe źródła światła.",
+    "uwzględnia światło odbite od powierzchni obiektów i świetlające powierzchnię, dla której obliczany jest kolor."
+  ],
+  "correct": [
+    "kolor powierzchni obliczany jest tylko na podstawie światła docierającego bezpośrednio ze źródeł światła."
+  ]
+},
+{
+  "question": "W ray tracingu do obliczenia kierunku promienia pierwotnego potrzebna jest znajomość",
+  "options": [
+    "parametrów materiału obiektu, w który trafi promień.",
+    "koloru tła.",
+    "położenia piksela renderowanego obrazu.",
+    "położenia źródeł światła."
+  ],
+  "correct": [
+    "położenia piksela renderowanego obrazu."
+  ]
+},
+{
+  "question": "Aliasing widoczny na renderowanych obrazach rastrowych",
+  "options": [
+    "może powodować zjawisko migania pikseli (ang. flickering) w czasie wyświetlania animacji.",
+    "może powodować zmianę kształtu małych obiektów.",
+    "powoduje zmianę kolorów pikseli.",
+    "jest spowodowany zbyt małą częstotliwością próbkowania sceny, tzn., że np. zbyt małą rozdzielczość syntezowanego obrazu rastrowego."
+  ],
+  "correct": [
+    "może powodować zjawisko migania pikseli (ang. flickering) w czasie wyświetlania animacji.",
+    "może powodować zmianę kształtu małych obiektów.",
+    "jest spowodowany zbyt małą częstotliwością próbkowania sceny, tzn., że np. zbyt małą rozdzielczość syntezowanego obrazu rastrowego."
+  ]
+},
+{
+  "question": "Model zjawiska fizycznego",
+  "options": [
+    "stosowany jest do komputerowej symulacji tego zjawiska.",
+    "w większości przypadków będzie bardziej złożony pod względem obliczeniowym, jeżeli w większym stopniu przybliża to zjawisko fizyczne.",
+    "to uproszczenie tego zjawiska umożliwiające np. symulowanie tego zjawiska za pomocą komputerów.",
+    "nie może być stosowany do komputerowej symulacji zjawisk fizycznych, ze względu na zbyt duże uproszczenie tych zjawisk."
+  ],
+  "correct": [
+    "stosowany jest do komputerowej symulacji tego zjawiska.",
+    "w większości przypadków będzie bardziej złożony pod względem obliczeniowym, jeżeli w większym stopniu przybliża to zjawisko fizyczne."
+  ]
+},
+{
+  "question": "Wartość składowej koloru \"specular\" obliczanej w modelu oświetlenia Blinna-Phonga",
+  "options": [
+    "zależy od położenia źródeł światła.",
+    "zależy od położenia obserwatora (kamery).",
+    "zależy od parametru nazwanego \"shninesse\"",
+    "umożliwia renderowanie obiektów o metalicznym wyglądzie powierzchni."
+  ],
+  "correct": [
+    "zależy od położenia źródeł światła.",
+    "zależy od położenia obserwatora (kamery).",
+    "zależy od parametru nazwanego \"shninesse\""
+  ]
+},
+{
+  "question": "Mapowanie tekstury to",
+  "options": [
+    "proces polegający na dostosowaniu wielkości tekstury do obszaru w rastrze, na który ta tekstura ma zostać nałożona.",
+    "proces, którego celem jest nałożenie tekstury na krzywoliniową powierzchnię w sposób, który w jak najmniejszym stopniu zniekształci treść tekstury.",
+    "proces pozwalający na dostosowanie płaskiego prostokątnego kształtu tekstury do krzywoliniowej powierzchni, na którą nakładana jest tekstura.",
+    "proces polegający na powiększaniu lub pomniejszaniu tekstury."
+  ],
+  "correct": [
+    "proces, którego celem jest nałożenie tekstury na krzywoliniową powierzchnię w sposób, który w jak najmniejszym stopniu zniekształci treść tekstury."
+  ]
+},
+{
+  "question": "W ray tracingu wartość komponentu koloru diffuse",
+  "options": [
+    "obliczany jest osobno dla każdego źródła światła umieszczonego na scenie.",
+    "nie zależy od położenia kamery.",
+    "zależy tylko od koloru źródeł światła oraz parametru diffuse materiału powierzchni."
+  ],
+  "correct": [
+    "obliczany jest osobno dla każdego źródła światła umieszczonego na scenie.",
+    "nie zależy od położenia kamery."
+  ]
+},
+{
+  "question": "Reprezentacja wielokątowa kształtów obiektów",
+  "options": [
+    "cechuje się idealną dokładnością reprezentowania zadanego kształtu.",
+    "umożliwia szybkie przetwarzanie obiektów na kartach z GPU.",
+    "ułatwia zrównoleglenie obliczeń.",
+    "można za jej pomocą przybliżyć z różną dokładnością dowolny kształt geometryczny."
+  ],
+  "correct": [
+    "umożliwia szybkie przetwarzanie obiektów na kartach z GPU.",
+    "ułatwia zrównoleglenie obliczeń.",
+    "można za jej pomocą przybliżyć z różną dokładnością dowolny kształt geometryczny."
+  ]
+},
+{
+  "question": "Antyaliasing stosuje się, aby",
+  "options": [
+    "zwiększyć rozdzielczość renderowanego obrazu.",
+    "zmniejszyć widoczność aliasingu na obrazie.",
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu.",
+    "poprawić jakość renderowanych obrazów."
+  ],
+  "correct": [
+    "zmniejszyć widoczność aliasingu na obrazie.",
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu.",
+    "poprawić jakość renderowanych obrazów."
+  ]
+},
+{
+  "question": "Profil koloru",
+  "options": [
+    "definiowany jest między innymi przez wartości koloru bieli.",
+    "to zestaw parametrów opisujących w jaki sposób dane urządzenie wyświetla kolory.",
+    "nie obejmuje parametrów korekcji gamma.",
+    "definiowany jest między innymi przez wartości trzech barw podstawowych."
+  ],
+  "correct": [
+    "definiowany jest między innymi przez wartości koloru bieli.",
+    "to zestaw parametrów opisujących w jaki sposób dane urządzenie wyświetla kolory.",
+    "definiowany jest między innymi przez wartości trzech barw podstawowych."
+  ]
+},
+{
+  "question": "Kodowanie i dekodowanie gamma",
+  "options": [
+    "polega na liniowej zmianie jasności obrazu w celu polepszenia widoczności szczegółów na obrazie.",
+    "polega na nieliniowej zmianie jasności pikseli w obrazie przed wykonaniem kwantyzacji tego obrazu.",
+    "to proces umożliwiający pomniejszenie błędów kwantyzacji na obrazie bez konieczności powiększania pamięci, w której przechowywana jest wartość koloru piksela.",
+    "jest wykonywane przez dodawanie bądź odejmowanie stałej wartości od trzech kanałów koloru w obrazie."
+  ],
+  "correct": [
+    "polega na nieliniowej zmianie jasności pikseli w obrazie przed wykonaniem kwantyzacji tego obrazu.",
+    "to proces umożliwiający pomniejszenie błędów kwantyzacji na obrazie bez konieczności powiększania pamięci, w której przechowywana jest wartość koloru piksela."
+  ]
+},
+{
+  "question": "W równaniu oświetlenia Blinna-Phonga",
+  "options": [
+    "składowa specular odpowiada za symulację wyglądu powierzchni rozpraszających światło.",
+    "składowa specular odpowiada za symulację odbić od powierzchni o metalicznym wyglądzie.",
+    "składowa ambient odpowiada za przybliżenie oświetlenia globalnego, tzn. światła, które zostało odbite od innych powierzchni.",
+    "składowa diffuse odpowiada za symulację wyglądu powierzchni rozpraszających światło, np. matowego plastiku."
+  ],
+  "correct": [
+    "składowa specular odpowiada za symulację odbić od powierzchni o metalicznym wyglądzie.",
+    "składowa ambient odpowiada za przybliżenie oświetlenia globalnego, tzn. światła, które zostało odbite od innych powierzchni.",
+    "składowa diffuse odpowiada za symulację wyglądu powierzchni rozpraszających światło, np. matowego plastiku."
+  ]
+},
+{
+  "question": "Teksturowanie",
+  "options": [
+    "jest powszechnie stosowane w systemach graficznych czasu rzeczywistego.",
+    "to proces polegający na obliczaniu mapy wektorów normalnych (ang. normal map) dla danego obiektu.",
+    "to proces polegający na modyfikacji koloru powierzchni obiektu poprzez wymnożenie koloru tej powierzchni obliczonego w równaniu oświetlenia przez kolor teksela odpowiadającego wybranemu punktowi na powierzchni.",
+    "to proces polegający na podziale siatki tworzącej model obiektu na mniejsze trójkąty bądź czworokąty."
+  ],
+  "correct": [
+    "jest powszechnie stosowane w systemach graficznych czasu rzeczywistego.",
+    "to proces polegający na modyfikacji koloru powierzchni obiektu poprzez wymnożenie koloru tej powierzchni obliczonego w równaniu oświetlenia przez kolor teksela odpowiadającego wybranemu punktowi na powierzchni."
+  ]
+},
+{
+  "question": "Pamięć obrazu to",
+  "options": [
+    "pamięć, w której uruchamiany jest program renderujący grafikę.",
+    "pamięć nazywana buforem ramki (ang. framebuffer).",
+    "część komputera, w której przechowywane są dane obrazu.",
+    "pamięć, do której zapisywane są obliczane wartości kolorów pikseli obrazu."
+  ],
+  "correct": [
+    "pamięć nazywana buforem ramki (ang. framebuffer).",
+    "pamięć, do której zapisywane są obliczane wartości kolorów pikseli obrazu."
+  ]
+}
+,{
+  "question": "W monitorach LCD",
+  "options": [
+    "konieczne jest zastosowanie podświetlenia (ang. backlight).",
+    "ciekłe kryształy muszą być schłodzone poniżej 0 stopni Celsjusza.",
+    "stosowane są filtry polaryzacyjne.",
+    "kolory uzyskuje się dzięki różnokolorowym ciekłym kryształom."
+  ],
+  "correct": [
+    "konieczne jest zastosowanie podświetlenia (ang. backlight).",
+    "stosowane są filtry polaryzacyjne."
+  ]
+}
+,{
+  "question": "W monitorach LCD kolory uzyskuje się poprzez",
+  "options": [
+    "podział piksela wyświetlacza na trzy komórki ciekłego kryształu i przesłonięcie każdej filtrem R, G lub B.",
+    "zmianę położenia ciekłego kryształu prowadzącą do zmiany barwy w jakiej świeci dana komórka ciekłego kryształu.",
+    "wykorzystanie filtrów RGB umieszczonych w warstwie CFA (ang. color filter array).",
+    "stosowanie podświetlenia w różnych barwach, które zmieniają się zgodnie z kolorami wyświetlanego obrazu."
+  ],
+  "correct": [
+    "podział piksela wyświetlacza na trzy komórki ciekłego kryształu i przesłonięcie każdej filtrem R, G lub B.",
+    "wykorzystanie filtrów RGB umieszczonych w warstwie CFA (ang. color filter array)."
+  ]
+}
+,{
+  "question": "Elementem karty graficznej jest",
+  "options": [
+    "pamięć RAM.",
+    "układ służący do ogrzewania GPU.",
+    "pamięć.",
+    "zegar taktujący."
+  ],
+  "correct": [
+    "pamięć."
+  ]
+}
+,{
+  "question": "Podstawowym parametrem wyświetlacza LCD jest",
+  "options": [
+    "częstotliwość odświeżania pionowego obrazu.",
+    "fizyczne rozmiary ekranu wyświetlacza.",
+    "materiał z jakiego wykonana jest jego obudowa.",
+    "rozdzielczość."
+  ],
+  "correct": [
+    "częstotliwość odświeżania pionowego obrazu.",
+    "rozdzielczość."
+  ]
+}
+,{
+  "question": "Grafika komputerowa",
+  "options": [
+    "definiuje algorytmy renderingu obrazów, które mogą być stosowane tylko w systemach offlinowych, tzn. w takich, w których rendering obrazów nie odbywa się w czasie rzeczywistym.",
+    "ma zastosowanie jedynie w systemach używanych w grach komputerowych.",
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny.",
+    "jest dziedziną wiedzy zajmującą się przetwarzaniem i analizą obrazów."
+  ],
+  "correct": [
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny."
+  ]
+}
+,{
+  "question": "Parametrami piksela są",
+  "options": [
+    "pole powierzchni.",
+    "kolor.",
+    "stopień przezroczystości.",
+    "położenie w rastrze."
+  ],
+  "correct": [
+    "kolor.",
+    "stopień przezroczystości.",
+    "położenie w rastrze."
+  ]
+}
+,{
+  "question": "Punkt bieli",
+  "options": [
+    "może być wyrażony za pomocą temperatury barwowej.",
+    "wykorzystywany jest w systemach zarządzania kolorami, aby uwzględniać zjawisko adaptacji wzroku człowieka do zmiany kolorów dominujących na scenie.",
+    "jest jedynym parametrem profilu koloru wyświetlaczy komputerowych.",
+    "w fotografii to kolor, do którego zaadaptowany byłby wzrok człowieka w momencie wykonywania zdjęcia."
+  ],
+  "correct": [
+    "może być wyrażony za pomocą temperatury barwowej.",
+    "wykorzystywany jest w systemach zarządzania kolorami, aby uwzględniać zjawisko adaptacji wzroku człowieka do zmiany kolorów dominujących na scenie.",
+    "w fotografii to kolor, do którego zaadaptowany byłby wzrok człowieka w momencie wykonywania zdjęcia."
+  ]
+}
+,{
+  "question": "W równaniu oświetlenia Blinna-Phonga",
+  "options": [
+    "wartość składowej diffuse obliczana jest z uwzględnieniem wzajemnego położenia powierzchni i źródła światła oraz położenia obserwatora/kamery.",
+    "wartość składowej ambient obliczana jest z uwzględnieniem położenia obserwatora.",
+    "wartość składowej diffuse obliczana jest z uwzględnieniem od wzajemnego położenia powierzchni i źródeł światła.",
+    "wartość składowej specular nie zależy od położenia obserwatora i położenia źródeł światła."
+  ],
+  "correct": [
+    "wartość składowej diffuse obliczana jest z uwzględnieniem od wzajemnego położenia powierzchni i źródeł światła."
+  ]
+}
+,{
+  "question": "Równanie oświetlenia Blinna-Phonga",
+  "options": [
+    "służy do obliczania koloru powierzchni, ale nie bierze pod uwagę położenia źródeł światła.",
+    "służy do obliczania koloru punktu na powierzchni obiektu.",
+    "nie może być obliczane na GPU, ponieważ jest zbyt złożone pod względem obliczeniowym.",
+    "służy do obliczania koloru powierzchni, ale nie bierze pod uwagę położenia kamery."
+  ],
+  "correct": [
+    "służy do obliczania koloru punktu na powierzchni obiektu."
+  ]
+}
+,{
+  "question": "Antyaliasing stosuje się, aby",
+  "options": [
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu.",
+    "zwiększyć rozdzielczość renderowanego obrazu.",
+    "poprawić jakość renderowanych obrazów.",
+    "zmniejszyć widoczność aliasingu na obrazie."
+  ],
+  "correct": [
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu.",
+    "poprawić jakość renderowanych obrazów.",
+    "zmniejszyć widoczność aliasingu na obrazie."
+  ]
+}
+,{
+  "question": "Aliasing na obrazie",
+  "options": [
+    "może doprowadzić do zanikania szczegółów (detali) w obrazie rastrowym.",
+    "powstaje na skutek użycia zbyt dużej częstotliwości próbkowania obrazu.",
+    "prowadzi do nadmiernego nasycenia kolorów w obrazie.",
+    "może doprowadzić do \"migania\" fragmentów obrazów."
+  ],
+  "correct": [
+    "może doprowadzić do zanikania szczegółów (detali) w obrazie rastrowym.",
+    "może doprowadzić do \"migania\" fragmentów obrazów."
+  ]
+}
+,{
+  "question": "Ray tracing to",
+  "options": [
+    "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+    "metoda syntezy obrazów, w której obraz jest generowany poprzez przenoszenie do rastra, a następnie obliczanie kolorów trójkątów zdefiniowanych na scenie.",
+    "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak odbicia, załamania i cieniowanie.",
+    "technika polegająca na rysowaniu linii (promienia) w rastrze."
+  ],
+  "correct": [
+    "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+    "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak odbicia, załamania i cieniowanie."
+  ]
+},
+{
+  "question": "Atlas tekstur to",
+  "options": [
+    "nazwa folderu zawierającego tekstury.",
+    "technika zmniejszająca rozdrobnienie tekstur i umożliwiająca ich efektywne przesyłanie z głównej pamięci RAM do pamięci karty graficznej.",
+    "zestaw tekstur różnego rodzaju nakładanych na jedną powierzchnię, np. tekstury typu diffuse, normal, specular.",
+    "jedna duża tekstura zawierająca wiele mniejszych tekstur nakładanych na różne powierzchnie."
+  ],
+  "correct": [
+    "technika zmniejszająca rozdrobnienie tekstur i umożliwiająca ich efektywne przesyłanie z głównej pamięci RAM do pamięci karty graficznej.",
+    "jedna duża tekstura zawierająca wiele mniejszych tekstur nakładanych na różne powierzchnie."
+  ]
+}
+,{
+  "question": "W monitorach LCD",
+  "options": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "ciekłe kryształy muszą być schłodzone poniżej 0 stopni Celsjusza.",
+    "kolor uzyskuje się dzięki różnokolorowym ciekłym kryształom.",
+    "konieczne jest zastosowanie podświetlenia (ang. backlight)."
+  ],
+  "correct": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "konieczne jest zastosowanie podświetlenia (ang. backlight)."
+  ]
+}
+,{
+  "question": "Scena to",
+  "options": [
+    "zbiór obiektów wraz z przypisanymi materiałami.",
+    "składnik silnika gry zawierający informacje o tym jak powierzchnie obiektów odbijają światło.",
+    "składnik silnika gry zawierający informacje o tym jak oświetlone są obiekty.",
+    "w przypadku scen trójwymiarowych powinna zawierać kamerę."
+  ],
+  "correct": [
+    "zbiór obiektów wraz z przypisanymi materiałami.",
+    "w przypadku scen trójwymiarowych powinna zawierać kamerę."
+  ]
+}
+,{
+  "question": "Grafika komputerowa",
+  "options": [
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny.",
+    "definiuje techniki renderingu stosowane w systemach graficznych czasu rzeczywistego.",
+    "jest dziedziną wiedzy zajmującą się przetwarzaniem i analizą obrazów.",
+    "definiuje techniki renderingu stosowane w grach komputerowych."
+  ],
+  "correct": [
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny.",
+    "definiuje techniki renderingu stosowane w systemach graficznych czasu rzeczywistego.",
+    "definiuje techniki renderingu stosowane w grach komputerowych."
+  ]
+}
+,{
+  "question": "Procesor GPU szybciej od CPU renderuje obrazy, ponieważ",
+  "options": [
+    "ma architekturę SISD (ang. Single Instruction Single Data).",
+    "oblicza równolegle więcej wątków niż CPU.",
+    "ma szybszy dostęp do pamięci RAM karty graficznej.",
+    "ma szybszy dostęp do pamięci RAM komputera."
+  ],
+  "correct": [
+    "oblicza równolegle więcej wątków niż CPU.",
+    "ma szybszy dostęp do pamięci RAM karty graficznej."
+  ]
+}
+,{
+  "question": "Zasada działania monitora LCD opiera się między innymi na wykorzystaniu:",
+  "options": [
+    "zjawiska indukcji elektromagnetycznej.",
+    "wykorzystania właściwości ciekłych kryształów.",
+    "elementów światłoczułych.",
+    "zjawiska dyspersji światła."
+  ],
+  "correct": [
+    "wykorzystania właściwości ciekłych kryształów."
+  ]
+}
+,{
+  "question": "Elementem karty graficznej jest",
+  "options": [
+    "pamięć.",
+    "procesor CPU.",
+    "gniazdo Display-Port (DP).",
+    "procesor graficzny."
+  ],
+  "correct": [
+    "pamięć.",
+    "procesor graficzny."
+  ]
+},
+{
+  "question": "Kolor w grafice komputerowej",
+  "options": [
+    "może być reprezentowany w postaci trzech wartości zapisanych w standardzie CIE XYZ.",
+    "w reprezentacji cyfrowej zapisywany jest jako zbiór trzech wartości całkowitych.",
+    "najczęściej reprezentowany jest w postaci wektora RGB, ponieważ w wyświetlaczach wykorzystywane są filtry R, G i B.",
+    "najczęściej reprezentowany jest w postaci wektora z trzema parametrami R, G i B (ang. red, green, blue)."
+  ],
+  "correct": [
+    "może być reprezentowany w postaci trzech wartości zapisanych w standardzie CIE XYZ.",
+    "najczęściej reprezentowany jest w postaci wektora RGB, ponieważ w wyświetlaczach wykorzystywane są filtry R, G i B.",
+    "najczęściej reprezentowany jest w postaci wektora z trzema parametrami R, G i B (ang. red, green, blue)."
+  ]
+},{
+  "question": "Model oświetlenia nazywany jest globalnym jeżeli",
+  "options": [
+    "uwzględnia tylko punktowe źródła światła.",
+    "uwzględnia wzajemne oświetlenie się obiektów znajdujących się na scenie.",
+    "kolor powierzchni obliczany jest tylko na podstawie światła docierającego bezpośrednio ze źródeł światła.",
+    "uwzględnia tylko białe źródła światła."
+  ],
+  "correct": [
+    "uwzględnia wzajemne oświetlenie się obiektów znajdujących się na scenie."
+  ]
+}
+,{
+  "question": "Antyaliasing stosuje się, aby",
+  "options": [
+    "poprawić jakość renderowanych obrazów.",
+    "zmniejszyć widoczność aliasingu na obrazie.",
+    "zwiększyć rozdzielczość renderowanego obrazu.",
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu."
+  ],
+  "correct": [
+    "poprawić jakość renderowanych obrazów.",
+    "zmniejszyć widoczność aliasingu na obrazie.",
+    "zmniejszyć aliasing bez konieczności zwiększania rozdzielczości obrazu."
+  ]
+}
+,{
+  "question": "Aliasing na obrazie",
+  "options": [
+    "może doprowadzić do \"migania\" fragmentów obrazów.",
+    "powstaje na skutek użycia zbyt dużej częstotliwości próbkowania obrazu.",
+    "prowadzi do nadmiernego nasycenia kolorów w obrazie.",
+    "może doprowadzić do zanikania szczegółów (detali) w obrazie rastrowym."
+  ],
+  "correct": [
+    "może doprowadzić do \"migania\" fragmentów obrazów.",
+    "może doprowadzić do zanikania szczegółów (detali) w obrazie rastrowym."
+  ]
+}
+,{
+  "question": "W ray tracingu promienie śledzone są od kamery w kierunku sceny do źródeł światła",
+  "options": [
+    "ponieważ tylko w taki sposób możliwe jest obliczenie kolorów powierzchni z uwzględnieniem globalnego modelu oświetlenia.",
+    "ponieważ tylko takie rozwiązanie umożliwia obliczenie koloru powierzchni.",
+    "w celu zmniejszenia liczby obliczeń wymaganych do wyrenderowania obrazu.",
+    "w celu przyspieszenia szukania ścieżek światła biegnących od źródeł światła, odbijających się od powierzchni obiektów i trafiających w kamerę."
+  ],
+  "correct": [
+    "ponieważ tylko w taki sposób możliwe jest obliczenie kolorów powierzchni z uwzględnieniem globalnego modelu oświetlenia."
+  ]
+}
+,{
+  "question": "Teksturowanie",
+  "options": [
+    "wymaga obliczenia położenia teksela w teksturze odpowiadającego punktowi na powierzchni, w którym nakładana jest tekstura.",
+    "jest powszechnie stosowane w systemach graficznych czasu rzeczywistego.",
+    "to proces polegający na podziale siatki tworzącej model obiektu na mniejsze trójkąty bądź czworokąty.",
+    "to proces polegający na obliczaniu mapy wektorów normalnych (ang. normal map) dla danego obiektu."
+  ],
+  "correct": [
+    "wymaga obliczenia położenia teksela w teksturze odpowiadającego punktowi na powierzchni, w którym nakładana jest tekstura.",
+    "jest powszechnie stosowane w systemach graficznych czasu rzeczywistego."
+  ]
+},{
+  "question": "Podstawowymi parametrami definiującymi scenę 3D są",
+  "options": [
+    "kolor źródeł światła.",
+    "materiał obiektów.",
+    "zbiór wielokątów tworzących trójkątową siatkę obiektów.",
+    "pozycja kamery, która będzie służyła do tworzenia obrazu sceny."
+  ],
+  "correct": [
+    "materiał obiektów.",
+    "zbiór wielokątów tworzących trójkątową siatkę obiektów.",
+    "pozycja kamery, która będzie służyła do tworzenia obrazu sceny."
+  ]
+}
+,{
+  "question": "Zasada działania monitora LCD opiera się między innymi na wykorzystaniu",
+  "options": [
+    "zjawiska indukcji elektromagnetycznej.",
+    "zjawiska dyspersji światła.",
+    "elementów światłoczułych.",
+    "wykorzystania właściwości ciekłych kryształów."
+  ],
+  "correct": [
+    "wykorzystania właściwości ciekłych kryształów."
+  ]
+}
+,{
+  "question": "W monitorach LCD",
+  "options": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "ciekłe kryształy muszą być schłodzone poniżej 0 stopni Celsjusza.",
+    "stosowane są filtry polaryzacyjne.",
+    "kolor uzyskuje się dzięki różnokolorowym ciekłym kryształom."
+  ],
+  "correct": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "stosowane są filtry polaryzacyjne."
+  ]
+}
+,{
+  "question": "Rozdzielczość wyświetlacza to",
+  "options": [
+    "fizyczna wielkość punktu/piksela wyświetlacza.",
+    "liczba wyświetlanych punktów/pikseli na jednostkę powierzchni.",
+    "liczba projekcji wyświetlacza.",
+    "liczba wyświetlanych obrazów na sekundę."
+  ],
+  "correct": [
+    "liczba wyświetlanych punktów/pikseli na jednostkę powierzchni."
+  ]
+}
+,{
+  "question": "Podstawowym parametrem wyświetlacza LCD jest",
+  "options": [
+    "rozdzielczość.",
+    "częstotliwość odświeżania pionowego obrazu.",
+    "materiał z jakiego wykonana jest jego obudowa.",
+    "fizyczne wymiary ekranu wyświetlacza."
+  ],
+  "correct": [
+    "rozdzielczość.",
+    "częstotliwość odświeżania pionowego obrazu."
+  ]
+}
+
+,{
+  "question": "W równaniu oświetlenia Blinna-Phonga",
+  "options": [
+    "intensywność składowych ambient, diffuse i specular symuluje wygląd powierzchni zmieniając go od metalicznego do \"chropowatych\" powierzchni rozpraszających światło.",
+    "składowa ambient odpowiada za symulację wpływu światła odbitego od innych powierzchni.",
+    "składowa diffuse odpowiada za symulację wyglądu powierzchni rozpraszających światło, oświetlanych powierzchnie, dla której liczony jest kolor.",
+    "składowa specular odpowiada za symulację odbić od powierzchni o metalicznym wyglądzie."
+  ],
+  "correct": [
+    "składowa ambient odpowiada za symulację wpływu światła odbitego od innych powierzchni.",
+    "składowa diffuse odpowiada za symulację wyglądu powierzchni rozpraszających światło, oświetlanych powierzchni, dla której liczony jest kolor.",
+    "składowa specular odpowiada za symulację odbić od powierzchni o metalicznym wyglądzie."
+  ]
+}
+,{
+  "question": "W ray tracingu komponent koloru specular",
+  "options": [
+    "obliczany jest w ten sposób, że na jego wartość nie ma wpływu światło odbite od innych obiektów na scenie i docierające do punktu na powierzchni, dla którego obliczany jest ten kolor.",
+    "odpowiada za modelowanie powierzchni o metalicznym wyglądzie, które w znaczącym stopniu odbijają światło w sposób kierunkowy.",
+    "zależy jedynie od położenia punktu przecięcia, źródła światła oraz kamery.",
+    "nie jest obliczany w równaniu oświetlenia ze względu na czasochłonność obliczeń."
+  ],
+  "correct": [
+    "odpowiada za modelowanie powierzchni o metalicznym wyglądzie, które w znaczącym stopniu odbijają światło w sposób kierunkowy."
+  ]
+}
+,{
+  "question": "Operacja BitBliting to",
+  "options": [
+    "kasowanie pamięci obrazu.",
+    "napisanie zawartości pamięci obrazu w inne miejsce w pamięci obrazu.",
+    "zmiana wyświetlanego piksela w dwóch kolorach zakodowanych w pamięci obrazu.",
+    "równe dzielenie wyświetlanego fragmentu obrazu z wykorzystaniem koloru tła."
+  ],
+  "correct": [
+    "napisanie zawartości pamięci obrazu w inne miejsce w pamięci obrazu."
+  ]
+}
+,{
+  "question": "Model oświetlenia globalny różni się od lokalnego tym, że",
+  "options": [
+    "uwzględnia odbicia światła od innych obiektów znajdujących się na scenie.",
+    "uwzględnia tylko światło bezpośrednie od źródeł światła.",
+    "jest mniej złożony pod względem obliczeniowym.",
+    "może być stosowany tylko do symulacji zjawisk fizycznych."
+  ],
+  "correct": [
+    "uwzględnia odbicia światła od innych obiektów znajdujących się na scenie."
+  ]
+}
+,{
+  "question": "Operator tonów",
+  "options": [
+    "jest algorytmem służącym do zmiany kolorów teksture nakładanych na obiekty.",
+    "służy do mapowania jasności sceny, która może zawierać szeroki zakres dynamiki jasności (ang. HDR – High Dynamic Range).",
+    "jest techniką służącą do korekcji kolorów, kompensacji w luminancji, a następnie obliczeniu nowych wartości kolorów w zakresie wyświetlania.",
+    "zmienia kolory w grach wideo w trybie graficznym nocy, np. zmieniając ciepłą tonację na chłodną dla lepszej widoczności."
+  ],
+  "correct": [
+    "służy do mapowania jasności sceny, która może zawierać szeroki zakres dynamiki jasności (ang. HDR – High Dynamic Range).",
+    "jest techniką służącą do korekcji kolorów, kompensacji w luminancji, a następnie obliczeniu nowych wartości kolorów w zakresie wyświetlania."
+  ]
+}
+,{
+  "question": "W ray tracingu teksturowanie",
+  "options": [
+    "w przypadku braku adekwatnych współrzędnych (u,v) wymaga zastosowania mapowania przestrzennego dla danego kształtu obiektu.",
+    "polega na zastąpieniu koloru obliczonego z równania oświetlenia kolorem odpowiadającym tekselowi z tekstury.",
+    "polega na symulowaniu koloru teksela tekstury przez kolor powierzchni obliczony za pomocą równania oświetlenia.",
+    "jest odrzucane ze względu na związaną z nim wydłużenie czasu renderingu."
+  ],
+  "correct": [
+    "w przypadku braku adekwatnych współrzędnych (u,v) wymaga zastosowania mapowania przestrzennego dla danego kształtu obiektu.",
+    "polega na zastąpieniu koloru obliczonego z równania oświetlenia kolorem odpowiadającym tekselowi z tekstury."
+  ]
+}
+,{
+  "question": "System graficzny nazywany jest systemem czasu rzeczywistego, jeżeli:",
+  "options": [
+    "jest wykorzystywany w grach wymagających wysokiej jakości grafiki.",
+    "jego głównym zadaniem jest szybkość renderingu.",
+    "generuje liczbę obrazów na sekundę taką samą jak częstotliwość odświeżania pionowego wyświetlacza.",
+    "renderowanie są powierzchnie zwierciadlane."
+  ],
+  "correct": [
+    "jego głównym zadaniem jest szybkość renderingu.",
+    "generuje liczbę obrazów na sekundę taką samą jak częstotliwość odświeżania pionowego wyświetlacza."
+  ]
+}
+,{
+  "question": "W ray tracingu rekurencyjne śledzenie promieni",
+  "options": [
+    "nie może być stosowane.",
+    "wymaga wywołania funkcji dziedziczenia promienia pierwotnego z poziomu funkcji śledzącej promienie wtórne.",
+    "jest wykorzystywane do implementacji ray tracera wymagającego śledzenia rozgałęzionego promienia odbitego.",
+    "umożliwia obliczenia położenia cieni na obrazie."
+  ],
+  "correct": [
+    "jest wykorzystywane do implementacji ray tracera wymagającego śledzenia rozgałęzionego promienia odbitego."
+  ]
+}
+,{
+  "question": "Kwantyzacja kolorów obrazu polega na",
+  "options": [
+    "podziale obrazu na kilka mniejszych części.",
+    "zastąpieniu wartości kolorów obrazu na cyfrowe wartości dyskretne.",
+    "zastąpieniu wartości kolorów obrazu w różnych miejscach na jego powierzchni.",
+    "zmniejszeniu liczby kanałów koloru."
+  ],
+  "correct": [
+    "zastąpieniu wartości kolorów obrazu na cyfrowe wartości dyskretne."
+  ]
+}
+,{
+  "question": "Aliasing na obrazie",
+  "options": [
+    "pojawia się na krawędziach tekstur \"chudokowanych\" krawędzi obiektów.",
+    "prowadzi do zmniejszenia szczegółowości reprezentacji kolorów w obrazie.",
+    "może doprowadzić do \"migania\" fragmentów obrazów.",
+    "prowadzi do nadmiernego nasycenia kolorów w obrazie."
+  ],
+  "correct": [
+    "może doprowadzić do \"migania\" fragmentów obrazów."
+  ]
+},
+ {
+    "question": "Clipping w potoku renderingu czasu rzeczywistego jest to operacja",
+    "options": [
+      "polegająca na pomniejszaniu obrazu rastrowego tak, aby w całości zmieścił się na ekranie.",
+      "polegająca na rzutowaniu wierzchołków trójkątów sceny na płaszczyznę obrazu.",
+      "polegająca na usuwaniu fragmentów trójkątów znajdujących się poza polem widzenia kamery.",
+      "polegająca na tworzeniu grafiki trójwymiarowej na podstawie jedynie obiektów znajdujących się poza polem widzenia kamery."
+    ],
+    "correct": [
+      "polegająca na usuwaniu fragmentów trójkątów znajdujących się poza polem widzenia kamery."
+    ]
+  },
+  {
+    "question": "Rasteryzowanie w potoku graficznym czasu rzeczywistego służy do",
+    "options": [
+      "wyznaczania trójkątów sąsiadujących z danym trójkątem w scenie 3D.",
+      "transformowania obiektów 2D do obiektów trójwymiarowych w komputerowej grafice.",
+      "przekształcenia obiektów 3D w scenie do dwuwymiarowej płaszczyzny obrazu.",
+      "transformowania położenia wierzchołków trójkątów na ich cieniu na płaszczyźnie generowanego obrazu rastrowego."
+    ],
+    "correct": [
+      "przekształcenia obiektów 3D w scenie do dwuwymiarowej płaszczyzny obrazu."
+    ]
+  },
+  {
+    "question": "Mapowanie tekstury to",
+    "options": [
+      "proces polegający na powiększaniu lub pomniejszaniu tekstury.",
+      "proces, którego celem jest nałożenie tekstury na krzywoliniową powierzchnię w sposób, który w jak najmniejszym stopniu zniekształci treść tekstury.",
+      "proces polegający na obliczaniu współrzędnych (u,v) teksela tekstury dla punktu położonego na powierzchni.",
+      "proces pozwalający na dostosowanie płaskiego prostokątnego kształtu tekstury do krzywoliniowej powierzchni, na którą nakładana jest tekstura."
+    ],
+    "correct": [
+      "proces polegający na obliczaniu współrzędnych (u,v) teksela tekstury dla punktu położonego na powierzchni."
+    ]
+  },
+  {
+    "question": "W ray tracingu rekurencyjne śledzenie promieni",
+    "options": [
+      "nie może być stosowane.",
+      "umożliwia obliczanie funkcji śledzenia promienia wtórnego z poziomu funkcji śledzącej promień pierwotny.",
+      "jest wymogiem implementacji ray tracera wymagającego śledzenia rozgałęzionego drzewa promieni wtórnych.",
+      "umożliwia obliczanie położenia cieni na obrazie."
+    ],
+    "correct": [
+      "umożliwia obliczanie funkcji śledzenia promienia wtórnego z poziomu funkcji śledzącej promień pierwotny."
+    ]
+  },
+  {
+    "question": "Obraz rastrowy 2D",
+    "options": [
+      "powstaje w aparatach cyfrowych poprzez integrację fotografowanej sceny.",
+      "zawsze reprezentowany informacją o kolorze w postaci wektora RGB definiującego czerwoną, zieloną i niebieską składową koloru.",
+      "jest wynikiem działania algorytmu renderingu – konwersji trójwymiarowej sceny na dwuwymiarowy obraz rastrowy.",
+      "to obraz, którego rozdzielczość można zdefiniować podając liczbę pikseli w poziomie i w pionie."
+    ],
+    "correct": [
+      "jest wynikiem działania algorytmu renderingu – konwersji trójwymiarowej sceny na dwuwymiarowy obraz rastrowy.",
+      "to obraz, którego rozdzielczość można zdefiniować podając liczbę pikseli w poziomie i w pionie."
+    ]
+  },
+  {
+    "question": "Wartość składowej koloru \"specular\" obliczanej w modelu oświetlenia Blinna-Phonga",
+    "options": [
+      "zależy od liczby trójkątów z jakiej składa się obiekt.",
+      "umożliwia renderowanie obiektów o metalicznym wyglądzie powierzchni.",
+      "zależy od położenia źródeł światła.",
+      "zależy od położenia obserwatora (kamery)."
+    ],
+    "correct": [
+      "umożliwia renderowanie obiektów o metalicznym wyglądzie powierzchni.",
+      "zależy od położenia źródeł światła.",
+      "zależy od położenia obserwatora (kamery)."
+    ]
+  },
+  {
+    "question": "Vertex shader to",
+    "options": [
+      "program wykonujący transformacje wierzchołków trójkątów.",
+      "program wykonywany przez procesor graficzny.",
+      "program wykonywany przez procesor CPU.",
+      "algorytm obliczający kolor powierzchni."
+    ],
+    "correct": [
+      "program wykonujący transformacje wierzchołków trójkątów.",
+      "program wykonywany przez procesor graficzny."
+    ]
+  },
+  {
+    "question": "Ray tracing to",
+    "options": [
+      "metoda syntezy obrazów, w której obraz jest generowany poprzez przenoszenie do rastra, a następnie obliczanie kolorów trójkątów zdefiniowanych na scenie.",
+      "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+      "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak cienie czy odbicia zwierciadlane.",
+      "metoda służąca do rysowania linii (promienia) w rastrze."
+    ],
+    "correct": [
+      "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+      "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak cienie czy odbicia zwierciadlane."
+    ]
+  },
+{
+  "question": "Scena",
+  "options": [
+    "składa się między innymi z informacji o tym jak powierzchnie obiektów odbijają światło.",
+    "to zbiór danych wejściowych wykorzystywanych do renderingu obrazu.",
+    "w przypadku scen trójwymiarowych powinna zawierać kamerę.",
+    "składa się między innymi z informacji o kształcie obiektów."
+  ],
+  "correct": [
+    "składa się między innymi z informacji o tym jak powierzchnie obiektów odbijają światło.",
+    "to zbiór danych wejściowych wykorzystywanych do renderingu obrazu.",
+    "w przypadku scen trójwymiarowych powinna zawierać kamerę.",
+    "składa się między innymi z informacji o kształcie obiektów."
+  ]
+},{
+  "question": "Parametrami piksela są",
+  "options": [
+    "pole powierzchni.",
+    "stopień przezroczystości.",
+    "kolor.",
+    "położenie w rastrze."
+  ],
+  "correct": [
+    "stopień przezroczystości.",
+    "kolor.",
+    "położenie w rastrze."
+  ]
+}
+,{
+  "question": "Grafika komputerowa",
+  "options": [
+    "definiuje techniki renderingu stosowane w grach komputerowych.",
+    "jest dziedziną wiedzy zajmującą się przetwarzaniem i analizą obrazów.",
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny.",
+    "definiuje algorytmy renderingu obrazów, które mogą być stosowane tylko w systemach offline’owych, tzn. w takich, w których rendering obrazów nie odbywa się w czasie rzeczywistym."
+  ],
+  "correct": [
+    "definiuje techniki renderingu stosowane w grach komputerowych.",
+    "to dziedzina wiedzy zajmująca się algorytmami renderingu umożliwiającym syntezę obrazów na podstawie danych opisujących parametry sceny.",
+    "definiuje algorytmy renderingu obrazów, które mogą być stosowane tylko w systemach offline’owych, tzn. w takich, w których rendering obrazów nie odbywa się w czasie rzeczywistym."
+  ]
+}
+,{
+  "question": "Procesor GPU szybciej od CPU renderuje obrazy, ponieważ",
+  "options": [
+    "ma architekturę SISD (ang. Single Instruction Single Data).",
+    "ma szybszy dostęp do pamięci obrazu (framebuffera).",
+    "może równolegle wykonywać więcej wątków niż CPU.",
+    "ma szybszy dostęp do pamięci RAM karty graficznej."
+  ],
+  "correct": [
+    "ma szybszy dostęp do pamięci obrazu (framebuffera).",
+    "może równolegle wykonywać więcej wątków niż CPU.",
+    "ma szybszy dostęp do pamięci RAM karty graficznej."
+  ]
+}
+,{
+  "question": "Wynikiem iloczynu wektorowego jest",
+  "options": [
+    "wektor prostopadły do mnożonych wektorów.",
+    "liczba skalara.",
+    "liczba skalarna równa kosinusowi kąta pomiędzy mnożonymi wektorami."
+  ],
+  "correct": [
+    "wektor prostopadły do mnożonych wektorów."
+  ]
+},{
+  "question": "Rozdzielczość wyświetlacza to",
+  "options": [
+    "liczba wyświetlanych obrazów na sekundę.",
+    "fizyczna wielkość punktu/piksela wyświetlacza.",
+    "długość przekątnej wyświetlacza.",
+    "liczba wyświetlanych punktów/pikseli na jednostkę powierzchni."
+  ],
+  "correct": [
+    "liczba wyświetlanych punktów/pikseli na jednostkę powierzchni."
+  ]
+}
+,{
+  "question": "W monitorach LCD",
+  "options": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "konieczne jest zastosowanie podświetlenia (ang. backlight).",
+    "stosowane są filtry polaryzacyjne.",
+    "kolor uzyskuje się dzięki różnokolorowym ciekłym kryształom."
+  ],
+  "correct": [
+    "zmiana jasności wyświetlanego punktu/piksela uzyskuje się poprzez zmianę napięcia dostarczanego do komórki ciekłego kryształu.",
+    "konieczne jest zastosowanie podświetlenia (ang. backlight).",
+    "stosowane są filtry polaryzacyjne."
+  ]
+}
+,{
+  "question": "Operacja BitBliting to",
+  "options": [
+    "kopiowanie dwuwymiarowego fragmentu obrazu z wykorzystaniem operacji logicznych.",
+    "kasowanie pamięci obrazu.",
+    "przeniesienie zawartości pamięci obrazu w inne miejsce w pamięci obrazu.",
+    "napisanie wyświetlanego piksela w dwóch kolorach powodujące jego migotanie."
+  ],
+  "correct": [
+    "kopiowanie dwuwymiarowego fragmentu obrazu z wykorzystaniem operacji logicznych.",
+    "przeniesienie zawartości pamięci obrazu w inne miejsce w pamięci obrazu."
+  ]
+}
+,
+  {
+    "question": "Clipping w potoku renderingu czasu rzeczywistego jest to operacja",
+    "options": [
+      "polegająca na pomniejszaniu obrazu rastrowego tak, aby w całości zmieścił się na ekranie.",
+      "polegająca na rzutowaniu wierzchołków trójkątów sceny na płaszczyznę obrazu.",
+      "polegająca na usuwaniu fragmentów trójkątów znajdujących się poza polem widzenia kamery.",
+      "polegająca na tworzeniu grafiki trójwymiarowej na podstawie jedynie obiektów znajdujących się poza polem widzenia kamery."
+    ],
+    "correct": [
+      "polegająca na usuwaniu fragmentów trójkątów znajdujących się poza polem widzenia kamery."
+    ]
+  },
+  {
+    "question": "Rasteryzowanie w potoku graficznym czasu rzeczywistego służy do",
+    "options": [
+      "wyznaczania trójkątów sąsiadujących z danym trójkątem w scenie 3D.",
+      "transformowania obiektów 2D do obiektów trójwymiarowych w komputerowej grafice.",
+      "przekształcenia obiektów 3D w scenie do dwuwymiarowej płaszczyzny obrazu.",
+      "transformowania położenia wierzchołków trójkątów na ich cieniu na płaszczyźnie generowanego obrazu rastrowego."
+    ],
+    "correct": [
+      "przekształcenia obiektów 3D w scenie do dwuwymiarowej płaszczyzny obrazu."
+    ]
+  },
+  {
+    "question": "Mapowanie tekstury to",
+    "options": [
+      "proces polegający na powiększaniu lub pomniejszaniu tekstury.",
+      "proces, którego celem jest nałożenie tekstury na krzywoliniową powierzchnię w sposób, który w jak najmniejszym stopniu zniekształci treść tekstury.",
+      "proces polegający na obliczaniu współrzędnych (u,v) teksela tekstury dla punktu położonego na powierzchni.",
+      "proces pozwalający na dostosowanie płaskiego prostokątnego kształtu tekstury do krzywoliniowej powierzchni, na którą nakładana jest tekstura."
+    ],
+    "correct": [
+      "proces polegający na obliczaniu współrzędnych (u,v) teksela tekstury dla punktu położonego na powierzchni."
+    ]
+  },
+  {
+    "question": "W ray tracingu rekurencyjne śledzenie promieni",
+    "options": [
+      "nie może być stosowane.",
+      "umożliwia obliczanie funkcji śledzenia promienia wtórnego z poziomu funkcji śledzącej promień pierwotny.",
+      "jest wymogiem implementacji ray tracera wymagającego śledzenia rozgałęzionego drzewa promieni wtórnych.",
+      "umożliwia obliczanie położenia cieni na obrazie."
+    ],
+    "correct": [
+      "umożliwia obliczanie funkcji śledzenia promienia wtórnego z poziomu funkcji śledzącej promień pierwotny."
+    ]
+  },
+  {
+    "question": "Obraz rastrowy 2D",
+    "options": [
+      "powstaje w aparatach cyfrowych poprzez integrację fotografowanej sceny.",
+      "zawsze reprezentowany informacją o kolorze w postaci wektora RGB definiującego czerwoną, zieloną i niebieską składową koloru.",
+      "jest wynikiem działania algorytmu renderingu – konwersji trójwymiarowej sceny na dwuwymiarowy obraz rastrowy.",
+      "to obraz, którego rozdzielczość można zdefiniować podając liczbę pikseli w poziomie i w pionie."
+    ],
+    "correct": [
+      "jest wynikiem działania algorytmu renderingu – konwersji trójwymiarowej sceny na dwuwymiarowy obraz rastrowy.",
+      "to obraz, którego rozdzielczość można zdefiniować podając liczbę pikseli w poziomie i w pionie."
+    ]
+  },
+  {
+    "question": "Wartość składowej koloru \"specular\" obliczanej w modelu oświetlenia Blinna-Phonga",
+    "options": [
+      "zależy od liczby trójkątów z jakiej składa się obiekt.",
+      "umożliwia renderowanie obiektów o metalicznym wyglądzie powierzchni.",
+      "zależy od położenia źródeł światła.",
+      "zależy od położenia obserwatora (kamery)."
+    ],
+    "correct": [
+      "umożliwia renderowanie obiektów o metalicznym wyglądzie powierzchni.",
+      "zależy od położenia źródeł światła.",
+      "zależy od położenia obserwatora (kamery)."
+    ]
+  },
+  {
+    "question": "Vertex shader to",
+    "options": [
+      "program wykonujący transformacje wierzchołków trójkątów.",
+      "program wykonywany przez procesor graficzny.",
+      "program wykonywany przez procesor CPU.",
+      "algorytm obliczający kolor powierzchni."
+    ],
+    "correct": [
+      "program wykonujący transformacje wierzchołków trójkątów.",
+      "program wykonywany przez procesor graficzny."
+    ]
+  },
+  {
+    "question": "Ray tracing to",
+    "options": [
+      "metoda syntezy obrazów, w której obraz jest generowany poprzez przenoszenie do rastra, a następnie obliczanie kolorów trójkątów zdefiniowanych na scenie.",
+      "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+      "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak cienie czy odbicia zwierciadlane.",
+      "metoda służąca do rysowania linii (promienia) w rastrze."
+    ],
+    "correct": [
+      "metoda syntezy obrazów polegająca na śledzeniu promieni światła od kamery do źródeł światła.",
+      "metoda syntezy obrazów, w której uwzględniane są elementy globalnego modelu oświetlenia, takie jak cienie czy odbicia zwierciadlane."
+    ]
+  },
+  {
+    "question": "Operator tonu",
+    "options": [
+      "jest algorytmem służącym do zmiany kolorów tekstur nakładanych na obiekty.",
+      "jest algorytmem służącym do zmniejszenia zakresu dynamiki jasności (ang. HDR, high dynamic range).",
+      "kompensuje różnice między luminancją i chrominancją.",
+      "zmienia kolory wyjściowe grafiki do wyświetlacza monitora, np. zmieniając ciepłą tonację na chłodną."
+    ],
+    "correct": [
+      "jest algorytmem służącym do zmniejszenia zakresu dynamiki jasności (ang. HDR, high dynamic range).",
+      "zmienia kolory wyjściowe grafiki do wyświetlacza monitora, np. zmieniając ciepłą tonację na chłodną."
+    ]
+  },
+  {
+    "question": "W ray tracingu wartość komponentu koloru diffuse",
+    "options": [
+      "należy tylko od koloru światła oraz parametru koloru materiału powierzchni.",
+      "zależy od wzajemnego położenia źródła światła oraz powierzchni.",
+      "obliczany jest osobno dla każdego źródła światła umieszczonego na scenie.",
+      "zależy od położenia kamery."
+    ],
+    "correct": [
+      "zależy od wzajemnego położenia źródła światła oraz powierzchni.",
+      "obliczany jest osobno dla każdego źródła światła umieszczonego na scenie."
+    ]
+  },
+  {
+    "question": "W ray tracingu obliczając punkt przecięcia promienia pierwotnego z obiektem na scenie należy",
+    "options": [
+      "odrzucić obiekty, dla których punkt przecięcia znajduje się za kamerą (czyli w przeciwnym do kierunku promienia).",
+      "znaleźć przecięcie promienia z najbliższym obiektem na scenie leżącym przed kamerą.",
+      "aby zapewnić prawidłowe przekształcenia się obiektów w ray tracingu, obliczyć przecięcia także z tłem i trójkątami.",
+      "pominąć testowanie przecięć z obiektami znajdującymi się za kamerą."
+    ],
+    "correct": [
+      "odrzucić obiekty, dla których punkt przecięcia znajduje się za kamerą (czyli w przeciwnym do kierunku promienia).",
+      "znaleźć przecięcie promienia z najbliższym obiektem na scenie leżącym przed kamerą."
+    ]
+  },
+  {
+    "question": "Parametry profilu koloru",
+    "options": [
+      "mogą być różne dla dwóch wyświetlaczy, pomimo że są to identyczne modele tych urządzeń.",
+      "muszą być dostosowywane do użytkownika wyświetlacza, dla którego mierzone są dane dotyczące koloru.",
+      "mogą być mierzone za pomocą mierników luminancji i chrominancji.",
+      "mogą być różne dla różnych fizycznych urządzeń."
+    ],
+    "correct": [
+      "mogą być różne dla dwóch wyświetlaczy, pomimo że są to identyczne modele tych urządzeń.",
+      "mogą być mierzone za pomocą mierników luminancji i chrominancji.",
+      "mogą być różne dla różnych fizycznych urządzeń."
+    ]
+  },
+  {
+    "question": "Punkt bieli",
+    "options": [
+      "może być wyrażony za pomocą temperatury barwowej.",
+      "jest niezbędnym parametrem profilu koloru wyświetlaczy komputerowych.",
+      "w fotografii to kolor, do którego zaadaptowany byłby wzrok człowieka w momencie wykonywania zdjęcia na scenie.",
+      "jest niezbędny do obliczenia adaptacji wzroku człowieka do zmiany jasności sceny."
+    ],
+    "correct": [
+      "może być wyrażony za pomocą temperatury barwowej.",
+      "jest niezbędnym parametrem profilu koloru wyświetlaczy komputerowych.",
+      "w fotografii to kolor, do którego zaadaptowany byłby wzrok człowieka w momencie wykonywania zdjęcia na scenie."
+    ]
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
